@@ -27,7 +27,7 @@
       </a>
       <button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle>☰</button>
       <div class="nav-links" data-nav-links>
-        <a class="" href="index.html">Home</a><a class="active" href="facilitators.html">Facilitators</a><a class="" href="agenda.html">Agenda</a><a class="" href="about.html">About</a><a class="" href="contact.html">Contact</a>
+        <a href="index.html">Home</a><a class="active" href="facilitators.html">Facilitators</a><a href="agenda.html">Agenda</a><a href="about.html">About</a><a href="contact.html">Contact</a>
       </div>
     </nav>
   </div>
@@ -36,7 +36,7 @@
   <section class="page-hero simple-hero">
     <span class="eyebrow">Facilitators</span>
     <h1>Explore holistic facilitators across Lombok.</h1>
-    <p class="lead">Search by name, practice or region. Each card links to a fuller profile with photos, offerings, contact links and location information.</p>
+    <p class="lead">Search by name, practice or region. Click a card to open a quick view first, then continue to the full profile page when you want more detail.</p>
   </section>
   <section class="toolbar-panel">
     <input class="search-input" data-facilitator-search type="search" placeholder="Search yoga, breathwork, Kuta, Gili Air…" />
@@ -47,12 +47,21 @@
     <div class="cards-grid" data-all-facilitators></div>
   </section>
   <section class="section map-section">
-    <div class="section-heading"><div><span class="eyebrow">Map</span><h2 class="section-title">Where the listings are based</h2></div><p class="section-sub">This map uses the existing approximate coordinates from the current site.</p></div>
+    <div class="section-heading"><div><span class="eyebrow">Map</span><h2 class="section-title">Where the listings are based</h2></div><p class="section-sub">Approximate locations to help visitors orient themselves across Lombok and the Gilis.</p></div>
     <div id="map" class="map-card"></div>
   </section>
 </main>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<div class="modal" data-facilitator-modal hidden>
+  <div class="sheet facilitator-sheet">
+    <button class="close" type="button" data-close-facilitator-modal aria-label="Close facilitator quick view">✕</button>
+    <div class="sheet-visual" data-facilitator-image></div>
+    <div class="sheet-copy facilitator-modal-copy" data-facilitator-copy></div>
+  </div>
+</div>
+
 <footer class="footer">
   <div class="container footer-grid">
     <div>

@@ -27,34 +27,20 @@
       </a>
       <button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle>☰</button>
       <div class="nav-links" data-nav-links>
-        <a class="active" href="index.html">Home</a><a class="" href="facilitators.html">Facilitators</a><a class="" href="agenda.html">Agenda</a><a class="" href="about.html">About</a><a class="" href="contact.html">Contact</a>
+        <a class="active" href="index.html">Home</a><a href="facilitators.html">Facilitators</a><a href="agenda.html">Agenda</a><a href="about.html">About</a><a href="contact.html">Contact</a>
       </div>
     </nav>
   </div>
 </div>
 <main>
-  <section class="hero home-hero">
-    <div class="container hero-layout">
-      <div class="hero-copy">
-        <span class="eyebrow light">Holistic discovery · Lombok</span>
-        <h1>Find holistic facilitators, retreats and soulful experiences across Lombok.</h1>
-        <p class="lead light-lead">A calm place for travelers, seekers and locals to discover yoga, breathwork, meditation, sound healing, bodywork, ceremonies, retreats and conscious community on the island.</p>
-        <div class="hero-actions"><a class="primary-btn" href="facilitators.html">Explore facilitators</a><a class="secondary-btn" href="agenda.html">View agenda</a></div>
-      </div>
-      <aside class="hero-panel">
-        <h2>Lombok is the first chapter.</h2>
-        <p>Holistic Tribe wants to give facilitators around the world a beautiful podium to be seen and to connect with the people who are looking for their work.</p>
-      </aside>
-    </div>
-  </section>
+  <section class="hero home-hero hero-image-only" aria-label="Holistic Tribe Lombok hero image"></section>
 
-  <section class="container section intro-panel">
-    <span class="eyebrow">Why this exists</span>
-    <h2 class="section-title">One island, many practices, one gentle place to discover them.</h2>
-    <div class="intro-grid">
-      <p>Travelers often arrive in Lombok looking for yoga, healing sessions, breathwork, meditation, ceremonies, bodywork or retreats — but the information is scattered across Instagram, WhatsApp groups, flyers and word of mouth.</p>
-      <p>Holistic Tribe Lombok brings these offerings together in one calm platform, while giving facilitators, studios and retreat spaces a clear place to share what they offer.</p>
-    </div>
+  <section class="container section intro-panel home-intro">
+    <span class="eyebrow">Holistic discovery · Lombok</span>
+    <h1 class="section-title">Find holistic facilitators, retreats and soulful experiences across Lombok.</h1>
+    <p class="lead">A calm place for travelers, seekers and locals to discover yoga, breathwork, meditation, sound healing, bodywork, ceremonies, retreats and conscious community on the island.</p>
+    <p class="section-sub">Holistic Tribe wants to give facilitators around the world a beautiful podium to be seen and connected with the people who are looking for their work. Lombok is the first chapter: a powerful place to begin, where more travelers, seekers and conscious communities are arriving and where more holistic experiences are unfolding.</p>
+    <div class="hero-actions compact"><a class="primary-btn dark" href="facilitators.html">Explore facilitators</a><a class="secondary-btn pale" href="agenda.html">View agenda</a></div>
   </section>
 
   <section class="container section">
@@ -86,14 +72,16 @@
     </div>
     <div class="panel soft-panel"><div data-upcoming-mini></div></div>
   </section>
-
-  <section class="container section about-card">
-    <span class="eyebrow">About Holistic Tribe</span>
-    <h2 class="section-title">A global platform, starting in Lombok.</h2>
-    <p>Holistic Tribe is a growing global platform created to give holistic facilitators a beautiful place to be seen, found and connected with the people who are looking for their work. Lombok is a powerful place to begin: a beautiful island where more travelers, seekers and conscious communities are arriving, and where more holistic experiences are unfolding.</p>
-    <div class="hero-actions compact"><a class="primary-btn dark" href="about.html">Read the story</a><a class="secondary-btn pale" href="contact.html#facilitators">Get listed</a></div>
-  </section>
 </main>
+
+<div class="modal" data-facilitator-modal hidden>
+  <div class="sheet facilitator-sheet">
+    <button class="close" type="button" data-close-facilitator-modal aria-label="Close facilitator quick view">✕</button>
+    <div class="sheet-visual" data-facilitator-image></div>
+    <div class="sheet-copy facilitator-modal-copy" data-facilitator-copy></div>
+  </div>
+</div>
+
 <footer class="footer">
   <div class="container footer-grid">
     <div>
