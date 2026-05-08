@@ -80,3 +80,43 @@
   .pg-hero, .pg-overview-hero { padding-top: 42px; }
   .pg-intro-box, .pg-note, .pg-resource-card, .pg-faq-item, .pg-cta, .pg-toc { padding:20px; }
 }
+
+/* Practice-page image fitting improvements */
+.pg-hero-card img,
+.pg-visual img,
+.pg-symbol img {
+  background: #f4ecdf;
+  object-fit: contain;
+  object-position: center;
+}
+.pg-hero-card img {
+  padding: 8px;
+}
+.pg-visual img,
+.pg-symbol img {
+  padding: 6px;
+}
+.practice-card-image {
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #f4ecdf;
+}
+.practice-card-image::before {
+  background: linear-gradient(180deg, rgba(38,53,47,.02), rgba(38,53,47,.16)) !important;
+}
+@media (max-width: 760px) {
+  .practice-card-image {
+    background-size: contain !important;
+  }
+  .pg-hero-note {
+    position: static;
+    margin-top: 14px;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+  .pg-hero-card {
+    padding-bottom: 14px;
+  }
+}
