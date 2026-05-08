@@ -173,7 +173,7 @@ function initAgenda(){
     });
   }
 
-  function occursOn(dateStr){ return filteredEvents().filter(evt => evt.date === dateStr || (evt.endDate && evt.date <= dateStr && evt.endDate >= dateStr)); }
+  function startsOn(dateStr){ return filteredEvents().filter(evt => evt.date === dateStr); }
 
   function render(){
     $('[data-calendar-label]').textContent = view.toLocaleDateString('en-US', {month:'long', year:'numeric'});
@@ -196,7 +196,7 @@ function initAgenda(){
     const today = toYMD(new Date());
     grid.innerHTML = cells.map(cell => {
       const ymd = toYMD(cell.date);
-      const count = occursOn(ymd).length;
+      const count = startsOn(ymd).length;
       return '<button class="day-cell '+(cell.muted?'muted ':'')+(ymd===selected?'selected ':'')+(ymd===today?'today ':'')+'" type="button" data-date="'+ymd+'"><strong>'+cell.date.getDate()+'</strong><div class="dots">'+Array.from({length:Math.min(3,count)}).map(()=>'<span class="dot"></span>').join('')+'</div></button>';
     }).join('');
     grid.onclick = e => {
@@ -208,7 +208,7 @@ function initAgenda(){
   }
 
   function renderSelected(){
-    const evts = occursOn(selected).sort((a,b)=>a.date.localeCompare(b.date));
+    const evts = startsOn(selected).sort((a,b)=>a.date.localeCompare(b.date));
     $('[data-selected-day]').textContent = formatLongDate(parseLocalDate(selected));
     $('[data-selected-day-sub]').textContent = evts.length ? 'Events happening on this date. Click an event for details.' : 'No listed events for this date yet.';
     $('[data-events-list]').innerHTML = evts.map(eventCard).join('') || '<div class="empty-state">No events listed for this date yet. Check another day or send us an update.</div>';

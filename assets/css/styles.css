@@ -345,7 +345,19 @@ p + p,
   background: var(--sand);
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
+.guide-card-image.has-photo::before {
+  inset: 0;
+  width: auto;
+  height: auto;
+  right: auto;
+  top: auto;
+  border-radius: 0;
+  background: linear-gradient(180deg, rgba(38,53,47,.05), rgba(38,53,47,.42));
+}
+.guide-card-image.has-photo::after { display: none; }
 .guide-card-image::before,
 .guide-card-image::after {
   content: "";
