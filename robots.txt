@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://www.holistictribelombok.com/sitemap.xml

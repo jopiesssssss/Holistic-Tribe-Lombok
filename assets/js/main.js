@@ -10,7 +10,9 @@ const toYMD = (date) => date.getFullYear() + '-' + String(date.getMonth()+1).pad
 
 function facilitatorUrl(f, prefix=''){ return prefix + f.url; }
 function chips(items=[]){ return [...new Set(items)].slice(0,6).map(c => '<span class="chip">'+escapeHtml(c)+'</span>').join(''); }
-function upcomingEvents(limit=4){ return [...data.events].sort((a,b)=>a.date.localeCompare(b.date)).slice(0,limit); }
+function eventEnd(evt){ return evt.endDate || evt.date; }
+function isUpcoming(evt){ return eventEnd(evt) >= toYMD(new Date()); }
+function upcomingEvents(limit=4){ const upcoming = data.events.filter(isUpcoming).sort((a,b)=>a.date.localeCompare(b.date)); return (upcoming.length ? upcoming : [...data.events].sort((a,b)=>a.date.localeCompare(b.date))).slice(0,limit); }
 function eventDateText(evt){ const start = parseLocalDate(evt.date); return evt.endDate ? formatDate(start)+' – '+formatDate(parseLocalDate(evt.endDate)) : formatDate(start); }
 
 function facilitatorCard(f, prefix=''){
@@ -142,8 +144,11 @@ function initAgenda(){
   if(!$('[data-calendar-grid]')) return;
   const search = $('[data-event-search]');
   const filters = $('[data-event-filters]');
-  let view = new Date(2026,3,1);
-  let selected = '2026-04-10';
+  const todayYMD = toYMD(new Date());
+  const firstUpcoming = upcomingEvents(1)[0];
+  let selected = firstUpcoming ? firstUpcoming.date : todayYMD;
+  let view = parseLocalDate(selected);
+  view = new Date(view.getFullYear(), view.getMonth(), 1);
   let active = '';
   const types = ['All', ...new Set(data.events.map(e => e.type))];
   filters.innerHTML = types.map(t => '<button class="filter-btn '+(t==='All'?'active':'')+'" type="button" data-event-filter="'+escapeHtml(t)+'">'+escapeHtml(t)+'</button>').join('');
@@ -168,7 +173,7 @@ function initAgenda(){
     });
   }
 
-  function startsOn(dateStr){ return filteredEvents().filter(evt => evt.date === dateStr); }
+  function occursOn(dateStr){ return filteredEvents().filter(evt => evt.date === dateStr || (evt.endDate && evt.date <= dateStr && evt.endDate >= dateStr)); }
 
   function render(){
     $('[data-calendar-label]').textContent = view.toLocaleDateString('en-US', {month:'long', year:'numeric'});
@@ -191,7 +196,7 @@ function initAgenda(){
     const today = toYMD(new Date());
     grid.innerHTML = cells.map(cell => {
       const ymd = toYMD(cell.date);
-      const count = startsOn(ymd).length;
+      const count = occursOn(ymd).length;
       return '<button class="day-cell '+(cell.muted?'muted ':'')+(ymd===selected?'selected ':'')+(ymd===today?'today ':'')+'" type="button" data-date="'+ymd+'"><strong>'+cell.date.getDate()+'</strong><div class="dots">'+Array.from({length:Math.min(3,count)}).map(()=>'<span class="dot"></span>').join('')+'</div></button>';
     }).join('');
     grid.onclick = e => {
@@ -203,9 +208,9 @@ function initAgenda(){
   }
 
   function renderSelected(){
-    const evts = startsOn(selected);
+    const evts = occursOn(selected).sort((a,b)=>a.date.localeCompare(b.date));
     $('[data-selected-day]').textContent = formatLongDate(parseLocalDate(selected));
-    $('[data-selected-day-sub]').textContent = evts.length ? 'Events starting on this date. Click an event for details.' : 'No listed events start on this date yet.';
+    $('[data-selected-day-sub]').textContent = evts.length ? 'Events happening on this date. Click an event for details.' : 'No listed events for this date yet.';
     $('[data-events-list]').innerHTML = evts.map(eventCard).join('') || '<div class="empty-state">No events listed for this date yet. Check another day or send us an update.</div>';
     $$('[data-event-id]').forEach(btn => btn.addEventListener('click', () => openEvent(btn.dataset.eventId)));
   }
@@ -213,7 +218,7 @@ function initAgenda(){
   function renderMultiday(){
     const box = $('[data-multiday-list]');
     if(!box) return;
-    const items = filteredEvents().filter(e => e.endDate).sort((a,b)=>a.date.localeCompare(b.date));
+    const items = filteredEvents().filter(e => e.endDate && eventEnd(e) >= todayYMD).sort((a,b)=>a.date.localeCompare(b.date));
     box.innerHTML = items.map(evt => '<button class="event-pill" type="button" data-event-id="'+evt.id+'"><div class="event-date">'+eventDateText(evt)+'</div><strong>'+escapeHtml(evt.title)+'</strong><span>'+escapeHtml(evt.location)+'</span></button>').join('') || '<div class="empty-state">No multi-day retreats or trainings match this filter.</div>';
     $$('[data-event-id]', box).forEach(btn => btn.addEventListener('click', () => openEvent(btn.dataset.eventId)));
   }

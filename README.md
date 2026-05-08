@@ -6,9 +6,9 @@ This folder is ready to upload to a new GitHub repository and deploy with Vercel
 
 - Shared header and footer across all pages
 - Homepage with facilitator cards, practice browsing and agenda preview
-- Separate pages for Facilitators, Agenda, About and Contact
+- Separate pages for Facilitators, Agenda, About, Contact and Holistic Travel Guides
 - 16 facilitator profile pages with the existing external photo links and information carried over
-- Data files for facilitators and events
+- Data files for facilitators and events, refreshed for the live agenda
 - Smarter agenda behavior: multi-day retreats/trainings are shown as one date-range listing instead of repeated every day
 - Contact page with separate flows for visitors, facilitators and event updates
 
@@ -27,6 +27,7 @@ data/site-data.js
 data/facilitators.json
 data/events.json
 assets/images/general/holistic-tribe-lombok-hero.webp
+holistic-travel-guides/
 ```
 
 ## How to deploy with GitHub + Vercel
@@ -77,3 +78,23 @@ assets/images/facilitators/
 ```
 
 Then update the image URLs in `data/site-data.js` and the matching profile HTML page.
+
+
+## Live-ready patch notes
+
+This version removes the About page hero image, adds non-profit language in key places, refreshes agenda behavior so it starts from current/upcoming events, adds new researched events and adds three SEO travel guide pages linked from the homepage.
+
+The travel guide pages are located in:
+
+```text
+holistic-travel-guides/
+```
+
+After upload, check these URLs:
+
+```text
+/holistic-travel-guides/
+/holistic-travel-guides/bali-or-lombok-yoga-wellness.html
+/holistic-travel-guides/best-holistic-things-to-do-in-lombok-after-bali.html
+/holistic-travel-guides/tetebatu-lombok-nature-meditation-slow-travel.html
+```
