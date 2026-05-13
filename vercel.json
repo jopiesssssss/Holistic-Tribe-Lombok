@@ -1,0 +1,150 @@
+{
+  "redirects": [
+    {
+      "source": "/about.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/agenda.html",
+      "destination": "/agenda/",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators.html",
+      "destination": "/facilitators/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/ashtari-yoga-kuta-lombok.html",
+      "destination": "/facilitators/ashtari-yoga-kuta-lombok/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/chi-in-harmony-senggigi-lombok.html",
+      "destination": "/facilitators/chi-in-harmony-senggigi-lombok/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/cocoon-healing-hut-kuta-lombok.html",
+      "destination": "/facilitators/cocoon-healing-hut-kuta-lombok/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/flowers-and-fire-gili-air.html",
+      "destination": "/facilitators/flowers-and-fire-gili-air/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/gili-yoga-gili-trawangan.html",
+      "destination": "/facilitators/gili-yoga-gili-trawangan/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/h2o-yoga-and-meditation-gili-air.html",
+      "destination": "/facilitators/h2o-yoga-and-meditation-gili-air/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/ikara-yoga-kuta-lombok.html",
+      "destination": "/facilitators/ikara-yoga-kuta-lombok/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/ingeborg-leonoor-lombok.html",
+      "destination": "/facilitators/ingeborg-leonoor-lombok/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/kuara-lombok-south-lombok.html",
+      "destination": "/facilitators/kuara-lombok-south-lombok/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/kuara-resort-lombok.html",
+      "destination": "/facilitators/kuara-lombok-south-lombok/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/mana-yoga-retreat-kuta-lombok.html",
+      "destination": "/facilitators/mana-yoga-retreat-kuta-lombok/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/my-spa-lombok-kuta-mandalika.html",
+      "destination": "/facilitators/my-spa-lombok-kuta-mandalika/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/shanti-yoga-lombok-kuta-lombok.html",
+      "destination": "/facilitators/shanti-yoga-lombok-kuta-lombok/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/slow-spa-and-yoga-gili-air.html",
+      "destination": "/facilitators/slow-spa-and-yoga-gili-air/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/soraya-yoga-wellness-center-gili-trawangan.html",
+      "destination": "/facilitators/soraya-yoga-wellness-center-gili-trawangan/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/sunset-beach-yoga-gili-trawangan.html",
+      "destination": "/facilitators/sunset-beach-yoga-gili-trawangan/",
+      "permanent": true
+    },
+    {
+      "source": "/facilitators/tetebatu-retreats-lombok.html",
+      "destination": "/facilitators/tetebatu-retreats-lombok/",
+      "permanent": true
+    },
+    {
+      "source": "/holistic-practices/breathwork.html",
+      "destination": "/holistic-practices/breathwork/",
+      "permanent": true
+    },
+    {
+      "source": "/holistic-practices/reiki.html",
+      "destination": "/holistic-practices/reiki/",
+      "permanent": true
+    },
+    {
+      "source": "/holistic-practices/sound-healing.html",
+      "destination": "/holistic-practices/sound-healing/",
+      "permanent": true
+    },
+    {
+      "source": "/holistic-travel-guides/bali-or-lombok-yoga-wellness.html",
+      "destination": "/holistic-travel-guides/bali-or-lombok-yoga-wellness/",
+      "permanent": true
+    },
+    {
+      "source": "/holistic-travel-guides/best-holistic-things-to-do-in-lombok-after-bali.html",
+      "destination": "/holistic-travel-guides/best-holistic-things-to-do-in-lombok-after-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/holistic-travel-guides/tetebatu-lombok-nature-meditation-slow-travel.html",
+      "destination": "/holistic-travel-guides/tetebatu-lombok-nature-meditation-slow-travel/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
