@@ -450,94 +450,97 @@
   },
   {
     "id": 6,
-    "name": "Kuara Lombok",
-    "region": "South Lombok",
-    "description": "Kuara Lombok is a boutique beachfront resort offering ocean-view villas, private pools and authentic island experiences with wellness and spa.",
-    "image": "https://kuaralombok.com/wp-content/uploads/2025/11/Madaq-1024x752.jpg",
+    "name": "Kuara Resort Lombok",
+    "region": "Bumbang Beach, South Lombok",
+    "description": "A 16-villa nature-led luxury resort on Bumbang Beach with wellness spa, farm-to-table dining, local experiences, yoga and slow travel.",
+    "image": "assets/images/kuara/kuara-hero.webp",
     "lat": -8.9225,
     "lng": 116.319,
     "categories": [
-      "Retreats",
+      "Yoga",
       "Massage",
-      "Yoga"
+      "Retreats"
     ],
     "website": "https://kuaralombok.com/",
     "logoDomain": "kuaralombok.com",
     "logoText": "K",
     "slug": "kuara-lombok-south-lombok",
     "url": "facilitators/kuara-lombok-south-lombok.html",
-    "profileLead": "A boutique beachfront resort on Lombok’s quiet southern coast where ocean views, intimate stays and wellness experiences come together.",
-    "overview": "Kuara is a boutique resort with a more intimate luxury feel, combining beachfront accommodation, spa experiences and a slower South Lombok rhythm.",
-    "about": "Kuara Lombok presents itself as a quiet beachfront boutique resort shaped by nature and local character. With a small suite count and a strong focus on atmosphere, it fits travelers looking for a softer luxury stay with room for wellness and rest.",
-    "practicesIntro": "More stay-led than studio-led, with wellness as part of the experience.",
-    "location": "Kuara Lombok, South Lombok, Indonesia",
+    "profileLead": "Rooted in place and alive in spirit, Kuara Resort Lombok is an intimate nature-led luxury resort on Bumbang Beach, combining wellness, local culture and slow coastal living.",
+    "overview": "Kuara combines Sasak and Bugis heritage with contemporary tropical design, immersive experiences, a farm-to-table beachfront restaurant and a quiet wellness spa.",
+    "about": "Kuara Lombok opened in June 2025 as a 16-villa nature-led luxury resort on Bumbang Beach. Every stay is designed to foster presence, cultural engagement and connection to land and community.",
+    "practicesIntro": "Stay-led wellness with spa rituals, yoga in the garden, farm-to-table food and locally guided cultural and nature experiences.",
+    "location": "Bumbang Beach, South Lombok, Indonesia",
     "gallery": [
-      "https://kuaralombok.com/wp-content/uploads/2025/11/Madaq-1024x752.jpg"
+      "assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp",
+      "assets/images/kuara/gallery/kuara-river-pool-aerial.webp",
+      "assets/images/kuara/gallery/kuara-spa-treatment-garden.webp",
+      "assets/images/kuara/gallery/kuara-beachfront-dining.webp"
     ],
     "offerings": [
-      "Retreats",
-      "Massage",
+      "Wellness spa",
       "Yoga",
-      "Resort stay",
-      "Spa",
-      "Wellness",
-      "Ocean view",
-      "Beachfront",
-      "South Lombok",
-      "Boutique accommodation",
-      "Wellness experiences",
-      "Beachfront stays",
-      "Slow travel"
+      "Massage",
+      "Retreats",
+      "Farm-to-table",
+      "Slow travel",
+      "Local experiences",
+      "Sand therapy",
+      "Coastal foraging",
+      "Cooking atelier",
+      "Beachfront stay",
+      "Bumbang Beach",
+      "South Lombok"
     ],
     "stats": [
       {
         "value": "16",
-        "label": "Suites"
+        "label": "Villas"
       },
       {
-        "value": "Beachfront",
-        "label": "Southern coast"
+        "value": "Bumbang",
+        "label": "Beach"
       },
       {
-        "value": "Wellness",
-        "label": "& spa"
+        "value": "Spa",
+        "label": "& experiences"
       }
     ],
     "highlights": [
       {
-        "title": "Intimate resort feel",
-        "text": "A smaller-scale property designed around ease and privacy."
+        "title": "Small by design",
+        "text": "An intimate resort feel that is quiet by nature and personable by design."
       },
       {
-        "title": "Beachfront setting",
-        "text": "Well suited to guests wanting direct connection with the ocean and South Lombok’s quieter side."
+        "title": "Rooted in place",
+        "text": "A place where local culture, landscape and hospitality naturally find you."
       },
       {
-        "title": "Wellness layer",
-        "text": "Spa and restorative experiences add a slower, softer dimension to the stay."
+        "title": "Slow it down",
+        "text": "Cultural experiences, spa rituals, farm-to-table dining and island botanicals."
       }
     ],
     "reasons": [
       {
-        "title": "Clear offering",
-        "text": "A useful starting point for travelers looking for this kind of holistic experience."
+        "title": "To disconnect properly",
+        "text": "Nature, culture and time to connect are on your side."
       },
       {
-        "title": "Local connection",
-        "text": "A profile that helps visitors discover what is available in Lombok."
+        "title": "To get under the skin of Lombok",
+        "text": "Guided by locals who help guests experience the coast, the forest and the culture behind it all."
       },
       {
-        "title": "Check direct details",
-        "text": "Always confirm current schedules, prices and availability with the facilitator."
+        "title": "It stays with you",
+        "text": "The kind of place that quietly changes how you travel."
       }
     ],
     "links": {
       "website": "https://kuaralombok.com/",
-      "instagram": "",
-      "facebook": "https://www.facebook.com/KuaraLombok/",
+      "instagram": "https://www.instagram.com/kuaralombok/",
+      "facebook": "",
       "whatsapp": "https://wa.me/6281138310885",
       "email": "info@kuaralombok.com",
-      "map": "https://maps.google.com/?q=Kuara+Lombok"
+      "map": "https://maps.google.com/?q=Kuara+Lombok+Bumbang+Beach"
     }
   },
   {
