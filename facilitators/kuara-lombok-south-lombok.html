@@ -30,12 +30,9 @@
     .kuara-experience { background:var(--mist); border:1px solid var(--line); border-radius:24px; padding:18px; }
     .kuara-experience strong { display:block; margin-bottom:5px; }
     .kuara-experience span { color:var(--muted); }
-    .kuara-property-heading { margin-top:26px; padding:0 4px; display:flex; justify-content:space-between; align-items:flex-end; gap:24px; }
+    .kuara-property-heading { margin-top:26px; padding:0 4px; display:block; }
     .kuara-property-heading h2 { margin:8px 0 4px; font-family:"Cormorant Garamond",serif; font-size:clamp(42px,5vw,66px); line-height:.95; letter-spacing:-.02em; }
-    .kuara-property-meta { display:flex; flex-wrap:wrap; align-items:center; gap:9px 12px; color:var(--muted); font-weight:700; }
-    .kuara-stars { color:#c9933a; letter-spacing:.08em; font-size:18px; }
     .kuara-location-line { color:var(--muted); font-weight:650; margin-top:4px; }
-    .kuara-heading-actions { display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
     .kuara-gallery-section { margin-top:22px; }
     .kuara-gallery-section .section-heading { display:none; }
     .kuara-photo-board { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(0,1fr) minmax(0,1fr); grid-template-rows:repeat(2,minmax(230px,260px)); gap:10px; border-radius:34px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); background:var(--paper); }
@@ -75,7 +72,7 @@
     .kuara-booking-card p { margin:6px 0 0; color:rgba(255,255,255,.82); max-width:760px; }
     .kuara-booking-card h2 { margin:0; font-family:"Cormorant Garamond",serif; font-size:42px; line-height:1; }
     .kuara-booking-card .secondary-btn { background:rgba(255,255,255,.12); }
-    @media (max-width:1000px) { .kuara-property-heading { display:block; } .kuara-heading-actions { justify-content:flex-start; margin-top:14px; } .kuara-feature-grid,.kuara-experience-list,.kuara-booking-card { grid-template-columns:1fr; } .kuara-photo-board { grid-template-columns:1fr 1fr; grid-template-rows:auto; } .kuara-photo-main { grid-column:1 / span 2; grid-row:auto; min-height:420px; } .kuara-photo-tile { min-height:210px; } .kuara-photo-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+    @media (max-width:1000px) { .kuara-property-heading { display:block; } .kuara-feature-grid,.kuara-experience-list,.kuara-booking-card { grid-template-columns:1fr; } .kuara-photo-board { grid-template-columns:1fr 1fr; grid-template-rows:auto; } .kuara-photo-main { grid-column:1 / span 2; grid-row:auto; min-height:420px; } .kuara-photo-tile { min-height:210px; } .kuara-photo-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
     @media (max-width:760px) { .kuara-logo-card { align-items:flex-start; } .kuara-logo-card img { width:78px; height:78px; } .kuara-gallery-section { margin-top:14px; } .kuara-photo-board { gap:7px; border-radius:24px; } .kuara-photo-main { min-height:310px; } .kuara-photo-tile { min-height:145px; } .kuara-photo-label { left:12px; bottom:12px; border-radius:18px; } .kuara-all-photos { right:12px; bottom:12px; border-radius:18px; padding:10px 12px; } .kuara-gallery-modal { padding:14px; } .kuara-gallery-modal-head h2 { font-size:34px; } .kuara-photo-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; } .kuara-photo-grid button:nth-child(1), .kuara-photo-grid button:nth-child(8), .kuara-photo-grid button:nth-child(15) { grid-column:span 2; grid-row:span 1; } .kuara-photo-grid img, .kuara-photo-grid button:nth-child(1) img, .kuara-photo-grid button:nth-child(8) img, .kuara-photo-grid button:nth-child(15) img { min-height:160px; } .kuara-viewer { padding:14px; } .kuara-viewer img { max-height:78vh; border-radius:18px; } .kuara-viewer-close { right:14px; top:14px; } .kuara-viewer-nav { width:44px; height:44px; font-size:24px; } .kuara-viewer-nav.prev { left:14px; } .kuara-viewer-nav.next { right:14px; } }
 
   </style>
@@ -99,7 +96,7 @@
   <section class="profile-hero" style="--hero-image:url('../assets/images/kuara/kuara-hero.webp')">
     <div class="profile-hero-grid">
       <div>
-        <span class="eyebrow light">Resort profile · Bumbang Beach</span>
+        <span class="eyebrow light">Bumbang Beach · South Lombok</span>
         <h1>Kuara Resort Lombok</h1>
         <p class="lead light-lead">A 16-villa nature-led luxury resort on Lombok’s quiet southern coast, rooted in local culture, slow travel, wellness and connection to land and community.</p>
         <div class="stat-row"><div class="stat"><strong>16</strong><span>Villas</span></div><div class="stat"><strong>Bumbang</strong><span>Beach</span></div><div class="stat"><strong>Spa</strong><span>&amp; experiences</span></div></div>
@@ -117,20 +114,10 @@
     </div>
   </section>
 
-  <section class="kuara-property-heading" aria-label="Kuara Resort Lombok overview">
+  <section class="kuara-property-heading" aria-label="Kuara Lombok overview">
     <div>
-      <div class="kuara-property-meta">
-        <span class="kuara-stars" aria-label="Five star resort">★★★★★</span>
-        <span>Resort profile</span>
-        <span>·</span>
-        <span>Bumbang Beach, South Lombok</span>
-      </div>
-      <h2>Kuara Resort Lombok</h2>
+      <h2>Kuara Lombok</h2>
       <p class="kuara-location-line">Nature-led luxury, beachfront stillness, local experiences and wellness rooted in Lombok.</p>
-    </div>
-    <div class="kuara-heading-actions">
-      <a class="secondary-btn" href="#contact">Contact</a>
-      <a class="primary-btn" href="https://kuaralombok.com/" target="_blank" rel="noopener">Book / visit website</a>
     </div>
   </section>
 
