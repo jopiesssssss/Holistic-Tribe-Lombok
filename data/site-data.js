@@ -16,6 +16,101 @@ window.HTL_DATA = {
   ],
   "facilitators": [
     {
+      "id": 6,
+      "name": "Kuara Resort Lombok",
+      "region": "Bumbang Beach, South Lombok",
+      "description": "A 16-villa nature-led luxury resort on Bumbang Beach with wellness spa, farm-to-table dining, local experiences, yoga and slow travel.",
+      "image": "/assets/images/kuara/kuara-hero.webp",
+      "lat": -8.9225,
+      "lng": 116.319,
+      "categories": [
+        "Yoga",
+        "Massage",
+        "Retreats"
+      ],
+      "website": "https://kuaralombok.com/",
+      "logoDomain": "kuaralombok.com",
+      "logoText": "K",
+      "slug": "kuara-lombok-south-lombok",
+      "url": "/facilitators/kuara-lombok-south-lombok/",
+      "profileLead": "Rooted in place and alive in spirit, Kuara Resort Lombok is an intimate nature-led luxury resort on Bumbang Beach, combining wellness, local culture and slow coastal living.",
+      "overview": "Kuara combines Sasak and Bugis heritage with contemporary tropical design, immersive experiences, a farm-to-table beachfront restaurant and a quiet wellness spa.",
+      "about": "Kuara Lombok opened in June 2025 as a 16-villa nature-led luxury resort on Bumbang Beach. Every stay is designed to foster presence, cultural engagement and connection to land and community.",
+      "practicesIntro": "Stay-led wellness with spa rituals, yoga in the garden, farm-to-table food and locally guided cultural and nature experiences.",
+      "location": "Bumbang Beach, South Lombok, Indonesia",
+      "gallery": [
+        "/assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp",
+        "/assets/images/kuara/gallery/kuara-river-pool-aerial.webp",
+        "/assets/images/kuara/gallery/kuara-spa-treatment-garden.webp",
+        "/assets/images/kuara/gallery/kuara-beachfront-dining.webp"
+      ],
+      "offerings": [
+        "Wellness spa",
+        "Yoga",
+        "Massage",
+        "Retreats",
+        "Farm-to-table",
+        "Slow travel",
+        "Local experiences",
+        "Sand therapy",
+        "Coastal foraging",
+        "Cooking atelier",
+        "Beachfront stay",
+        "Bumbang Beach",
+        "South Lombok"
+      ],
+      "stats": [
+        {
+          "value": "16",
+          "label": "Villas"
+        },
+        {
+          "value": "Bumbang",
+          "label": "Beach"
+        },
+        {
+          "value": "Spa",
+          "label": "& experiences"
+        }
+      ],
+      "highlights": [
+        {
+          "title": "Small by design",
+          "text": "An intimate resort feel that is quiet by nature and personable by design."
+        },
+        {
+          "title": "Rooted in place",
+          "text": "A place where local culture, landscape and hospitality naturally find you."
+        },
+        {
+          "title": "Slow it down",
+          "text": "Cultural experiences, spa rituals, farm-to-table dining and island botanicals."
+        }
+      ],
+      "reasons": [
+        {
+          "title": "To disconnect properly",
+          "text": "Nature, culture and time to connect are on your side."
+        },
+        {
+          "title": "To get under the skin of Lombok",
+          "text": "Guided by locals who help guests experience the coast, the forest and the culture behind it all."
+        },
+        {
+          "title": "It stays with you",
+          "text": "The kind of place that quietly changes how you travel."
+        }
+      ],
+      "links": {
+        "website": "https://kuaralombok.com/",
+        "instagram": "https://www.instagram.com/kuaralombok/",
+        "facebook": "",
+        "whatsapp": "https://wa.me/6281138310885",
+        "email": "info@kuaralombok.com",
+        "map": "https://maps.google.com/?q=Kuara+Lombok+Bumbang+Beach"
+      }
+    },
+    {
       "id": 1,
       "name": "Ashtari Yoga & Retreat",
       "region": "Kuta Lombok",
@@ -462,101 +557,6 @@ window.HTL_DATA = {
         "whatsapp": "",
         "email": "",
         "map": "https://maps.google.com/?q=Ikara+Yoga+Kuta+Lombok"
-      }
-    },
-    {
-      "id": 6,
-      "name": "Kuara Resort Lombok",
-      "region": "Bumbang Beach, South Lombok",
-      "description": "A 16-villa nature-led luxury resort on Bumbang Beach with wellness spa, farm-to-table dining, local experiences, yoga and slow travel.",
-      "image": "assets/images/kuara/kuara-hero.webp",
-      "lat": -8.9225,
-      "lng": 116.319,
-      "categories": [
-        "Yoga",
-        "Massage",
-        "Retreats"
-      ],
-      "website": "https://kuaralombok.com/",
-      "logoDomain": "kuaralombok.com",
-      "logoText": "K",
-      "slug": "kuara-lombok-south-lombok",
-      "url": "/facilitators/kuara-lombok-south-lombok/",
-      "profileLead": "Rooted in place and alive in spirit, Kuara Resort Lombok is an intimate nature-led luxury resort on Bumbang Beach, combining wellness, local culture and slow coastal living.",
-      "overview": "Kuara combines Sasak and Bugis heritage with contemporary tropical design, immersive experiences, a farm-to-table beachfront restaurant and a quiet wellness spa.",
-      "about": "Kuara Lombok opened in June 2025 as a 16-villa nature-led luxury resort on Bumbang Beach. Every stay is designed to foster presence, cultural engagement and connection to land and community.",
-      "practicesIntro": "Stay-led wellness with spa rituals, yoga in the garden, farm-to-table food and locally guided cultural and nature experiences.",
-      "location": "Bumbang Beach, South Lombok, Indonesia",
-      "gallery": [
-        "assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp",
-        "assets/images/kuara/gallery/kuara-river-pool-aerial.webp",
-        "assets/images/kuara/gallery/kuara-spa-treatment-garden.webp",
-        "assets/images/kuara/gallery/kuara-beachfront-dining.webp"
-      ],
-      "offerings": [
-        "Wellness spa",
-        "Yoga",
-        "Massage",
-        "Retreats",
-        "Farm-to-table",
-        "Slow travel",
-        "Local experiences",
-        "Sand therapy",
-        "Coastal foraging",
-        "Cooking atelier",
-        "Beachfront stay",
-        "Bumbang Beach",
-        "South Lombok"
-      ],
-      "stats": [
-        {
-          "value": "16",
-          "label": "Villas"
-        },
-        {
-          "value": "Bumbang",
-          "label": "Beach"
-        },
-        {
-          "value": "Spa",
-          "label": "& experiences"
-        }
-      ],
-      "highlights": [
-        {
-          "title": "Small by design",
-          "text": "An intimate resort feel that is quiet by nature and personable by design."
-        },
-        {
-          "title": "Rooted in place",
-          "text": "A place where local culture, landscape and hospitality naturally find you."
-        },
-        {
-          "title": "Slow it down",
-          "text": "Cultural experiences, spa rituals, farm-to-table dining and island botanicals."
-        }
-      ],
-      "reasons": [
-        {
-          "title": "To disconnect properly",
-          "text": "Nature, culture and time to connect are on your side."
-        },
-        {
-          "title": "To get under the skin of Lombok",
-          "text": "Guided by locals who help guests experience the coast, the forest and the culture behind it all."
-        },
-        {
-          "title": "It stays with you",
-          "text": "The kind of place that quietly changes how you travel."
-        }
-      ],
-      "links": {
-        "website": "https://kuaralombok.com/",
-        "instagram": "https://www.instagram.com/kuaralombok/",
-        "facebook": "",
-        "whatsapp": "https://wa.me/6281138310885",
-        "email": "info@kuaralombok.com",
-        "map": "https://maps.google.com/?q=Kuara+Lombok+Bumbang+Beach"
       }
     },
     {

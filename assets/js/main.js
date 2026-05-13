@@ -62,7 +62,28 @@ function initHome(){
   }
 
   const featured = $('[data-featured-facilitators]');
-  if(featured) featured.innerHTML = data.facilitators.slice(0,6).map(f => facilitatorCard(f)).join('');
+  const featuredToggle = $('[data-featured-toggle]');
+  let featuredExpanded = false;
+
+  function renderFeaturedFacilitators(){
+    if(!featured) return;
+    const items = featuredExpanded ? data.facilitators : data.facilitators.slice(0,6);
+    featured.innerHTML = items.map(f => facilitatorCard(f)).join('');
+    if(featuredToggle){
+      featuredToggle.textContent = featuredExpanded ? 'Show fewer facilitators ↑' : 'See more facilitators ↓';
+      featuredToggle.setAttribute('aria-expanded', String(featuredExpanded));
+    }
+  }
+
+  renderFeaturedFacilitators();
+
+  featuredToggle?.addEventListener('click', () => {
+    featuredExpanded = !featuredExpanded;
+    renderFeaturedFacilitators();
+    if(!featuredExpanded && featured){
+      featured.scrollIntoView({ behavior:'smooth', block:'start' });
+    }
+  });
 
   const mini = $('[data-upcoming-mini]');
   if(mini) mini.innerHTML = upcomingEvents(4).map(evt => '<a class="event-mini" href="agenda.html"><div class="event-date">'+eventDateText(evt)+'</div><strong>'+escapeHtml(evt.title)+'</strong><span>'+escapeHtml(evt.location)+'</span></a>').join('');

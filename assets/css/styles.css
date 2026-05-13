@@ -402,3 +402,65 @@ p + p,
 .nav-links a.guide-link { color: var(--muted); }
 .footer .nonprofit-footer { margin-top: 12px; font-size: 14px; }
 @media (max-width:760px){ .guide-card-image{min-height:190px;} .guide-card .card-copy{min-height:auto;} }
+
+
+/* --- Facilitator homepage patch: cleaner sticky header + clear show-more control --- */
+html {
+  scroll-padding-top: 128px;
+}
+
+[id],
+.cards-grid,
+.section {
+  scroll-margin-top: 128px;
+}
+
+.topbar {
+  background: linear-gradient(180deg, var(--bg) 0%, rgba(249,246,240,.96) 72%, rgba(249,246,240,0) 100%);
+}
+
+.show-more-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.show-more-button {
+  min-width: 220px;
+}
+
+.directory-link {
+  color: var(--sage-dark);
+  font-weight: 800;
+}
+
+.directory-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 104px;
+  }
+
+  [id],
+  .cards-grid,
+  .section {
+    scroll-margin-top: 104px;
+  }
+
+  .show-more-row {
+    align-items: stretch;
+  }
+
+  .show-more-row .soft-button,
+  .show-more-row .directory-link {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
