@@ -31,21 +31,35 @@
     .kuara-experience strong { display:block; margin-bottom:5px; }
     .kuara-experience span { color:var(--muted); }
     .kuara-slider { background:var(--paper); border:1px solid var(--line); border-radius:36px; box-shadow:var(--shadow); overflow:hidden; }
-    .kuara-slider-main { position:relative; background:#1f1c18; }
-    .kuara-slider-main img { width:100%; height:min(68vh,650px); min-height:420px; object-fit:cover; }
-    .kuara-slider-caption { position:absolute; left:22px; bottom:22px; background:rgba(255,255,255,.9); border:1px solid rgba(255,255,255,.6); border-radius:999px; padding:10px 16px; font-weight:800; color:var(--ink); box-shadow:0 12px 28px rgba(0,0,0,.14); }
-    .kuara-slider-controls { position:absolute; right:18px; bottom:18px; display:flex; gap:10px; }
-    .kuara-slider-controls button { width:46px; height:46px; border-radius:50%; border:1px solid rgba(255,255,255,.55); background:rgba(255,255,255,.9); cursor:pointer; font-weight:900; }
+    .kuara-slider-main { position:relative; display:grid; place-items:center; min-height:clamp(420px,68vh,650px); background:linear-gradient(135deg,#e4dccf,#f7f2e8); overflow:hidden; }
+    .kuara-slider-main::before { content:""; position:absolute; inset:-28px; background:linear-gradient(180deg,rgba(32,28,24,.18),rgba(32,28,24,.28)),var(--kuara-gallery-bg) center/cover no-repeat; filter:blur(22px); transform:scale(1.04); opacity:.5; }
+    .kuara-slider-main img { position:relative; z-index:1; width:100%; height:100%; min-height:clamp(420px,68vh,650px); object-fit:contain; object-position:center center; cursor:zoom-in; }
+    .kuara-slider-caption { position:absolute; z-index:2; left:22px; bottom:22px; background:rgba(255,255,255,.92); border:1px solid rgba(255,255,255,.72); border-radius:999px; padding:10px 16px; font-weight:800; color:var(--ink); box-shadow:0 12px 28px rgba(0,0,0,.14); }
+    .kuara-slider-controls { position:absolute; z-index:3; right:18px; bottom:18px; display:flex; gap:10px; }
+    .kuara-slider-controls button,.kuara-expand-button { width:46px; height:46px; border-radius:50%; border:1px solid rgba(255,255,255,.55); background:rgba(255,255,255,.92); cursor:pointer; font-weight:900; box-shadow:0 10px 24px rgba(0,0,0,.12); }
+    .kuara-expand-button { position:absolute; z-index:3; right:18px; top:18px; width:auto; min-width:46px; padding:0 15px; border-radius:999px; font-size:13px; }
     .kuara-thumbs { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:10px; padding:14px; background:var(--mist); }
-    .kuara-thumb { padding:0; border:2px solid transparent; border-radius:18px; overflow:hidden; background:transparent; cursor:pointer; opacity:.74; }
+    .kuara-thumb { padding:0; border:2px solid transparent; border-radius:18px; overflow:hidden; background:transparent; cursor:pointer; opacity:.72; transition:opacity .18s ease, transform .18s ease, border-color .18s ease; }
+    .kuara-thumb:hover { opacity:1; transform:translateY(-1px); }
     .kuara-thumb.active { border-color:var(--sage); opacity:1; }
-    .kuara-thumb img { width:100%; aspect-ratio:1.25/1; object-fit:cover; }
+    .kuara-thumb img { width:100%; aspect-ratio:1.25/1; object-fit:cover; display:block; }
+    .kuara-lightbox { position:fixed; inset:0; z-index:5000; display:grid; place-items:center; padding:28px; background:rgba(24,21,18,.82); backdrop-filter:blur(10px); }
+    .kuara-lightbox[hidden] { display:none; }
+    .kuara-lightbox figure { margin:0; width:min(1180px,100%); display:grid; gap:12px; justify-items:center; }
+    .kuara-lightbox img { max-width:100%; max-height:82vh; object-fit:contain; border-radius:24px; box-shadow:0 28px 80px rgba(0,0,0,.42); background:#f4efe4; }
+    .kuara-lightbox figcaption { color:#fff; font-weight:800; text-align:center; text-shadow:0 2px 14px rgba(0,0,0,.4); }
+    .kuara-lightbox-close,.kuara-lightbox-nav { position:fixed; border:1px solid rgba(255,255,255,.36); background:rgba(255,255,255,.92); color:var(--ink); cursor:pointer; box-shadow:0 14px 34px rgba(0,0,0,.24); }
+    .kuara-lightbox-close { right:24px; top:24px; width:48px; height:48px; border-radius:50%; font-size:26px; line-height:1; }
+    .kuara-lightbox-nav { top:50%; width:52px; height:52px; border-radius:50%; font-size:30px; transform:translateY(-50%); }
+    .kuara-lightbox-nav.prev { left:24px; }
+    .kuara-lightbox-nav.next { right:24px; }
+    body.kuara-lightbox-open { overflow:hidden; }
     .kuara-booking-card { display:grid; grid-template-columns:1fr auto; align-items:center; gap:22px; padding:28px; border-radius:32px; border:1px solid var(--line); background:linear-gradient(135deg,var(--sage-dark),#26382f); color:#fff; box-shadow:var(--shadow); }
     .kuara-booking-card p { margin:6px 0 0; color:rgba(255,255,255,.82); max-width:760px; }
     .kuara-booking-card h2 { margin:0; font-family:"Cormorant Garamond",serif; font-size:42px; line-height:1; }
     .kuara-booking-card .secondary-btn { background:rgba(255,255,255,.12); }
     @media (max-width:1000px) { .kuara-feature-grid,.kuara-experience-list,.kuara-booking-card { grid-template-columns:1fr; } .kuara-thumbs { grid-template-columns:repeat(4,minmax(0,1fr)); } }
-    @media (max-width:760px) { .kuara-logo-card { align-items:flex-start; } .kuara-logo-card img { width:78px; height:78px; } .kuara-slider-main img { min-height:290px; height:390px; } .kuara-slider-caption { left:12px; bottom:12px; right:96px; border-radius:18px; } .kuara-slider-controls { right:12px; bottom:12px; } .kuara-thumbs { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+    @media (max-width:760px) { .kuara-logo-card { align-items:flex-start; } .kuara-logo-card img { width:78px; height:78px; } .kuara-slider-main { min-height:290px; } .kuara-slider-main img { min-height:290px; height:390px; object-fit:contain; } .kuara-slider-caption { left:12px; bottom:12px; right:96px; border-radius:18px; } .kuara-slider-controls { right:12px; bottom:12px; } .kuara-expand-button { top:12px; right:12px; height:40px; min-width:40px; padding:0 12px; font-size:12px; } .kuara-thumbs { grid-template-columns:repeat(3,minmax(0,1fr)); } .kuara-lightbox { padding:14px; } .kuara-lightbox img { max-height:78vh; border-radius:18px; } .kuara-lightbox-close { right:14px; top:14px; } .kuara-lightbox-nav { width:44px; height:44px; font-size:24px; } .kuara-lightbox-nav.prev { left:14px; } .kuara-lightbox-nav.next { right:14px; } }
   </style>
 </head>
 <body data-page="profile">
@@ -155,37 +169,48 @@
       <p class="section-sub">A visual impression of the resort, spa, beach, food, villas and experiences. Use the arrows or thumbnails to browse the full gallery.</p>
     </div>
     <div class="kuara-slider" data-kuara-slider>
-      <div class="kuara-slider-main">
-        <img data-kuara-main src="../assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp" alt="Kuara Resort and Bumbang Bay from above" />
+      <div class="kuara-slider-main" style="--kuara-gallery-bg:url('../assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp')">
+        <img data-kuara-main src="../assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp" alt="Kuara Resort and Bumbang Bay from above" loading="eager" decoding="async" />
         <div class="kuara-slider-caption" data-kuara-caption>Bumbang Bay from above</div>
+        <button class="kuara-expand-button" type="button" data-kuara-expand aria-label="Open gallery image large">View large</button>
         <div class="kuara-slider-controls"><button type="button" data-kuara-prev aria-label="Previous image">‹</button><button type="button" data-kuara-next aria-label="Next image">›</button></div>
       </div>
       <div class="kuara-thumbs" data-kuara-thumbs>
-            <button class="kuara-thumb active" type="button" data-kuara-slide="0" data-full="../assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp" data-alt="Kuara Resort and Bumbang Bay from above" data-caption="Bumbang Bay from above" aria-label="Show image 1: Bumbang Bay from above"><img src="../assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp" alt="Kuara Resort and Bumbang Bay from above" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="1" data-full="../assets/images/kuara/gallery/kuara-coastal-cliffs.webp" data-alt="Coastal cliffs and quiet southern Lombok landscape near Kuara" data-caption="Coastal cliffs" aria-label="Show image 2: Coastal cliffs"><img src="../assets/images/kuara/gallery/kuara-coastal-cliffs.webp" alt="Coastal cliffs and quiet southern Lombok landscape near Kuara" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="2" data-full="../assets/images/kuara/gallery/kuara-villas-from-above.webp" data-alt="Kuara villas and garden paths seen from above" data-caption="Garden paths" aria-label="Show image 3: Garden paths"><img src="../assets/images/kuara/gallery/kuara-villas-from-above.webp" alt="Kuara villas and garden paths seen from above" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="3" data-full="../assets/images/kuara/gallery/kuara-river-pool-aerial.webp" data-alt="Kuara river pool and tropical palms" data-caption="River pool" aria-label="Show image 4: River pool"><img src="../assets/images/kuara/gallery/kuara-river-pool-aerial.webp" alt="Kuara river pool and tropical palms" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="4" data-full="../assets/images/kuara/gallery/kuara-beach-walk.webp" data-alt="A quiet beach moment at Kuara Resort Lombok" data-caption="Beach rhythm" aria-label="Show image 5: Beach rhythm"><img src="../assets/images/kuara/gallery/kuara-beach-walk.webp" alt="A quiet beach moment at Kuara Resort Lombok" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="5" data-full="../assets/images/kuara/gallery/kuara-villa-detail.webp" data-alt="A warm villa detail at Kuara Resort Lombok" data-caption="Villa detail" aria-label="Show image 6: Villa detail"><img src="../assets/images/kuara/gallery/kuara-villa-detail.webp" alt="A warm villa detail at Kuara Resort Lombok" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="6" data-full="../assets/images/kuara/gallery/kuara-botanicals-oils.webp" data-alt="Kuara spa botanicals and oils" data-caption="Botanicals" aria-label="Show image 7: Botanicals"><img src="../assets/images/kuara/gallery/kuara-botanicals-oils.webp" alt="Kuara spa botanicals and oils" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="7" data-full="../assets/images/kuara/gallery/kuara-reception-library.webp" data-alt="Kuara reception space with tropical design details" data-caption="Reception" aria-label="Show image 8: Reception"><img src="../assets/images/kuara/gallery/kuara-reception-library.webp" alt="Kuara reception space with tropical design details" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="8" data-full="../assets/images/kuara/gallery/kuara-spa-treatment-garden.webp" data-alt="Kuara spa treatment in a garden pavilion" data-caption="Garden spa" aria-label="Show image 9: Garden spa"><img src="../assets/images/kuara/gallery/kuara-spa-treatment-garden.webp" alt="Kuara spa treatment in a garden pavilion" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="9" data-full="../assets/images/kuara/gallery/kuara-spa-quiet-room.webp" data-alt="A quiet wellness room at Kuara Spa" data-caption="Quiet spa" aria-label="Show image 10: Quiet spa"><img src="../assets/images/kuara/gallery/kuara-spa-quiet-room.webp" alt="A quiet wellness room at Kuara Spa" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="10" data-full="../assets/images/kuara/gallery/kuara-spa-ritual.webp" data-alt="Kuara spa ritual and bodywork" data-caption="Spa ritual" aria-label="Show image 11: Spa ritual"><img src="../assets/images/kuara/gallery/kuara-spa-ritual.webp" alt="Kuara spa ritual and bodywork" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="11" data-full="../assets/images/kuara/gallery/kuara-spa-pavilion.webp" data-alt="Kuara spa pavilion among tropical greenery" data-caption="Spa pavilion" aria-label="Show image 12: Spa pavilion"><img src="../assets/images/kuara/gallery/kuara-spa-pavilion.webp" alt="Kuara spa pavilion among tropical greenery" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="12" data-full="../assets/images/kuara/gallery/kuara-beachfront-dining.webp" data-alt="Beachfront dining with ocean view at Kuara" data-caption="Beachfront dining" aria-label="Show image 13: Beachfront dining"><img src="../assets/images/kuara/gallery/kuara-beachfront-dining.webp" alt="Beachfront dining with ocean view at Kuara" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="13" data-full="../assets/images/kuara/gallery/kuara-sand-therapy-beach.webp" data-alt="Traditional sand therapy on the beach near Kuara" data-caption="Sand therapy" aria-label="Show image 14: Sand therapy"><img src="../assets/images/kuara/gallery/kuara-sand-therapy-beach.webp" alt="Traditional sand therapy on the beach near Kuara" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="14" data-full="../assets/images/kuara/gallery/kuara-sand-therapy-detail.webp" data-alt="Sand therapy ritual detail in Lombok" data-caption="Healing ritual" aria-label="Show image 15: Healing ritual"><img src="../assets/images/kuara/gallery/kuara-sand-therapy-detail.webp" alt="Sand therapy ritual detail in Lombok" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="15" data-full="../assets/images/kuara/gallery/kuara-restaurant-interior.webp" data-alt="Kuara restaurant interior and shelves" data-caption="Restaurant" aria-label="Show image 16: Restaurant"><img src="../assets/images/kuara/gallery/kuara-restaurant-interior.webp" alt="Kuara restaurant interior and shelves" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="16" data-full="../assets/images/kuara/gallery/kuara-fire-cooking.webp" data-alt="Cooking over fire at Kuara Lombok" data-caption="Fire cooking" aria-label="Show image 17: Fire cooking"><img src="../assets/images/kuara/gallery/kuara-fire-cooking.webp" alt="Cooking over fire at Kuara Lombok" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="17" data-full="../assets/images/kuara/gallery/kuara-cooking-atelier.webp" data-alt="Kuara cooking atelier and local ingredients" data-caption="Cooking atelier" aria-label="Show image 18: Cooking atelier"><img src="../assets/images/kuara/gallery/kuara-cooking-atelier.webp" alt="Kuara cooking atelier and local ingredients" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="18" data-full="../assets/images/kuara/gallery/kuara-beach-house-ocean-view.webp" data-alt="Beach house view toward the ocean at Kuara" data-caption="Beach house" aria-label="Show image 19: Beach house"><img src="../assets/images/kuara/gallery/kuara-beach-house-ocean-view.webp" alt="Beach house view toward the ocean at Kuara" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="19" data-full="../assets/images/kuara/gallery/kuara-river-pool-detail.webp" data-alt="Kuara river pool from above with palms" data-caption="Pool detail" aria-label="Show image 20: Pool detail"><img src="../assets/images/kuara/gallery/kuara-river-pool-detail.webp" alt="Kuara river pool from above with palms" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="20" data-full="../assets/images/kuara/gallery/kuara-wellness-bodywork.webp" data-alt="Kuara wellness bodywork treatment" data-caption="Bodywork" aria-label="Show image 21: Bodywork"><img src="../assets/images/kuara/gallery/kuara-wellness-bodywork.webp" alt="Kuara wellness bodywork treatment" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="21" data-full="../assets/images/kuara/gallery/kuara-wellness-massage.webp" data-alt="Massage treatment at Kuara Spa" data-caption="Massage" aria-label="Show image 22: Massage"><img src="../assets/images/kuara/gallery/kuara-wellness-massage.webp" alt="Massage treatment at Kuara Spa" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="22" data-full="../assets/images/kuara/gallery/kuara-wellness-therapy.webp" data-alt="Wellness therapy session at Kuara" data-caption="Wellness therapy" aria-label="Show image 23: Wellness therapy"><img src="../assets/images/kuara/gallery/kuara-wellness-therapy.webp" alt="Wellness therapy session at Kuara" loading="lazy" /></button>
-            <button class="kuara-thumb" type="button" data-kuara-slide="23" data-full="../assets/images/kuara/gallery/kuara-wellness-face-ritual.webp" data-alt="Face and head massage ritual at Kuara Spa" data-caption="Face ritual" aria-label="Show image 24: Face ritual"><img src="../assets/images/kuara/gallery/kuara-wellness-face-ritual.webp" alt="Face and head massage ritual at Kuara Spa" loading="lazy" /></button>
+            <button class="kuara-thumb active" type="button" data-kuara-slide="0" data-full="../assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp" data-alt="Kuara Resort and Bumbang Bay from above" data-caption="Bumbang Bay from above" aria-label="Show image 1: Bumbang Bay from above"><img src="../assets/images/kuara/gallery/thumbs/kuara-aerial-bumbang-bay.webp" alt="Kuara Resort and Bumbang Bay from above" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="1" data-full="../assets/images/kuara/gallery/kuara-coastal-cliffs.webp" data-alt="Coastal cliffs and quiet southern Lombok landscape near Kuara" data-caption="Coastal cliffs" aria-label="Show image 2: Coastal cliffs"><img src="../assets/images/kuara/gallery/thumbs/kuara-coastal-cliffs.webp" alt="Coastal cliffs and quiet southern Lombok landscape near Kuara" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="2" data-full="../assets/images/kuara/gallery/kuara-villas-from-above.webp" data-alt="Kuara villas and garden paths seen from above" data-caption="Garden paths" aria-label="Show image 3: Garden paths"><img src="../assets/images/kuara/gallery/thumbs/kuara-villas-from-above.webp" alt="Kuara villas and garden paths seen from above" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="3" data-full="../assets/images/kuara/gallery/kuara-river-pool-aerial.webp" data-alt="Kuara river pool and tropical palms" data-caption="River pool" aria-label="Show image 4: River pool"><img src="../assets/images/kuara/gallery/thumbs/kuara-river-pool-aerial.webp" alt="Kuara river pool and tropical palms" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="4" data-full="../assets/images/kuara/gallery/kuara-beach-walk.webp" data-alt="A quiet beach moment at Kuara Resort Lombok" data-caption="Beach rhythm" aria-label="Show image 5: Beach rhythm"><img src="../assets/images/kuara/gallery/thumbs/kuara-beach-walk.webp" alt="A quiet beach moment at Kuara Resort Lombok" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="5" data-full="../assets/images/kuara/gallery/kuara-villa-detail.webp" data-alt="A warm villa detail at Kuara Resort Lombok" data-caption="Villa detail" aria-label="Show image 6: Villa detail"><img src="../assets/images/kuara/gallery/thumbs/kuara-villa-detail.webp" alt="A warm villa detail at Kuara Resort Lombok" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="6" data-full="../assets/images/kuara/gallery/kuara-botanicals-oils.webp" data-alt="Kuara spa botanicals and oils" data-caption="Botanicals" aria-label="Show image 7: Botanicals"><img src="../assets/images/kuara/gallery/thumbs/kuara-botanicals-oils.webp" alt="Kuara spa botanicals and oils" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="7" data-full="../assets/images/kuara/gallery/kuara-reception-library.webp" data-alt="Kuara reception space with tropical design details" data-caption="Reception" aria-label="Show image 8: Reception"><img src="../assets/images/kuara/gallery/thumbs/kuara-reception-library.webp" alt="Kuara reception space with tropical design details" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="8" data-full="../assets/images/kuara/gallery/kuara-spa-treatment-garden.webp" data-alt="Kuara spa treatment in a garden pavilion" data-caption="Garden spa" aria-label="Show image 9: Garden spa"><img src="../assets/images/kuara/gallery/thumbs/kuara-spa-treatment-garden.webp" alt="Kuara spa treatment in a garden pavilion" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="9" data-full="../assets/images/kuara/gallery/kuara-spa-quiet-room.webp" data-alt="A quiet wellness room at Kuara Spa" data-caption="Quiet spa" aria-label="Show image 10: Quiet spa"><img src="../assets/images/kuara/gallery/thumbs/kuara-spa-quiet-room.webp" alt="A quiet wellness room at Kuara Spa" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="10" data-full="../assets/images/kuara/gallery/kuara-spa-ritual.webp" data-alt="Kuara spa ritual and bodywork" data-caption="Spa ritual" aria-label="Show image 11: Spa ritual"><img src="../assets/images/kuara/gallery/thumbs/kuara-spa-ritual.webp" alt="Kuara spa ritual and bodywork" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="11" data-full="../assets/images/kuara/gallery/kuara-spa-pavilion.webp" data-alt="Kuara spa pavilion among tropical greenery" data-caption="Spa pavilion" aria-label="Show image 12: Spa pavilion"><img src="../assets/images/kuara/gallery/thumbs/kuara-spa-pavilion.webp" alt="Kuara spa pavilion among tropical greenery" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="12" data-full="../assets/images/kuara/gallery/kuara-beachfront-dining.webp" data-alt="Beachfront dining with ocean view at Kuara" data-caption="Beachfront dining" aria-label="Show image 13: Beachfront dining"><img src="../assets/images/kuara/gallery/thumbs/kuara-beachfront-dining.webp" alt="Beachfront dining with ocean view at Kuara" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="13" data-full="../assets/images/kuara/gallery/kuara-sand-therapy-beach.webp" data-alt="Traditional sand therapy on the beach near Kuara" data-caption="Sand therapy" aria-label="Show image 14: Sand therapy"><img src="../assets/images/kuara/gallery/thumbs/kuara-sand-therapy-beach.webp" alt="Traditional sand therapy on the beach near Kuara" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="14" data-full="../assets/images/kuara/gallery/kuara-sand-therapy-detail.webp" data-alt="Sand therapy ritual detail in Lombok" data-caption="Healing ritual" aria-label="Show image 15: Healing ritual"><img src="../assets/images/kuara/gallery/thumbs/kuara-sand-therapy-detail.webp" alt="Sand therapy ritual detail in Lombok" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="15" data-full="../assets/images/kuara/gallery/kuara-restaurant-interior.webp" data-alt="Kuara restaurant interior and shelves" data-caption="Restaurant" aria-label="Show image 16: Restaurant"><img src="../assets/images/kuara/gallery/thumbs/kuara-restaurant-interior.webp" alt="Kuara restaurant interior and shelves" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="16" data-full="../assets/images/kuara/gallery/kuara-fire-cooking.webp" data-alt="Cooking over fire at Kuara Lombok" data-caption="Fire cooking" aria-label="Show image 17: Fire cooking"><img src="../assets/images/kuara/gallery/thumbs/kuara-fire-cooking.webp" alt="Cooking over fire at Kuara Lombok" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="17" data-full="../assets/images/kuara/gallery/kuara-cooking-atelier.webp" data-alt="Kuara cooking atelier and local ingredients" data-caption="Cooking atelier" aria-label="Show image 18: Cooking atelier"><img src="../assets/images/kuara/gallery/thumbs/kuara-cooking-atelier.webp" alt="Kuara cooking atelier and local ingredients" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="18" data-full="../assets/images/kuara/gallery/kuara-beach-house-ocean-view.webp" data-alt="Beach house view toward the ocean at Kuara" data-caption="Beach house" aria-label="Show image 19: Beach house"><img src="../assets/images/kuara/gallery/thumbs/kuara-beach-house-ocean-view.webp" alt="Beach house view toward the ocean at Kuara" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="19" data-full="../assets/images/kuara/gallery/kuara-river-pool-detail.webp" data-alt="Kuara river pool from above with palms" data-caption="Pool detail" aria-label="Show image 20: Pool detail"><img src="../assets/images/kuara/gallery/thumbs/kuara-river-pool-detail.webp" alt="Kuara river pool from above with palms" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="20" data-full="../assets/images/kuara/gallery/kuara-wellness-bodywork.webp" data-alt="Kuara wellness bodywork treatment" data-caption="Bodywork" aria-label="Show image 21: Bodywork"><img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-bodywork.webp" alt="Kuara wellness bodywork treatment" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="21" data-full="../assets/images/kuara/gallery/kuara-wellness-massage.webp" data-alt="Massage treatment at Kuara Spa" data-caption="Massage" aria-label="Show image 22: Massage"><img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-massage.webp" alt="Massage treatment at Kuara Spa" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="22" data-full="../assets/images/kuara/gallery/kuara-wellness-therapy.webp" data-alt="Wellness therapy session at Kuara" data-caption="Wellness therapy" aria-label="Show image 23: Wellness therapy"><img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-therapy.webp" alt="Wellness therapy session at Kuara" loading="lazy" /></button>
+            <button class="kuara-thumb" type="button" data-kuara-slide="23" data-full="../assets/images/kuara/gallery/kuara-wellness-face-ritual.webp" data-alt="Face and head massage ritual at Kuara Spa" data-caption="Face ritual" aria-label="Show image 24: Face ritual"><img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-face-ritual.webp" alt="Face and head massage ritual at Kuara Spa" loading="lazy" /></button>
       </div>
+    </div>
+
+    <div class="kuara-lightbox" data-kuara-lightbox hidden role="dialog" aria-modal="true" aria-label="Kuara gallery image viewer">
+      <button class="kuara-lightbox-close" type="button" data-kuara-lightbox-close aria-label="Close large image">×</button>
+      <button class="kuara-lightbox-nav prev" type="button" data-kuara-lightbox-prev aria-label="Previous image">‹</button>
+      <figure>
+        <img src="../assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp" alt="Aerial view over Kuara Lombok and Bumbang Bay" data-kuara-lightbox-img />
+        <figcaption data-kuara-lightbox-caption>Bumbang Bay from above</figcaption>
+      </figure>
+      <button class="kuara-lightbox-nav next" type="button" data-kuara-lightbox-next aria-label="Next image">›</button>
     </div>
   </section>
 
@@ -256,21 +281,73 @@
   (function() {
     const slider = document.querySelector('[data-kuara-slider]');
     if (!slider) return;
+
     const thumbs = Array.from(slider.querySelectorAll('[data-kuara-slide]'));
     const main = slider.querySelector('[data-kuara-main]');
     const caption = slider.querySelector('[data-kuara-caption]');
+    const lightbox = document.querySelector('[data-kuara-lightbox]');
+    const lightboxImg = lightbox?.querySelector('[data-kuara-lightbox-img]');
+    const lightboxCaption = lightbox?.querySelector('[data-kuara-lightbox-caption]');
     let current = 0;
+
+    function activeButton() {
+      return thumbs[current];
+    }
+
     function show(index) {
       current = (index + thumbs.length) % thumbs.length;
-      const btn = thumbs[current];
-      main.src = btn.dataset.full;
+      const btn = activeButton();
+      const full = btn.dataset.full;
+      main.src = full;
       main.alt = btn.dataset.alt || '';
       caption.textContent = btn.dataset.caption || '';
+      slider.querySelector('.kuara-slider-main')?.style.setProperty('--kuara-gallery-bg', `url('${full}')`);
       thumbs.forEach((thumb, i) => thumb.classList.toggle('active', i === current));
+      thumbs[current]?.scrollIntoView({ behavior: 'smooth', inline: 'nearest', block: 'nearest' });
+
+      if (lightbox && !lightbox.hasAttribute('hidden')) {
+        updateLightbox();
+      }
     }
+
+    function updateLightbox() {
+      if (!lightboxImg || !lightboxCaption) return;
+      const btn = activeButton();
+      lightboxImg.src = btn.dataset.full;
+      lightboxImg.alt = btn.dataset.alt || '';
+      lightboxCaption.textContent = btn.dataset.caption || '';
+    }
+
+    function openLightbox() {
+      if (!lightbox) return;
+      updateLightbox();
+      lightbox.removeAttribute('hidden');
+      document.body.classList.add('kuara-lightbox-open');
+    }
+
+    function closeLightbox() {
+      if (!lightbox) return;
+      lightbox.setAttribute('hidden', '');
+      document.body.classList.remove('kuara-lightbox-open');
+    }
+
     thumbs.forEach((btn, index) => btn.addEventListener('click', () => show(index)));
     slider.querySelector('[data-kuara-prev]')?.addEventListener('click', () => show(current - 1));
     slider.querySelector('[data-kuara-next]')?.addEventListener('click', () => show(current + 1));
+    slider.querySelector('[data-kuara-expand]')?.addEventListener('click', openLightbox);
+    main?.addEventListener('click', openLightbox);
+
+    lightbox?.querySelector('[data-kuara-lightbox-close]')?.addEventListener('click', closeLightbox);
+    lightbox?.querySelector('[data-kuara-lightbox-prev]')?.addEventListener('click', () => show(current - 1));
+    lightbox?.querySelector('[data-kuara-lightbox-next]')?.addEventListener('click', () => show(current + 1));
+    lightbox?.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeLightbox();
+      if (lightbox && !lightbox.hasAttribute('hidden') && event.key === 'ArrowLeft') show(current - 1);
+      if (lightbox && !lightbox.hasAttribute('hidden') && event.key === 'ArrowRight') show(current + 1);
+    });
   })();
 </script>
 </body>
