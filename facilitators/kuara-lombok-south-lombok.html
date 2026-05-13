@@ -30,11 +30,13 @@
     .kuara-experience { background:var(--mist); border:1px solid var(--line); border-radius:24px; padding:18px; }
     .kuara-experience strong { display:block; margin-bottom:5px; }
     .kuara-experience span { color:var(--muted); }
-    .kuara-photo-board { display:grid; grid-template-columns:1.25fr .75fr; gap:10px; border-radius:34px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); background:var(--paper); }
-    .kuara-photo-main, .kuara-photo-tile { position:relative; display:block; padding:0; border:0; background:var(--sand); cursor:pointer; overflow:hidden; }
-    .kuara-photo-main { min-height:520px; }
-    .kuara-photo-side { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
-    .kuara-photo-tile { min-height:255px; }
+    .kuara-gallery-section { margin-top:22px; }
+    .kuara-gallery-section .section-heading { display:none; }
+    .kuara-photo-board { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(0,1fr) minmax(0,1fr); grid-template-rows:repeat(2,minmax(230px,260px)); gap:10px; border-radius:34px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); background:var(--paper); }
+    .kuara-photo-main, .kuara-photo-tile { position:relative; display:block; padding:0; border:0; background:var(--sand); cursor:pointer; overflow:hidden; min-height:0; }
+    .kuara-photo-main { grid-row:1 / span 2; }
+    .kuara-photo-side { display:contents; }
+    .kuara-photo-tile { min-height:0; }
     .kuara-photo-main img, .kuara-photo-tile img { width:100%; height:100%; object-fit:cover; object-position:center center; display:block; transition:transform .35s ease, filter .35s ease; }
     .kuara-photo-main:hover img, .kuara-photo-tile:hover img { transform:scale(1.025); filter:saturate(1.04); }
     .kuara-all-photos { position:absolute; right:18px; bottom:18px; z-index:2; display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(255,255,255,.75); background:rgba(255,255,255,.94); color:var(--ink); border-radius:999px; padding:12px 16px; font-weight:900; box-shadow:0 12px 28px rgba(0,0,0,.16); }
@@ -67,8 +69,8 @@
     .kuara-booking-card p { margin:6px 0 0; color:rgba(255,255,255,.82); max-width:760px; }
     .kuara-booking-card h2 { margin:0; font-family:"Cormorant Garamond",serif; font-size:42px; line-height:1; }
     .kuara-booking-card .secondary-btn { background:rgba(255,255,255,.12); }
-    @media (max-width:1000px) { .kuara-feature-grid,.kuara-experience-list,.kuara-booking-card { grid-template-columns:1fr; } .kuara-photo-board { grid-template-columns:1fr; } .kuara-photo-main { min-height:420px; } .kuara-photo-tile { min-height:210px; } .kuara-photo-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
-    @media (max-width:760px) { .kuara-logo-card { align-items:flex-start; } .kuara-logo-card img { width:78px; height:78px; } .kuara-photo-main { min-height:330px; } .kuara-photo-side { grid-template-columns:1fr 1fr; } .kuara-photo-tile { min-height:150px; } .kuara-photo-label { left:12px; bottom:12px; border-radius:18px; } .kuara-all-photos { right:12px; bottom:12px; border-radius:18px; padding:10px 12px; } .kuara-gallery-modal { padding:14px; } .kuara-gallery-modal-head h2 { font-size:34px; } .kuara-photo-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; } .kuara-photo-grid button:nth-child(1), .kuara-photo-grid button:nth-child(8), .kuara-photo-grid button:nth-child(15) { grid-column:span 2; grid-row:span 1; } .kuara-photo-grid img, .kuara-photo-grid button:nth-child(1) img, .kuara-photo-grid button:nth-child(8) img, .kuara-photo-grid button:nth-child(15) img { min-height:160px; } .kuara-viewer { padding:14px; } .kuara-viewer img { max-height:78vh; border-radius:18px; } .kuara-viewer-close { right:14px; top:14px; } .kuara-viewer-nav { width:44px; height:44px; font-size:24px; } .kuara-viewer-nav.prev { left:14px; } .kuara-viewer-nav.next { right:14px; } }
+    @media (max-width:1000px) { .kuara-feature-grid,.kuara-experience-list,.kuara-booking-card { grid-template-columns:1fr; } .kuara-photo-board { grid-template-columns:1fr 1fr; grid-template-rows:auto; } .kuara-photo-main { grid-column:1 / span 2; grid-row:auto; min-height:420px; } .kuara-photo-tile { min-height:210px; } .kuara-photo-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+    @media (max-width:760px) { .kuara-logo-card { align-items:flex-start; } .kuara-logo-card img { width:78px; height:78px; } .kuara-gallery-section { margin-top:14px; } .kuara-photo-board { gap:7px; border-radius:24px; } .kuara-photo-main { min-height:310px; } .kuara-photo-tile { min-height:145px; } .kuara-photo-label { left:12px; bottom:12px; border-radius:18px; } .kuara-all-photos { right:12px; bottom:12px; border-radius:18px; padding:10px 12px; } .kuara-gallery-modal { padding:14px; } .kuara-gallery-modal-head h2 { font-size:34px; } .kuara-photo-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; } .kuara-photo-grid button:nth-child(1), .kuara-photo-grid button:nth-child(8), .kuara-photo-grid button:nth-child(15) { grid-column:span 2; grid-row:span 1; } .kuara-photo-grid img, .kuara-photo-grid button:nth-child(1) img, .kuara-photo-grid button:nth-child(8) img, .kuara-photo-grid button:nth-child(15) img { min-height:160px; } .kuara-viewer { padding:14px; } .kuara-viewer img { max-height:78vh; border-radius:18px; } .kuara-viewer-close { right:14px; top:14px; } .kuara-viewer-nav { width:44px; height:44px; font-size:24px; } .kuara-viewer-nav.prev { left:14px; } .kuara-viewer-nav.next { right:14px; } }
 
   </style>
 </head>
@@ -108,6 +110,130 @@
       </aside>
     </div>
   </section>
+
+  <section id="gallery" class="section kuara-gallery-section">
+    <div class="section-heading">
+      <div><span class="eyebrow">Gallery</span><h2 class="section-title">A feeling for Kuara.</h2></div>
+      <p class="section-sub">A visual impression of the resort, spa, beach, food, villas and experiences. Use the arrows or thumbnails to browse the full gallery.</p>
+    </div>
+    <div class="kuara-photo-board" data-kuara-gallery>
+      <button class="kuara-photo-main" type="button" data-open-viewer="18" aria-label="Beach house">
+        <img src="../assets/images/kuara/gallery/kuara-beach-house-ocean-view.webp" alt="Beach house view toward the ocean at Kuara" loading="eager" decoding="async" />
+        <span class="kuara-photo-label">Kuara Resort Lombok</span>
+      </button>
+      <div class="kuara-photo-side">
+        <button class="kuara-photo-tile" type="button" data-open-viewer="0" aria-label="Bumbang Bay">
+          <img src="../assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp" alt="Aerial view over Kuara Lombok and Bumbang Bay" loading="lazy" decoding="async" />
+        </button>
+        <button class="kuara-photo-tile" type="button" data-open-viewer="2" aria-label="Garden paths">
+          <img src="../assets/images/kuara/gallery/kuara-villas-from-above.webp" alt="Kuara villas and garden paths seen from above" loading="lazy" decoding="async" />
+        </button>
+        <button class="kuara-photo-tile" type="button" data-open-viewer="3" aria-label="River pool">
+          <img src="../assets/images/kuara/gallery/kuara-river-pool-aerial.webp" alt="Kuara river pool and tropical palms" loading="lazy" decoding="async" />
+        </button>
+        <button class="kuara-photo-tile" type="button" data-open-gallery aria-label="Show all photos">
+          <img src="../assets/images/kuara/gallery/kuara-river-pool-detail.webp" alt="Kuara river pool from above with palms" loading="lazy" decoding="async" />
+          <span class="kuara-all-photos">▦ Show all photos</span>
+        </button>
+      </div>
+    </div>
+    <div class="kuara-gallery-modal" data-kuara-modal hidden role="dialog" aria-modal="true" aria-label="Kuara Resort Lombok photo gallery">
+      <div class="kuara-gallery-modal-inner">
+        <div class="kuara-gallery-modal-head">
+          <div>
+            <h2>Kuara Resort Lombok photos</h2>
+            <p>Browse the full gallery, then click any photo to view it larger.</p>
+          </div>
+          <button class="kuara-gallery-close" type="button" data-close-gallery aria-label="Close gallery">×</button>
+        </div>
+        <div class="kuara-photo-grid">
+        <button type="button" data-open-viewer="0" aria-label="Bumbang Bay">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-aerial-bumbang-bay.webp" alt="Aerial view over Kuara Lombok and Bumbang Bay" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="1" aria-label="Coastal cliffs">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-coastal-cliffs.webp" alt="Coastal cliffs and quiet southern Lombok landscape near Kuara" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="2" aria-label="Garden paths">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-villas-from-above.webp" alt="Kuara villas and garden paths seen from above" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="3" aria-label="River pool">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-river-pool-aerial.webp" alt="Kuara river pool and tropical palms" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="4" aria-label="Beach rhythm">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-beach-walk.webp" alt="A quiet beach moment at Kuara Resort Lombok" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="5" aria-label="Villa detail">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-villa-detail.webp" alt="A warm villa detail at Kuara Resort Lombok" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="6" aria-label="Botanicals">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-botanicals-oils.webp" alt="Kuara spa botanicals and oils" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="7" aria-label="Reception">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-reception-library.webp" alt="Kuara reception space with tropical design details" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="8" aria-label="Garden spa">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-spa-treatment-garden.webp" alt="Kuara spa treatment in a garden pavilion" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="9" aria-label="Quiet spa">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-spa-quiet-room.webp" alt="A quiet wellness room at Kuara Spa" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="10" aria-label="Spa ritual">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-spa-ritual.webp" alt="Kuara spa ritual and bodywork" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="11" aria-label="Spa pavilion">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-spa-pavilion.webp" alt="Kuara spa pavilion among tropical greenery" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="12" aria-label="Beachfront dining">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-beachfront-dining.webp" alt="Beachfront dining with ocean view at Kuara" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="13" aria-label="Sand therapy">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-sand-therapy-beach.webp" alt="Traditional sand therapy on the beach near Kuara" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="14" aria-label="Healing ritual">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-sand-therapy-detail.webp" alt="Sand therapy ritual detail in Lombok" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="15" aria-label="Restaurant">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-restaurant-interior.webp" alt="Kuara restaurant interior and shelves" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="16" aria-label="Fire cooking">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-fire-cooking.webp" alt="Cooking over fire at Kuara Lombok" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="17" aria-label="Cooking atelier">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-cooking-atelier.webp" alt="Kuara cooking atelier and local ingredients" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="18" aria-label="Beach house">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-beach-house-ocean-view.webp" alt="Beach house view toward the ocean at Kuara" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="19" aria-label="Pool detail">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-river-pool-detail.webp" alt="Kuara river pool from above with palms" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="20" aria-label="Bodywork">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-bodywork.webp" alt="Kuara wellness bodywork treatment" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="21" aria-label="Massage">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-massage.webp" alt="Massage treatment at Kuara Spa" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="22" aria-label="Wellness therapy">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-therapy.webp" alt="Wellness therapy session at Kuara" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" data-open-viewer="23" aria-label="Face ritual">
+          <img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-face-ritual.webp" alt="Face and head massage ritual at Kuara Spa" loading="lazy" decoding="async" />
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="kuara-viewer" data-kuara-viewer hidden role="dialog" aria-modal="true" aria-label="Large Kuara Resort Lombok photo">
+      <button class="kuara-viewer-close" type="button" data-close-viewer aria-label="Close large photo">×</button>
+      <button class="kuara-viewer-nav prev" type="button" data-prev-photo aria-label="Previous photo">‹</button>
+      <figure>
+        <img src="../assets/images/kuara/gallery/kuara-beach-house-ocean-view.webp" alt="Beach house view toward the ocean at Kuara" data-viewer-image />
+        <figcaption data-viewer-caption>Beach house</figcaption>
+      </figure>
+      <button class="kuara-viewer-nav next" type="button" data-next-photo aria-label="Next photo">›</button>
+    </div>
+  </section>
+
 
   <nav class="subnav" aria-label="Profile navigation">
     <a href="#about">About</a>
@@ -170,129 +296,6 @@
         <div class="list-item"><span class="icon">✦</span><div><strong>Food with a sense of place</strong><br><span class="muted">A beachfront restaurant with ingredients from Kuara’s garden and local producers.</span></div></div>
         <div class="list-item"><span class="icon">✦</span><div><strong>Accessible but remote</strong><br><span class="muted">Close to Lombok International Airport, yet surrounded by a quieter coastal landscape.</span></div></div>
       </div>
-    </div>
-  </section>
-
-  <section id="gallery" class="section">
-    <div class="section-heading">
-      <div><span class="eyebrow">Gallery</span><h2 class="section-title">A feeling for Kuara.</h2></div>
-      <p class="section-sub">A visual impression of the resort, spa, beach, food, villas and experiences. Use the arrows or thumbnails to browse the full gallery.</p>
-    </div>
-    <div class="kuara-photo-board" data-kuara-gallery>
-      <button class="kuara-photo-main" type="button" data-open-gallery aria-label="Coastal cliffs">
-          <img src="../assets/images/kuara/gallery/kuara-coastal-cliffs.webp" alt="Coastal cliffs and quiet southern Lombok landscape near Kuara" loading="eager" decoding="async" />
-          <span class="kuara-photo-label">Kuara Resort Lombok</span>
-        </button>
-      <div class="kuara-photo-side">
-        <button class="kuara-photo-tile" type="button" data-open-viewer="2" aria-label="River pool">
-          <img src="../assets/images/kuara/gallery/kuara-river-pool-aerial.webp" alt="Kuara river pool and tropical palms" loading="lazy" decoding="async" />
-          
-        </button>
-        <button class="kuara-photo-tile" type="button" data-open-viewer="3" aria-label="Beach rhythm">
-          <img src="../assets/images/kuara/gallery/kuara-beach-walk.webp" alt="A quiet beach moment at Kuara Resort Lombok" loading="lazy" decoding="async" />
-          
-        </button>
-        <button class="kuara-photo-tile" type="button" data-open-viewer="12" aria-label="Sand therapy">
-          <img src="../assets/images/kuara/gallery/kuara-sand-therapy-beach.webp" alt="Traditional sand therapy on the beach near Kuara" loading="lazy" decoding="async" />
-          
-        </button>
-        <button class="kuara-photo-tile" type="button" data-open-gallery aria-label="Pool detail">
-          <img src="../assets/images/kuara/gallery/kuara-river-pool-detail.webp" alt="Kuara river pool from above with palms" loading="lazy" decoding="async" />
-          <span class="kuara-all-photos">▦ Show all photos</span>
-        </button>
-      </div>
-    </div>
-    <div class="kuara-gallery-modal" data-kuara-modal hidden role="dialog" aria-modal="true" aria-label="Kuara Resort Lombok photo gallery">
-      <div class="kuara-gallery-modal-inner">
-        <div class="kuara-gallery-modal-head">
-          <div>
-            <h2>Kuara Resort Lombok photos</h2>
-            <p>Browse the full gallery, then click any photo to view it larger.</p>
-          </div>
-          <button class="kuara-gallery-close" type="button" data-close-gallery aria-label="Close gallery">×</button>
-        </div>
-        <div class="kuara-photo-grid">
-        <button type="button" data-open-viewer="0" aria-label="Coastal cliffs">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-coastal-cliffs.webp" alt="Coastal cliffs and quiet southern Lombok landscape near Kuara" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="1" aria-label="Garden paths">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-villas-from-above.webp" alt="Kuara villas and garden paths seen from above" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="2" aria-label="River pool">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-river-pool-aerial.webp" alt="Kuara river pool and tropical palms" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="3" aria-label="Beach rhythm">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-beach-walk.webp" alt="A quiet beach moment at Kuara Resort Lombok" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="4" aria-label="Villa detail">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-villa-detail.webp" alt="A warm villa detail at Kuara Resort Lombok" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="5" aria-label="Botanicals">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-botanicals-oils.webp" alt="Kuara spa botanicals and oils" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="6" aria-label="Reception">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-reception-library.webp" alt="Kuara reception space with tropical design details" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="7" aria-label="Garden spa">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-spa-treatment-garden.webp" alt="Kuara spa treatment in a garden pavilion" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="8" aria-label="Quiet spa">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-spa-quiet-room.webp" alt="A quiet wellness room at Kuara Spa" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="9" aria-label="Spa ritual">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-spa-ritual.webp" alt="Kuara spa ritual and bodywork" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="10" aria-label="Spa pavilion">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-spa-pavilion.webp" alt="Kuara spa pavilion among tropical greenery" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="11" aria-label="Beachfront dining">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-beachfront-dining.webp" alt="Beachfront dining with ocean view at Kuara" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="12" aria-label="Sand therapy">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-sand-therapy-beach.webp" alt="Traditional sand therapy on the beach near Kuara" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="13" aria-label="Healing ritual">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-sand-therapy-detail.webp" alt="Sand therapy ritual detail in Lombok" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="14" aria-label="Restaurant">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-restaurant-interior.webp" alt="Kuara restaurant interior and shelves" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="15" aria-label="Fire cooking">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-fire-cooking.webp" alt="Cooking over fire at Kuara Lombok" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="16" aria-label="Cooking atelier">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-cooking-atelier.webp" alt="Kuara cooking atelier and local ingredients" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="17" aria-label="Beach house">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-beach-house-ocean-view.webp" alt="Beach house view toward the ocean at Kuara" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="18" aria-label="Pool detail">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-river-pool-detail.webp" alt="Kuara river pool from above with palms" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="19" aria-label="Bodywork">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-bodywork.webp" alt="Kuara wellness bodywork treatment" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="20" aria-label="Massage">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-massage.webp" alt="Massage treatment at Kuara Spa" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="21" aria-label="Wellness therapy">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-therapy.webp" alt="Wellness therapy session at Kuara" loading="lazy" decoding="async" />
-        </button>
-        <button type="button" data-open-viewer="22" aria-label="Face ritual">
-          <img src="../assets/images/kuara/gallery/thumbs/kuara-wellness-face-ritual.webp" alt="Face and head massage ritual at Kuara Spa" loading="lazy" decoding="async" />
-        </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="kuara-viewer" data-kuara-viewer hidden role="dialog" aria-modal="true" aria-label="Large Kuara Resort Lombok photo">
-      <button class="kuara-viewer-close" type="button" data-close-viewer aria-label="Close large photo">×</button>
-      <button class="kuara-viewer-nav prev" type="button" data-prev-photo aria-label="Previous photo">‹</button>
-      <figure>
-        <img src="../assets/images/kuara/gallery/kuara-coastal-cliffs.webp" alt="Coastal cliffs and quiet southern Lombok landscape near Kuara" data-viewer-image />
-        <figcaption data-viewer-caption>Coastal cliffs</figcaption>
-      </figure>
-      <button class="kuara-viewer-nav next" type="button" data-next-photo aria-label="Next photo">›</button>
     </div>
   </section>
 
@@ -362,6 +365,7 @@
   window.HolisticTribe && window.HolisticTribe.init('profile');
   (function() {
     const items = [
+      { full: "../assets/images/kuara/gallery/kuara-aerial-bumbang-bay.webp", alt: "Aerial view over Kuara Lombok and Bumbang Bay", caption: "Bumbang Bay" },
       { full: "../assets/images/kuara/gallery/kuara-coastal-cliffs.webp", alt: "Coastal cliffs and quiet southern Lombok landscape near Kuara", caption: "Coastal cliffs" },
       { full: "../assets/images/kuara/gallery/kuara-villas-from-above.webp", alt: "Kuara villas and garden paths seen from above", caption: "Garden paths" },
       { full: "../assets/images/kuara/gallery/kuara-river-pool-aerial.webp", alt: "Kuara river pool and tropical palms", caption: "River pool" },
