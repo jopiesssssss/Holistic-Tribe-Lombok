@@ -111,6 +111,93 @@ window.HTL_DATA = {
       }
     },
     {
+      "id": 13,
+      "name": "Sunset Beach Yoga",
+      "region": "Gili Trawangan",
+      "description": "Ocean-view Morning Flow and FlyHigh Yoga classes on Gili Trawangan. Beginner-friendly, drop-in adult classes by the beach.",
+      "image": "/assets/images/sunset-beach-yoga/sunset-beach-yoga-beach-hut-flowers.webp",
+      "lat": -8.348,
+      "lng": 116.0375,
+      "categories": [
+        "Yoga"
+      ],
+      "website": "",
+      "logoText": "SB",
+      "slug": "sunset-beach-yoga-gili-trawangan",
+      "url": "/facilitators/sunset-beach-yoga-gili-trawangan/",
+      "profileLead": "Ocean-view Morning Flow and FlyHigh Yoga classes in a relaxed beach setting on Gili Trawangan.",
+      "overview": "Sunset Beach Yoga offers daily beachside yoga classes: Morning Flow at 8:30am and FlyHigh Yoga at 5:00pm. Classes are 1-hour adult classes, beginner-friendly and open to all levels.",
+      "about": "Sunset Beach Yoga is a relaxed beach yoga space on Gili Trawangan. Practice by the ocean in the morning, then return for FlyHigh Yoga at sunset in an open-air island setting.",
+      "practicesIntro": "Daily Morning Flow and FlyHigh Yoga, with occasional sound bath sessions and FlyHigh workshops shared through Instagram and WhatsApp.",
+      "location": "Sunset Beach area, Gili Trawangan, Lombok, Indonesia",
+      "gallery": [
+        "/assets/images/sunset-beach-yoga/sunset-beach-yoga-pavilion-flowers.webp",
+        "/assets/images/sunset-beach-yoga/sunset-beach-yoga-flyhigh-shala.webp",
+        "/assets/images/sunset-beach-yoga/sunset-beach-yoga-beach-hut-flowers.webp",
+        "/assets/images/sunset-beach-yoga/sunset-beach-yoga-flyhigh-ocean.webp"
+      ],
+      "offerings": [
+        "Yoga",
+        "FlyHigh Yoga",
+        "Morning Flow",
+        "Ocean views",
+        "Beachside",
+        "Beginner-friendly",
+        "Drop-in classes",
+        "Gili Trawangan"
+      ],
+      "stats": [
+        {
+          "value": "8:30am",
+          "label": "Morning Flow"
+        },
+        {
+          "value": "5:00pm",
+          "label": "FlyHigh Yoga"
+        },
+        {
+          "value": "200k",
+          "label": "IDR per person"
+        }
+      ],
+      "highlights": [
+        {
+          "title": "Daily practice",
+          "text": "Morning Flow at 8:30am and FlyHigh Yoga at 5:00pm."
+        },
+        {
+          "title": "Beginner-friendly",
+          "text": "All 1-hour adult classes are open to all levels."
+        },
+        {
+          "title": "Drop in",
+          "text": "No booking needed for regular classes. Let them know if you are a group."
+        }
+      ],
+      "reasons": [
+        {
+          "title": "Morning energy",
+          "text": "Begin the day with Morning Flow by the ocean."
+        },
+        {
+          "title": "FlyHigh at sunset",
+          "text": "Unwind in the evening with a playful, supported FlyHigh Yoga class."
+        },
+        {
+          "title": "Simple and accessible",
+          "text": "No booking needed, beginner-friendly and easy to join."
+        }
+      ],
+      "links": {
+        "website": "",
+        "instagram": "https://www.instagram.com/sunset_beach_yoga/",
+        "facebook": "",
+        "whatsapp": "https://wa.me/6287862125860",
+        "email": "",
+        "map": "https://maps.app.goo.gl/k7wbzXbepmW9UKXK7?g_st=iwb"
+      }
+    },
+    {
       "id": 1,
       "name": "Ashtari Yoga & Retreat",
       "region": "Kuta Lombok",
@@ -1091,90 +1178,6 @@ window.HTL_DATA = {
         "whatsapp": "https://wa.me/6285955215874",
         "email": "info@sorayayoga.com",
         "map": "https://maps.google.com/?q=Soraya+Yoga+Wellness+Center+Gili+Trawangan"
-      }
-    },
-    {
-      "id": 13,
-      "name": "Sunset Beach Yoga",
-      "region": "Gili Trawangan",
-      "description": "Enjoy yoga bliss in our treetop studio with stunning ocean views. An oasis of peace & tranquility surrounded by nature and white sand beach.",
-      "image": "https://www.instagram.com/p/DR_yUQQiFY2/media/?size=l",
-      "lat": -8.348,
-      "lng": 116.0375,
-      "categories": [
-        "Yoga"
-      ],
-      "website": "#",
-      "logoText": "SB",
-      "slug": "sunset-beach-yoga-gili-trawangan",
-      "url": "/facilitators/sunset-beach-yoga-gili-trawangan/",
-      "profileLead": "A beachside yoga spot known for its treetop studio, ocean views and a peaceful natural atmosphere on Gili Trawangan.",
-      "overview": "Sunset Beach Yoga is known for a treetop studio near the beach where classes unfold with sea views, nature and a relaxed island atmosphere.",
-      "about": "Sunset Beach Yoga is best known through its social presence and traveler listings, which describe a treetop yoga studio with white-sand beach and ocean views. The experience leans into nature, breeze and simplicity rather than a large studio infrastructure.",
-      "practicesIntro": "A lighter profile page based on its active social presence and traveler references.",
-      "location": "Sunset Beach area, Gili Trawangan, Lombok, Indonesia",
-      "gallery": [
-        "https://www.instagram.com/p/DR_yUQQiFY2/media/?size=l"
-      ],
-      "offerings": [
-        "Yoga",
-        "Ocean views",
-        "Treetop studio",
-        "Beachside",
-        "Gili Trawangan",
-        "Morning flow",
-        "Beachside practice",
-        "Ocean-view sessions"
-      ],
-      "stats": [
-        {
-          "value": "Ocean",
-          "label": "Views"
-        },
-        {
-          "value": "Treetop",
-          "label": "Studio"
-        },
-        {
-          "value": "Yoga",
-          "label": "By the beach"
-        }
-      ],
-      "highlights": [
-        {
-          "title": "Beautiful natural setting",
-          "text": "The location itself is a large part of the draw."
-        },
-        {
-          "title": "Relaxed island feel",
-          "text": "A softer, less polished option for travelers who care about atmosphere."
-        },
-        {
-          "title": "Social-first presence",
-          "text": "Useful to check their social channels for the latest class updates."
-        }
-      ],
-      "reasons": [
-        {
-          "title": "Clear offering",
-          "text": "A useful starting point for travelers looking for this kind of holistic experience."
-        },
-        {
-          "title": "Local connection",
-          "text": "A profile that helps visitors discover what is available in Lombok."
-        },
-        {
-          "title": "Check direct details",
-          "text": "Always confirm current schedules, prices and availability with the facilitator."
-        }
-      ],
-      "links": {
-        "website": "",
-        "instagram": "https://www.instagram.com/sunset_beach_yoga/",
-        "facebook": "https://www.facebook.com/sunsetbeachyogagilitrawangan/",
-        "whatsapp": "",
-        "email": "",
-        "map": "https://maps.google.com/?q=Sunset+Beach+Yoga+Gili+Trawangan"
       }
     },
     {
