@@ -52,7 +52,7 @@ window.HTL_DATA = {
         "Farm-to-table",
         "Slow travel",
         "Local experiences",
-        "Sand therapy",
+        "Guided surfing sessions",
         "Coastal foraging",
         "Cooking atelier",
         "Beachfront stay",
