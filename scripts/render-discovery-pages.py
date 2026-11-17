@@ -37,7 +37,7 @@ def sources(f):
  return '<details class="profile-sources"><summary>Sources & updates <span aria-hidden="true">+</span></summary><p>'+E(supplied)+'Source information reviewed '+E(date)+'. Check current availability directly.</p><ul>'+''.join('<li><a href="'+E(u)+'" target="_blank" rel="noopener">'+E(u)+'</a></li>' for u in src)+'</ul><p>Are you the provider? <a href="mailto:hello@holistictribelombok.com">Send corrections or photographs</a>. Your profile and updates stay free.</p></details>'
 def profile(f):
  links=f['links'];photos=photo_urls(f);url=links.get('booking') or links.get('whatsapp') or links.get('website') or links.get('instagram');label='Check classes & booking' if links.get('booking') else 'Contact the provider'
- heading=begin(f['name'],f['description'],f['url'],photos[0] if photos else None)
+ heading=begin(f['name'],f['description'],f['url'],photos[0] if photos else None).replace('<body class="discovery-page"','<body class="discovery-page island-profile"')
  body='<main class="container refreshed-profile">'+crumb([('Providers','/facilitators/'),(f['region'],'/facilitators/?'+urlencode({'place':area(f)})),(f['name'],'')])
  body+='<div class="island-profile-title"><div><span class="small-label">'+E(f['region'])+'</span><h1>'+E(f['name'])+'</h1><p>'+E(f['profileLead'])+'</p></div><a class="island-button" href="'+E(url)+'" target="_blank" rel="noopener">'+label+' ↗</a></div>'
  if photos:
