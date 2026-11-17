@@ -1554,6 +1554,594 @@ window.HTL_DATA = {
         "confirmedByProvider": false
       },
       "availabilityNote": "The provider’s website was unavailable during this review. A venue partner corroborates Reiki and breathwork, but current sessions and location still need confirmation."
+    },
+    {
+      "id": 17,
+      "name": "Rascals Yoga",
+      "region": "Kuta Lombok",
+      "description": "Yoga classes and breathwork in an adults-only garden setting in central Kuta, with a direct class-booking page.",
+      "image": "",
+      "lat": null,
+      "lng": null,
+      "categories": [
+        "Yoga",
+        "Breathwork",
+        "Meditation"
+      ],
+      "website": "https://www.rascalskutalombok.com/yoga",
+      "logoText": "RY",
+      "slug": "rascals-yoga-kuta-lombok",
+      "url": "/facilitators/rascals-yoga-kuta-lombok/",
+      "profileLead": "Yoga classes and breathwork in an adults-only garden setting in central Kuta, with a direct class-booking page.",
+      "overview": "Rascals has a yoga shala within its Kuta property. The published programme includes yoga alongside community breathwork and meditation. Visitors can use the class-booking page to see available sessions and reserve a mat.",
+      "about": "Rascals has a yoga shala within its Kuta property. The published programme includes yoga alongside community breathwork and meditation. Visitors can use the class-booking page to see available sessions and reserve a mat.",
+      "practicesIntro": "Explore the relevant offerings below and use the provider’s current information to plan your visit.",
+      "location": "Rascals Kuta Lombok, Kuta, Central Lombok, Indonesia",
+      "gallery": [],
+      "offerings": [
+        "Yoga classes",
+        "Breathwork",
+        "Meditation",
+        "Small-group practice"
+      ],
+      "stats": [],
+      "highlights": [],
+      "reasons": [],
+      "links": {
+        "website": "https://www.rascalskutalombok.com/yoga",
+        "booking": "https://www.rascalskutalombok.com/yoga-class-booking",
+        "instagram": "",
+        "facebook": "",
+        "whatsapp": "https://wa.me/6282145354865",
+        "email": "info@rascalskutalombok.com",
+        "map": "https://maps.app.goo.gl/idEfqW1QkLkqF8qL9"
+      },
+      "publicationStatus": "published",
+      "availabilityNote": "Use the provider’s current booking calendar. The venue is adults-only; booking a yoga class does not imply access to hotel pools or other facilities.",
+      "profileTemplate": "source-v1",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://www.rascalskutalombok.com/yoga",
+          "https://www.rascalskutalombok.com/yoga-class-booking",
+          "https://www.rascalskutalombok.com/service-page/community-breathwork-meditation",
+          "https://lombokdispatch.id/places-to-stay-in-kuta-lombok/",
+          "https://www.holidaycheck.de/hi/rascals-hotel/4bc3d469-fb22-473b-8124-bc034b81ea2e"
+        ],
+        "note": "Official yoga and booking pages describe public classes, with a separate breathwork/meditation session. Check current booking slots; adults-only venue.",
+        "contactFieldsChecked": [
+          "website",
+          "email",
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      }
+    },
+    {
+      "id": 18,
+      "name": "Zora Yoga",
+      "region": "Kuta Lombok",
+      "description": "An open-air yoga studio in central Kuta, with classes, workshops and a direct online schedule.",
+      "image": "",
+      "lat": null,
+      "lng": null,
+      "categories": [
+        "Yoga"
+      ],
+      "website": "https://www.zorayogalombok.com/",
+      "logoText": "ZY",
+      "slug": "zora-yoga-kuta-lombok",
+      "url": "/facilitators/zora-yoga-kuta-lombok/",
+      "profileLead": "An open-air yoga studio in central Kuta, with classes, workshops and a direct online schedule.",
+      "overview": "Zora Yoga is located upstairs in the garden at Kenza in central Kuta. Its website offers yoga classes and events with a booking agenda, making it a useful starting point for a single class or a longer practice during your stay.",
+      "about": "Zora Yoga is located upstairs in the garden at Kenza in central Kuta. Its website offers yoga classes and events with a booking agenda, making it a useful starting point for a single class or a longer practice during your stay.",
+      "practicesIntro": "Explore the relevant offerings below and use the provider’s current information to plan your visit.",
+      "location": "Jl. Raya Kuta No.5, Kuta, Pujut, Lombok, Indonesia",
+      "gallery": [],
+      "offerings": [
+        "Yoga classes",
+        "Workshops",
+        "Online class booking"
+      ],
+      "stats": [],
+      "highlights": [],
+      "reasons": [],
+      "links": {
+        "website": "https://www.zorayogalombok.com/",
+        "booking": "https://www.zorayogalombok.com/agenda",
+        "instagram": "",
+        "facebook": "",
+        "whatsapp": "https://wa.me/6282147925613",
+        "email": "info@zorayogalombok.com",
+        "map": "https://maps.app.goo.gl/vwFuGwwi6336kbro8"
+      },
+      "publicationStatus": "published",
+      "availabilityNote": "Check the live agenda for class style, level, available spaces and current prices. The provider lists Monday–Saturday opening; confirm holiday changes directly.",
+      "profileTemplate": "source-v1",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://www.zorayogalombok.com/",
+          "https://www.zorayogalombok.com/contact"
+        ],
+        "note": "Official class and contact pages; address Jl. Raya Kuta No.5. Include yoga; do not infer sound healing or other ceremonies from the general events label.",
+        "contactFieldsChecked": [
+          "website",
+          "email",
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      }
+    },
+    {
+      "id": 19,
+      "name": "Ola Ola Lombok",
+      "region": "Selong Belanak",
+      "description": "Yoga and mat Pilates near Selong Belanak, with morning classes and drop-in options for visiting travellers.",
+      "image": "",
+      "lat": null,
+      "lng": null,
+      "categories": [
+        "Yoga"
+      ],
+      "website": "https://olaolalombok.com/yoga/",
+      "logoText": "OO",
+      "slug": "ola-ola-yoga-selong-belanak",
+      "url": "/facilitators/ola-ola-yoga-selong-belanak/",
+      "profileLead": "Yoga and mat Pilates near Selong Belanak, with morning classes and drop-in options for visiting travellers.",
+      "overview": "Ola Ola combines a small surf house with yoga and mat Pilates in Selong Belanak. Its published programme includes Morning Flow, Spicy Vinyasa and Yin Yang Yoga. Classes are described as open to different experience levels, with individual classes and passes available.",
+      "about": "Ola Ola combines a small surf house with yoga and mat Pilates in Selong Belanak. Its published programme includes Morning Flow, Spicy Vinyasa and Yin Yang Yoga. Classes are described as open to different experience levels, with individual classes and passes available.",
+      "practicesIntro": "Explore the relevant offerings below and use the provider’s current information to plan your visit.",
+      "location": "Jalan Selong Belanak Kute, Selong Belanak, Praya Barat, Lombok, Indonesia",
+      "gallery": [],
+      "offerings": [
+        "Morning Flow",
+        "Vinyasa yoga",
+        "Yin Yang Yoga",
+        "Mat Pilates",
+        "Drop-in classes"
+      ],
+      "stats": [],
+      "highlights": [],
+      "reasons": [],
+      "links": {
+        "website": "https://olaolalombok.com/yoga/",
+        "booking": "https://olaolalombok.com/yoga/",
+        "instagram": "",
+        "facebook": "",
+        "whatsapp": "",
+        "email": "olaolalombok@gmail.com",
+        "map": "https://www.google.com/maps/search/?api=1&query=Ola+Ola+Lombok+Selong+Belanak+Lombok+Indonesia"
+      },
+      "publicationStatus": "published",
+      "availabilityNote": "Check the provider’s yoga page for the current timetable and prices. Use email or the booking page for questions; the site lists more than one telephone number.",
+      "profileTemplate": "source-v1",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://olaolalombok.com/yoga/"
+        ],
+        "note": "Official page describes yoga and mat Pilates, with drop-in access. Two different phone/WhatsApp numbers appear; use published email and booking page until the WhatsApp number is clarified.",
+        "contactFieldsChecked": [
+          "website",
+          "email"
+        ],
+        "confirmedByProvider": false
+      }
+    },
+    {
+      "id": 20,
+      "name": "Puri Mas Spa & Wellness Center",
+      "region": "Kerandangan / Senggigi",
+      "description": "Spa treatments, yoga and meditation in Kerandangan near Senggigi, with options for visitors who are not staying at the resort.",
+      "image": "",
+      "lat": null,
+      "lng": null,
+      "categories": [
+        "Yoga",
+        "Meditation",
+        "Massage"
+      ],
+      "website": "https://www.purimas-lombok.com/puri-mas-spa-wellness-center",
+      "logoText": "PM",
+      "slug": "puri-mas-spa-wellness-senggigi",
+      "url": "/facilitators/puri-mas-spa-wellness-senggigi/",
+      "profileLead": "Spa treatments, yoga and meditation in Kerandangan near Senggigi, with options for visitors who are not staying at the resort.",
+      "overview": "Puri Mas offers spa treatments and yoga in its Joglo House or gardens. Its own website explicitly welcomes outside spa visitors by appointment and describes yoga access for non-resident guests. The spa and wellness location is separate from the beachfront resort.",
+      "about": "Puri Mas offers spa treatments and yoga in its Joglo House or gardens. Its own website explicitly welcomes outside spa visitors by appointment and describes yoga access for non-resident guests. The spa and wellness location is separate from the beachfront resort.",
+      "practicesIntro": "Explore the relevant offerings below and use the provider’s current information to plan your visit.",
+      "location": "Puri Mas Spa & Wellness Center, Kerandangan, Senggigi area, West Lombok, Indonesia",
+      "gallery": [],
+      "offerings": [
+        "Massage",
+        "Spa treatments",
+        "Yoga",
+        "Meditation"
+      ],
+      "stats": [],
+      "highlights": [],
+      "reasons": [],
+      "links": {
+        "website": "https://www.purimas-lombok.com/puri-mas-spa-wellness-center",
+        "booking": "https://www.purimas-lombok.com/puri-mas-spa-wellness-center",
+        "instagram": "",
+        "facebook": "",
+        "whatsapp": "https://wa.me/6287865615553",
+        "email": "info@purimas-lombok.com",
+        "map": "https://www.google.com/maps/search/?api=1&query=Puri+Mas+Spa+%26+Wellness+Center+Kerandangan+%2F+Senggigi+Lombok+Indonesia"
+      },
+      "publicationStatus": "published",
+      "availabilityNote": "Contact the team before visiting to confirm the spa meeting point, treatment availability and current yoga classes. Do not travel to the beachfront resort assuming it is the spa venue.",
+      "profileTemplate": "source-v1",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://www.purimas-lombok.com/puri-mas-spa-wellness-center"
+        ],
+        "note": "Official page explicitly welcomes outside spa guests by appointment and outside yoga visitors. Keep spa location separate from beach resort; confirm current classes directly.",
+        "contactFieldsChecked": [
+          "website",
+          "email",
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      }
+    },
+    {
+      "id": 21,
+      "name": "Xanadu Surf & Yoga",
+      "region": "Kuta Lombok",
+      "description": "Surf and yoga stays in Kuta, with two locations and dedicated yoga immersion programmes.",
+      "image": "",
+      "lat": null,
+      "lng": null,
+      "categories": [
+        "Yoga",
+        "Retreats"
+      ],
+      "website": "https://xanadusurf.com/",
+      "logoText": "XS",
+      "slug": "xanadu-surf-yoga-kuta-lombok",
+      "url": "/facilitators/xanadu-surf-yoga-kuta-lombok/",
+      "profileLead": "Surf and yoga stays in Kuta, with two locations and dedicated yoga immersion programmes.",
+      "overview": "Xanadu runs two Lombok locations under one brand: Xanadu Village and Xanadu Boutique Retreat. Its offerings focus on surf-and-yoga stays and yoga immersion weeks. Choose the programme and property with the team before booking.",
+      "about": "Xanadu runs two Lombok locations under one brand: Xanadu Village and Xanadu Boutique Retreat. Its offerings focus on surf-and-yoga stays and yoga immersion weeks. Choose the programme and property with the team before booking.",
+      "practicesIntro": "Explore the relevant offerings below and use the provider’s current information to plan your visit.",
+      "location": "Xanadu Village and Xanadu Boutique Retreat, Kuta area, South Lombok, Indonesia",
+      "gallery": [],
+      "offerings": [
+        "Yoga",
+        "Surf & yoga stays",
+        "Yoga immersion weeks",
+        "Retreat packages"
+      ],
+      "stats": [],
+      "highlights": [],
+      "reasons": [],
+      "links": {
+        "website": "https://xanadusurf.com/",
+        "booking": "https://xanadusurf.com/contact/",
+        "instagram": "",
+        "facebook": "",
+        "whatsapp": "",
+        "email": "contact@xanadusurf.com",
+        "map": "https://www.google.com/maps/search/?api=1&query=Xanadu+Surf+%26+Yoga+Kuta+Lombok+Lombok+Indonesia"
+      },
+      "publicationStatus": "published",
+      "availabilityNote": "This profile covers two locations. Confirm the correct property and programme before travelling. Standalone drop-in yoga access is not confirmed.",
+      "profileTemplate": "source-v1",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://xanadusurf.com/",
+          "https://xanadusurf.com/contact/"
+        ],
+        "note": "Two locations under one operator: Village and Boutique Retreat. Present as one provider with two venues, primarily stay/retreat packages. Do not promise drop-in access. Email address is also corroborated by Indonesia’s tourism authority.",
+        "contactFieldsChecked": [
+          "website",
+          "email"
+        ],
+        "confirmedByProvider": false
+      }
+    },
+    {
+      "id": 22,
+      "name": "GLAZE House of Wellness",
+      "region": "Kuta Lombok",
+      "description": "Massage and bodywork at GLAZE House of Wellness in Kuta, with direct contact and online treatment booking.",
+      "image": "",
+      "lat": null,
+      "lng": null,
+      "categories": [
+        "Massage"
+      ],
+      "website": "https://www.glazehouseofwellness.com/",
+      "logoText": "GH",
+      "slug": "glaze-house-of-wellness-kuta-lombok",
+      "url": "/facilitators/glaze-house-of-wellness-kuta-lombok/",
+      "profileLead": "Massage and bodywork at GLAZE House of Wellness in Kuta, with direct contact and online treatment booking.",
+      "overview": "GLAZE is a wellness and beauty space in Kuta. This listing focuses on its massage and bodywork treatments; the wider business also offers facials and other beauty services. Use the treatment menu to choose a session and confirm details with the team.",
+      "about": "GLAZE is a wellness and beauty space in Kuta. This listing focuses on its massage and bodywork treatments; the wider business also offers facials and other beauty services. Use the treatment menu to choose a session and confirm details with the team.",
+      "practicesIntro": "Explore the relevant offerings below and use the provider’s current information to plan your visit.",
+      "location": "GLAZE House of Wellness, Kuta Lombok, Indonesia — confirm the exact meeting point when booking.",
+      "gallery": [],
+      "offerings": [
+        "Massage",
+        "Bodywork",
+        "Body treatments",
+        "Treatment booking"
+      ],
+      "stats": [],
+      "highlights": [],
+      "reasons": [],
+      "links": {
+        "website": "https://www.glazehouseofwellness.com/",
+        "booking": "https://www.glazehouseofwellness.com/",
+        "instagram": "https://www.instagram.com/glazelombok/",
+        "facebook": "",
+        "whatsapp": "https://wa.me/6282313019528",
+        "email": "info@glaze-spa.com",
+        "map": "https://www.google.com/maps?cid=14446208461610960587"
+      },
+      "publicationStatus": "published",
+      "availabilityNote": "Confirm the treatment, location, price and available appointment directly. Reiki, breathwork and sound healing have not been verified as offerings at this venue.",
+      "profileTemplate": "source-v1",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://www.glazehouseofwellness.com/",
+          "https://glazehouseofwellness.com/menu",
+          "https://id.linkedin.com/jobs/view/spa-supervisor-at-glaze-spa-lombok-4461703522"
+        ],
+        "note": "Official site and treatment menu support massage/bodywork. Include relevant treatments; do not label beauty treatments as Reiki, breathwork or sound healing. Verify exact map pin before mapping.",
+        "contactFieldsChecked": [
+          "website",
+          "email",
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      }
+    },
+    {
+      "id": 23,
+      "name": "XENO FIT Lombok",
+      "region": "Kuta Lombok",
+      "description": "Yoga classes within a Kuta fitness and community venue, with the current weekly programme published online.",
+      "image": "",
+      "lat": null,
+      "lng": null,
+      "categories": [
+        "Yoga"
+      ],
+      "website": "https://xenolombok.com/class-schedule/",
+      "logoText": "XF",
+      "slug": "xeno-fit-yoga-kuta-lombok",
+      "url": "/facilitators/xeno-fit-yoga-kuta-lombok/",
+      "profileLead": "Yoga classes within a Kuta fitness and community venue, with the current weekly programme published online.",
+      "overview": "XENO FIT is primarily a fitness venue, with yoga included in its published class programme. It is an option for visitors who want to combine a yoga session with an active Lombok stay. The broader schedule also includes mat Pilates and fitness classes.",
+      "about": "XENO FIT is primarily a fitness venue, with yoga included in its published class programme. It is an option for visitors who want to combine a yoga session with an active Lombok stay. The broader schedule also includes mat Pilates and fitness classes.",
+      "practicesIntro": "Explore the relevant offerings below and use the provider’s current information to plan your visit.",
+      "location": "XENO FIT Lombok, Kuta, South Lombok, Indonesia",
+      "gallery": [],
+      "offerings": [
+        "Yoga classes",
+        "Mat Pilates",
+        "Weekly class schedule"
+      ],
+      "stats": [],
+      "highlights": [],
+      "reasons": [],
+      "links": {
+        "website": "https://xenolombok.com/class-schedule/",
+        "booking": "https://xenolombok.com/class-schedule/",
+        "instagram": "",
+        "facebook": "",
+        "whatsapp": "https://wa.me/6281239704735",
+        "email": "info@xenolombok.com",
+        "map": "https://www.google.com/maps/search/?api=1&query=XENO+FIT+Lombok+Kuta+Lombok+Lombok+Indonesia"
+      },
+      "publicationStatus": "published",
+      "availabilityNote": "Check the live programme for current yoga sessions. The website says to arrive early and sign in at the front desk; confirm visitor rates and any changes directly.",
+      "profileTemplate": "source-v1",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://xenolombok.com/class-schedule/"
+        ],
+        "note": "Fitness venue with explicitly scheduled yoga and Pilates. Include only relevant yoga offering; use current schedule link rather than copying weekly hours into the site.",
+        "contactFieldsChecked": [
+          "website",
+          "email",
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      }
+    },
+    {
+      "id": 24,
+      "name": "maoMeno Yoga Resort",
+      "region": "Gili Meno",
+      "description": "A yoga and retreat space in the south of Gili Meno, with classes, private sessions and retreat-hosting information.",
+      "image": "",
+      "lat": null,
+      "lng": null,
+      "categories": [
+        "Yoga",
+        "Retreats"
+      ],
+      "website": "https://www.mao-meno.com/",
+      "logoText": "mY",
+      "slug": "maomeno-yoga-resort-gili-meno",
+      "url": "/facilitators/maomeno-yoga-resort-gili-meno/",
+      "profileLead": "A yoga and retreat space in the south of Gili Meno, with classes, private sessions and retreat-hosting information.",
+      "overview": "maoMeno is a yoga resort on Gili Meno. Its own website links a yoga programme, retreat-hosting options and a schedule describing Hatha and Flow practice, with private classes by enquiry. Contact the team to check which sessions are running during your visit.",
+      "about": "maoMeno is a yoga resort on Gili Meno. Its own website links a yoga programme, retreat-hosting options and a schedule describing Hatha and Flow practice, with private classes by enquiry. Contact the team to check which sessions are running during your visit.",
+      "practicesIntro": "Explore the relevant offerings below and use the provider’s current information to plan your visit.",
+      "location": "maoMeno Yoga Resort, South Gili Meno, Lombok, Indonesia",
+      "gallery": [],
+      "offerings": [
+        "Yoga",
+        "Hatha yoga",
+        "Flow yoga",
+        "Private classes by enquiry",
+        "Retreat hosting"
+      ],
+      "stats": [],
+      "highlights": [],
+      "reasons": [],
+      "links": {
+        "website": "https://www.mao-meno.com/",
+        "booking": "https://www.mao-meno.com/contact",
+        "instagram": "",
+        "facebook": "",
+        "whatsapp": "",
+        "email": "info@mao-meno.com",
+        "map": "https://www.google.com/maps/search/?api=1&query=maoMeno+Yoga+Resort+Gili+Meno+Lombok+Indonesia"
+      },
+      "publicationStatus": "published",
+      "availabilityNote": "The linked schedule does not display a current date. Confirm class times and drop-in availability by email. The website shows different telephone numbers, so email is the clearest contact route.",
+      "profileTemplate": "source-v1",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://www.mao-meno.com/",
+          "https://www.mao-meno.com/yoga",
+          "https://www.mao-meno.com/contact",
+          "https://www.mao-meno.com/_files/ugd/5a465b_f93d219a8be842c689b98b02d45cec21.pdf"
+        ],
+        "note": "Official site links yoga, retreat hosting and a schedule PDF. Contact page and footer list different phone numbers; use email. PDF has no current date, so confirm timetable before publishing specific sessions.",
+        "contactFieldsChecked": [
+          "website",
+          "email"
+        ],
+        "confirmedByProvider": false
+      }
+    },
+    {
+      "id": 25,
+      "name": "SENJA Wellness at Selong Selo",
+      "region": "Selong Belanak",
+      "description": "Massage and bodywork within Selong Selo Resort, in the hills above the Selong Belanak area.",
+      "image": "",
+      "lat": null,
+      "lng": null,
+      "categories": [
+        "Massage"
+      ],
+      "website": "https://senja.selongselo.com/",
+      "logoText": "SW",
+      "slug": "senja-wellness-selong-selo",
+      "url": "/facilitators/senja-wellness-selong-selo/",
+      "profileLead": "Massage and bodywork within Selong Selo Resort, in the hills above the Selong Belanak area.",
+      "overview": "SENJA is the wellness offering at Selong Selo Resort & Villas. The operator’s website describes massage and bodywork as standalone experiences or part of a stay. This listing covers those supported treatments, with appointments and visitor access arranged directly.",
+      "about": "SENJA is the wellness offering at Selong Selo Resort & Villas. The operator’s website describes massage and bodywork as standalone experiences or part of a stay. This listing covers those supported treatments, with appointments and visitor access arranged directly.",
+      "practicesIntro": "Explore the relevant offerings below and use the provider’s current information to plan your visit.",
+      "location": "SENJA at Selong Selo Resort & Villas, Selong Belanak area, South Lombok, Indonesia",
+      "gallery": [],
+      "offerings": [
+        "Massage",
+        "Bodywork",
+        "Personalised treatments"
+      ],
+      "stats": [],
+      "highlights": [],
+      "reasons": [],
+      "links": {
+        "website": "https://senja.selongselo.com/",
+        "booking": "https://senja.selongselo.com/",
+        "instagram": "",
+        "facebook": "",
+        "whatsapp": "https://wa.me/6281238135552",
+        "email": "reservations@selongselo.com",
+        "map": "https://www.google.com/maps/search/?api=1&query=SENJA+Wellness+at+Selong+Selo+Selong+Belanak+Lombok+Indonesia"
+      },
+      "publicationStatus": "published",
+      "availabilityNote": "Ask the team about appointments and access if you are not staying at Selong Selo. Sources differ on the yoga shala’s status, so no current yoga classes are listed here.",
+      "profileTemplate": "source-v1",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://senja.selongselo.com/",
+          "https://selogroup.co/wellness/",
+          "https://selongselo.com/from-sydney-to-south-lombok-chef-corey-costelloe/"
+        ],
+        "note": "Published for massage/bodywork only, supported by the resort operator’s wellness page. Yoga sources conflict; no active yoga category. Non-resident access by enquiry.",
+        "contactFieldsChecked": [
+          "website",
+          "email",
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      }
+    },
+    {
+      "id": 26,
+      "name": "Seri Resort — Spa & Retreat Space",
+      "region": "Gili Meno",
+      "description": "Massage services and a space for hosting yoga retreats on Gili Meno, with current bookings arranged through the resort.",
+      "image": "",
+      "lat": null,
+      "lng": null,
+      "categories": [
+        "Massage",
+        "Retreats"
+      ],
+      "website": "https://www.seriresortgilimeno.com/activities",
+      "logoText": "SR",
+      "slug": "seri-resort-spa-retreat-space-gili-meno",
+      "url": "/facilitators/seri-resort-spa-retreat-space-gili-meno/",
+      "profileLead": "Massage services and a space for hosting yoga retreats on Gili Meno, with current bookings arranged through the resort.",
+      "overview": "Seri Resort describes massage treatments, a bamboo space for personal yoga practice and facilities for hosting retreats or teacher training. This is one resort listing, including the Amber space, rather than a separate studio with a verified public class timetable.",
+      "about": "Seri Resort describes massage treatments, a bamboo space for personal yoga practice and facilities for hosting retreats or teacher training. This is one resort listing, including the Amber space, rather than a separate studio with a verified public class timetable.",
+      "practicesIntro": "Explore the relevant offerings below and use the provider’s current information to plan your visit.",
+      "location": "Seri Resort, Gili Meno, Gili Indah, Pemenang, North Lombok, Indonesia",
+      "gallery": [],
+      "offerings": [
+        "Massage",
+        "Retreat hosting",
+        "Yoga space hire",
+        "Private practice space"
+      ],
+      "stats": [],
+      "highlights": [],
+      "reasons": [],
+      "links": {
+        "website": "https://www.seriresortgilimeno.com/activities",
+        "booking": "https://www.seriresortgilimeno.com/contact",
+        "instagram": "",
+        "facebook": "",
+        "whatsapp": "https://wa.me/6282237596677",
+        "email": "info@seriresortgilimeno.com",
+        "map": "https://www.google.com/maps/search/?api=1&query=Seri+Resort+%E2%80%94+Spa+%26+Retreat+Space+Gili+Meno+Lombok+Indonesia"
+      },
+      "publicationStatus": "published",
+      "availabilityNote": "The advertised daily-yoga dates ended in February 2026. No current public yoga classes are claimed here. Confirm massage availability, space access and retreat arrangements directly.",
+      "profileTemplate": "source-v1",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://www.seriresortgilimeno.com/activities",
+          "https://www.seriresortgilimeno.com/events",
+          "https://www.seriresortgilimeno.com/contact"
+        ],
+        "note": "Published for massage and retreat venue only. No current public yoga schedule claimed. Official contact page supplies email and WhatsApp.",
+        "contactFieldsChecked": [
+          "website",
+          "email",
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      }
     }
   ],
   "events": [

@@ -1,6 +1,6 @@
 {
   "reviewDate": "2026-11-17",
-  "scope": "New providers absent from the 15-record source directory; research only, no outreach and no new public profiles.",
+  "scope": "11 researched candidates: 10 published on 17 November 2026; Jaya Villa remains pending. Public offerings are limited to what sources support. Outreach records are kept outside the public repository.",
   "candidates": [
     {
       "name": "Rascals Yoga",
@@ -13,17 +13,27 @@
       "sources": [
         "https://www.rascalskutalombok.com/yoga",
         "https://www.rascalskutalombok.com/yoga-class-booking",
-        "https://www.rascalskutalombok.com/service-page/community-breathwork-meditation"
+        "https://www.rascalskutalombok.com/service-page/community-breathwork-meditation",
+        "https://lombokdispatch.id/places-to-stay-in-kuta-lombok/",
+        "https://www.holidaycheck.de/hi/rascals-hotel/4bc3d469-fb22-473b-8124-bc034b81ea2e"
       ],
       "contact": {
         "booking": "https://www.rascalskutalombok.com/yoga-class-booking",
-        "phone": "+62 821 4535 4865"
+        "phone": "+62 821 4535 4865",
+        "email": "info@rascalskutalombok.com",
+        "whatsapp": "https://wa.me/6282145354865"
       },
       "note": "Official yoga and booking pages describe public classes, with a separate breathwork/meditation session. Check current booking slots; adults-only venue.",
-      "status": "ready_for_profile_draft",
+      "status": "published",
       "checkedAt": "2026-11-17",
-      "published": false,
-      "confirmedByProvider": false
+      "published": true,
+      "confirmedByProvider": false,
+      "profileUrl": "/facilitators/rascals-yoga-kuta-lombok/",
+      "publishedCategories": [
+        "Yoga",
+        "Breathwork",
+        "Meditation"
+      ]
     },
     {
       "name": "Zora Yoga",
@@ -40,10 +50,14 @@
         "whatsapp": "https://wa.me/6282147925613"
       },
       "note": "Official class and contact pages; address Jl. Raya Kuta No.5. Include yoga; do not infer sound healing or other ceremonies from the general events label.",
-      "status": "ready_for_profile_draft",
+      "status": "published",
       "checkedAt": "2026-11-17",
-      "published": false,
-      "confirmedByProvider": false
+      "published": true,
+      "confirmedByProvider": false,
+      "profileUrl": "/facilitators/zora-yoga-kuta-lombok/",
+      "publishedCategories": [
+        "Yoga"
+      ]
     },
     {
       "name": "Ola Ola Lombok",
@@ -60,10 +74,14 @@
         "booking": "https://olaolalombok.com/yoga/"
       },
       "note": "Official page describes yoga and mat Pilates, with drop-in access. Two different phone/WhatsApp numbers appear; use published email and booking page until the WhatsApp number is clarified.",
-      "status": "ready_for_profile_draft",
+      "status": "published",
       "checkedAt": "2026-11-17",
-      "published": false,
-      "confirmedByProvider": false
+      "published": true,
+      "confirmedByProvider": false,
+      "profileUrl": "/facilitators/ola-ola-yoga-selong-belanak/",
+      "publishedCategories": [
+        "Yoga"
+      ]
     },
     {
       "name": "Puri Mas Spa & Wellness Center",
@@ -81,10 +99,16 @@
         "whatsapp": "https://wa.me/6287865615553"
       },
       "note": "Official page explicitly welcomes outside spa guests by appointment and outside yoga visitors. Keep spa location separate from beach resort; confirm current classes directly.",
-      "status": "ready_for_profile_draft",
+      "status": "published",
       "checkedAt": "2026-11-17",
-      "published": false,
-      "confirmedByProvider": false
+      "published": true,
+      "confirmedByProvider": false,
+      "profileUrl": "/facilitators/puri-mas-spa-wellness-senggigi/",
+      "publishedCategories": [
+        "Yoga",
+        "Meditation",
+        "Massage"
+      ]
     },
     {
       "name": "Xanadu Surf & Yoga",
@@ -102,10 +126,15 @@
         "booking": "https://xanadusurf.com/contact/"
       },
       "note": "Two locations under one operator: Village and Boutique Retreat. Present as one provider with two venues, primarily stay/retreat packages. Do not promise drop-in access. Email address is also corroborated by Indonesia’s tourism authority.",
-      "status": "ready_for_profile_draft",
+      "status": "published",
       "checkedAt": "2026-11-17",
-      "published": false,
-      "confirmedByProvider": false
+      "published": true,
+      "confirmedByProvider": false,
+      "profileUrl": "/facilitators/xanadu-surf-yoga-kuta-lombok/",
+      "publishedCategories": [
+        "Yoga",
+        "Retreats"
+      ]
     },
     {
       "name": "GLAZE House of Wellness",
@@ -115,17 +144,23 @@
       ],
       "sources": [
         "https://www.glazehouseofwellness.com/",
-        "https://glazehouseofwellness.com/menu"
+        "https://glazehouseofwellness.com/menu",
+        "https://id.linkedin.com/jobs/view/spa-supervisor-at-glaze-spa-lombok-4461703522"
       ],
       "contact": {
         "whatsapp": "https://wa.me/6282313019528",
-        "instagram": "https://www.instagram.com/glazelombok/"
+        "instagram": "https://www.instagram.com/glazelombok/",
+        "email": "info@glaze-spa.com"
       },
       "note": "Official site and treatment menu support massage/bodywork. Include relevant treatments; do not label beauty treatments as Reiki, breathwork or sound healing. Verify exact map pin before mapping.",
-      "status": "ready_for_profile_draft",
+      "status": "published",
       "checkedAt": "2026-11-17",
-      "published": false,
-      "confirmedByProvider": false
+      "published": true,
+      "confirmedByProvider": false,
+      "profileUrl": "/facilitators/glaze-house-of-wellness-kuta-lombok/",
+      "publishedCategories": [
+        "Massage"
+      ]
     },
     {
       "name": "XENO FIT Lombok",
@@ -141,10 +176,14 @@
         "whatsapp": "https://wa.me/6281239704735"
       },
       "note": "Fitness venue with explicitly scheduled yoga and Pilates. Include only relevant yoga offering; use current schedule link rather than copying weekly hours into the site.",
-      "status": "ready_for_profile_draft",
+      "status": "published",
       "checkedAt": "2026-11-17",
-      "published": false,
-      "confirmedByProvider": false
+      "published": true,
+      "confirmedByProvider": false,
+      "profileUrl": "/facilitators/xeno-fit-yoga-kuta-lombok/",
+      "publishedCategories": [
+        "Yoga"
+      ]
     },
     {
       "name": "maoMeno Yoga Resort",
@@ -164,10 +203,15 @@
         "booking": "https://www.mao-meno.com/contact"
       },
       "note": "Official site links yoga, retreat hosting and a schedule PDF. Contact page and footer list different phone numbers; use email. PDF has no current date, so confirm timetable before publishing specific sessions.",
-      "status": "ready_for_profile_draft",
+      "status": "published",
       "checkedAt": "2026-11-17",
-      "published": false,
-      "confirmedByProvider": false
+      "published": true,
+      "confirmedByProvider": false,
+      "profileUrl": "/facilitators/maomeno-yoga-resort-gili-meno/",
+      "publishedCategories": [
+        "Yoga",
+        "Retreats"
+      ]
     },
     {
       "name": "SENJA Wellness at Selong Selo",
@@ -176,16 +220,23 @@
         "Massage"
       ],
       "sources": [
-        "https://senja.selongselo.com/"
+        "https://senja.selongselo.com/",
+        "https://selogroup.co/wellness/",
+        "https://selongselo.com/from-sydney-to-south-lombok-chef-corey-costelloe/"
       ],
       "contact": {
-        "whatsapp": "https://wa.me/6281238135552"
+        "whatsapp": "https://wa.me/6281238135552",
+        "email": "reservations@selongselo.com"
       },
       "note": "Massage/bodywork described on official page; dedicated yoga shala explicitly marked coming soon. Confirm outside-guest access. Do not publish as an operating yoga studio.",
-      "status": "needs_availability_check",
+      "status": "published",
       "checkedAt": "2026-11-17",
-      "published": false,
-      "confirmedByProvider": false
+      "published": true,
+      "confirmedByProvider": false,
+      "profileUrl": "/facilitators/senja-wellness-selong-selo/",
+      "publishedCategories": [
+        "Massage"
+      ]
     },
     {
       "name": "Jaya Villa Resort Spa & Yoga",
@@ -219,16 +270,24 @@
       ],
       "sources": [
         "https://www.seriresortgilimeno.com/activities",
-        "https://www.seriresortgilimeno.com/events"
+        "https://www.seriresortgilimeno.com/events",
+        "https://www.seriresortgilimeno.com/contact"
       ],
       "contact": {
-        "contactPage": "https://www.seriresortgilimeno.com/activities"
+        "contactPage": "https://www.seriresortgilimeno.com/activities",
+        "email": "info@seriresortgilimeno.com",
+        "whatsapp": "https://wa.me/6282237596677"
       },
       "note": "Official daily-yoga dates cover 26 January–28 February 2026, already past. Current page supports massage and private-practice/retreat space, not a verified November public class schedule. Do not create a separate duplicate Amber provider.",
-      "status": "needs_availability_check",
+      "status": "published",
       "checkedAt": "2026-11-17",
-      "published": false,
-      "confirmedByProvider": false
+      "published": true,
+      "confirmedByProvider": false,
+      "profileUrl": "/facilitators/seri-resort-spa-retreat-space-gili-meno/",
+      "publishedCategories": [
+        "Massage",
+        "Retreats"
+      ]
     }
   ]
 }

@@ -98,3 +98,8 @@ After upload, check these URLs:
 /holistic-travel-guides/best-holistic-things-to-do-in-lombok-after-bali.html
 /holistic-travel-guides/tetebatu-lombok-nature-meditation-slow-travel.html
 ```
+
+
+## Source-reviewed provider profiles
+
+New profiles with `profileTemplate: "source-v1"` are generated from `data/facilitators.json` using `python3 scripts/render-source-profiles.py`. Update the same provider in `data/site-data.js`, then rerun the renderer. Custom legacy profiles are preserved. Public source checks are not provider confirmations. Do not add seasonal classes or guessed map coordinates as verified availability.

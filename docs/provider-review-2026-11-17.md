@@ -2,7 +2,11 @@
 
 Controledatum: **17 november 2026**.
 
-## Resultaat
+## Update na publicatie van nieuwe aanbieders
+
+Op 17 november zijn 10 nieuwe profielen toegevoegd, zodat er nu 23 actieve aanbieders zijn. De acht oorspronkelijke profielkandidaten zijn gepubliceerd, plus SENJA voor massage/bodywork en Seri Resort voor massage en retreatruimte. De aanvullende eigen bronnen onderbouwen die beperktere aanbiedingen. Actuele yogalessen worden bij SENJA en Seri niet geclaimd. Jaya Villa blijft apart totdat opening en aanbod zijn opgehelderd.
+
+## Resultaat van de eerste controle
 
 - 15 bestaande vermeldingen beoordeeld: 10 via openbare eigen bronnen, 3 met beperkingen en 2 apart gezet.
 - 13 vermeldingen blijven actief; de 2 twijfelachtige vermeldingen staan niet meer in overzicht, kaart of sitemap. Hun oude pagina toont een controlebericht met noindex.
