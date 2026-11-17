@@ -125,7 +125,9 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider.",
+      "contentSubmitted": true,
+      "editorialOrder": 0
     },
     {
       "id": 13,
@@ -227,14 +229,16 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider.",
+      "contentSubmitted": true,
+      "editorialOrder": 1
     },
     {
       "id": 1,
       "name": "Ashtari Yoga & Retreat",
       "region": "Kuta Lombok",
       "description": "Welcome to Ashtari Yoga in Kuta Lombok! Daily yoga classes, retreats, teacher trainings and private holistic services in a beautiful hillside sanctuary with sea views.",
-      "image": "https://ashtari.yoga/wp-content/uploads/2024/11/Restaurant-1000x550-webp.webp",
+      "image": "/assets/images/providers/ashtari-yoga-kuta-lombok.webp",
       "lat": -8.9079,
       "lng": 116.2766,
       "categories": [
@@ -336,14 +340,15 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider.",
+      "imageSource": "https://static.wixstatic.com/media/41788a_43bbb5a7c77e43558a77bbeb74961758~mv2.png"
     },
     {
       "id": 2,
       "name": "Mana Yoga Retreat",
       "region": "Kuta Lombok",
       "description": "Mana Retreat Lombok is located in Kuta, Lombok. We have yoga classes every day, a cinema, spa, restaurant and an incredible array of places to stay.",
-      "image": "https://manalombok.com/wp-content/uploads/2024/09/Mana-Lombok-Yoga-and-Retreats-24.webp",
+      "image": "/assets/images/providers/mana-yoga-retreat-kuta-lombok.webp",
       "lat": -8.8927,
       "lng": 116.2839,
       "categories": [
@@ -446,14 +451,15 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider.",
+      "imageSource": "https://manalombok.com/wp-content/uploads/2024/09/Mana-Lombok-Yoga-and-Retreats-17.webp"
     },
     {
       "id": 3,
       "name": "Cocoon Healing Lombok",
       "region": "Kuta Lombok",
       "description": "Retreat venue and accommodation near Kuta. On-site physical treatments are currently paused; enquire about Reiki and sound sessions before visiting.",
-      "image": "https://cocoon-healing.com/media/pages/home/start/cocoon-healing-hut/7936fb86a0-1641236941/chillipictures-lombok-drop-in-surf-camp-108-400x.jpg",
+      "image": "/assets/images/providers/cocoon-healing-hut-kuta-lombok.webp",
       "lat": -8.8955,
       "lng": 116.281,
       "categories": [
@@ -538,14 +544,15 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "The provider reports that on-site physical treatments are paused during restructuring. Please email to confirm whether Reiki, sound sessions or retreat stays are currently available."
+      "availabilityNote": "The provider reports that on-site physical treatments are paused during restructuring. Please email to confirm whether Reiki, sound sessions or retreat stays are currently available.",
+      "imageSource": "https://cocoon-healing.com/media/pages/home/start/cocoon-healing-hut/7936fb86a0-1641236941/chillipictures-lombok-drop-in-surf-camp-108-400x.jpg"
     },
     {
       "id": 4,
       "name": "Shanti Holistic Wellness Lombok",
       "region": "Kuta Lombok",
       "description": "Private yoga, Reiki, sound healing and cacao sessions in Lombok, by appointment. No fixed studio timetable; confirm the meeting place directly.",
-      "image": "",
+      "image": "/assets/images/providers/shanti-yoga-lombok-kuta-lombok.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -641,14 +648,15 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "By appointment only. There is no fixed studio timetable. Please agree on the location directly; the former Jivana Resort address is no longer presented as the studio address."
+      "availabilityNote": "By appointment only. There is no fixed studio timetable. Please agree on the location directly; the former Jivana Resort address is no longer presented as the studio address.",
+      "imageSource": "https://shantiyogalombok.com/wp-content/uploads/2022/10/Shanti-Yoga-Shala-Lombok-scaled.jpg"
     },
     {
       "id": 5,
       "name": "Ikara Yoga",
       "region": "Kuta Lombok",
       "description": "IKARA Yoga is the first and only Traditional Ashtanga Yoga studio & retreat in Lombok, a paradise-like island in Indonesia.",
-      "image": "",
+      "image": "/assets/images/providers/ikara-yoga-kuta-lombok.webp",
       "lat": -8.891,
       "lng": 116.2805,
       "categories": [
@@ -743,14 +751,15 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "The studio and reservation number are corroborated by Indonesia’s tourism website. Its own website could not be read during this review; confirm the current schedule directly."
+      "availabilityNote": "The studio and reservation number are corroborated by Indonesia’s tourism website. Its own website could not be read during this review; confirm the current schedule directly.",
+      "imageSource": "https://www.ikarayoga.com/wp-content/uploads/2020/10/3-scaled.jpg"
     },
     {
       "id": 7,
       "name": "My Spa Lombok",
       "region": "Kuta Lombok",
       "description": "My Spa Lombok provides a wide selection of spa & beauty services including massage therapy, body treatments, bathing treatments, hair and beauty services.",
-      "image": "https://myspalombok.com/img/carousel/traditional-massage-therapy-myspa-kuta-lombok.jpg",
+      "image": "/assets/images/providers/my-spa-lombok-kuta-mandalika.webp",
       "lat": -8.8898,
       "lng": 116.2812,
       "categories": [
@@ -849,45 +858,71 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider.",
+      "imageSource": "https://myspalombok.com/img/carousel/webp/MY%20SPA-25.webp"
     },
     {
       "id": 8,
       "name": "Flowers & Fire",
       "region": "Gili Air",
-      "description": "Our yoga classes at Flowers & Fire cater to a variety of styles and levels – from first-timers to experienced yogis – in our beautiful garden and seaside locations.",
-      "image": "https://flowersandfire.yoga/wp-content/uploads/2020/02/Copy-of-Mosalik-studios-873.jpg",
+      "description": "Two unique yoga studios, daily classes, workshops and a welcoming wellness community on Gili Air.",
+      "image": "/assets/images/flowers-and-fire/flowers-fire-01.webp",
       "lat": -8.3604,
       "lng": 116.082,
       "categories": [
         "Yoga",
         "Meditation",
-        "Cacao ceremony"
+        "Breathwork",
+        "Sound healing",
+        "Cacao ceremony",
+        "Retreats"
       ],
       "website": "https://flowersandfire.yoga/",
       "logoDomain": "flowersandfire.yoga",
       "logoText": "F",
       "slug": "flowers-and-fire-gili-air",
       "url": "/facilitators/flowers-and-fire-gili-air/",
-      "profileLead": "A soulful island yoga space with both a garden studio and a seaside location, offering classes for first-timers through experienced yogis.",
-      "overview": "Flowers & Fire offers yoga in both a treehouse garden studio and a beachfront setting on Gili Air, with classes, workshops and a distinctly soulful island feel.",
-      "about": "Flowers & Fire runs yoga classes across two distinct island settings on Gili Air: a treehouse-style yoga garden and a seaside location. The approach is open and accessible, with an emphasis on soulful practice, breath and ease rather than performance.",
-      "practicesIntro": "A yoga profile with more atmosphere, softness and island character.",
+      "profileLead": "Flowers & Fire is a wellness and community hub on Gili Air, offering daily yoga classes, workshops, breathwork, sound healing, wholesome food and meaningful connections across two unique island studios.",
+      "overview": "Home to the open-air Yoga Garden and oceanfront Seaside Yoga Studio. Alongside daily yoga, discover breathwork, sound healing, cacao ceremonies, workshops, community events, vegetarian food and accommodation.",
+      "about": "Flowers & Fire is a wellness and community space on Gili Air, offering daily yoga classes across two unique island studios: the lush, open-air Yoga Garden and the oceanfront Seaside Yoga Studio. More than just a place to practise yoga, Flowers & Fire brings together movement, mindfulness, connection, nourishing food, workshops and island living in a welcoming environment for travellers, residents and retreat guests alike.",
+      "practicesIntro": "Daily yoga, workshops, healing experiences and community events across two distinctive Gili Air locations.",
       "location": "Flowers & Fire Yoga Garden and Seaside Yoga, Gili Air, Lombok, Indonesia",
       "gallery": [
-        "https://flowersandfire.yoga/wp-content/uploads/2020/02/Copy-of-Mosalik-studios-873.jpg"
+        "/assets/images/flowers-and-fire/flowers-fire-01.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-04.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-06.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-07.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-08.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-10.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-11.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-12.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-13.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-14.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-15.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-16.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-02.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-03.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-05.webp",
+        "/assets/images/flowers-and-fire/flowers-fire-09.webp"
       ],
       "offerings": [
         "Yoga",
         "Meditation",
-        "Cacao ceremony",
+        "Breathwork",
+        "Sound healing",
+        "Cacao ceremonies",
         "Workshops",
-        "Breath-led movement",
-        "Garden studio",
-        "Seaside yoga",
-        "Daily yoga",
-        "Sunrise and sunset classes",
-        "Community events"
+        "Community events",
+        "Yoga Garden",
+        "Seaside Yoga",
+        "Daily classes",
+        "Sunrise yoga",
+        "Sunset yoga",
+        "Wellness community",
+        "Beginner friendly",
+        "Yoga retreat experience",
+        "Vegetarian café",
+        "Accommodation"
       ],
       "stats": [
         {
@@ -905,30 +940,34 @@ window.HTL_DATA = {
       ],
       "highlights": [
         {
-          "title": "Two practice settings",
-          "text": "Garden and seaside spaces create different atmospheres across the day."
+          "title": "Two unique studios",
+          "text": "Practise in a bamboo treehouse surrounded by tropical gardens or beside the ocean with expansive sea views."
         },
         {
-          "title": "Accessible classes",
-          "text": "The studio welcomes everyone from beginners to experienced yogis."
+          "title": "Yoga for every level",
+          "text": "From complete beginners to experienced practitioners, classes are designed to be accessible, supportive and inclusive."
         },
         {
-          "title": "Island rhythm",
-          "text": "Workshops and special sessions sit naturally within Gili Air’s slower pace."
+          "title": "Workshops & community",
+          "text": "Sound healing, breathwork, cacao ceremonies and community gatherings create opportunities to explore beyond the yoga mat."
         }
       ],
       "reasons": [
         {
-          "title": "Clear offering",
-          "text": "A useful starting point for travelers looking for this kind of holistic experience."
+          "title": "Daily yoga for all levels",
+          "text": "A variety of classes welcomes beginners and experienced practitioners."
         },
         {
-          "title": "Local connection",
-          "text": "A profile that helps visitors discover what is available in Lombok."
+          "title": "Wellness beyond yoga",
+          "text": "Enjoy nourishing wholefood meals, community gatherings and spaces for a slower island lifestyle."
         },
         {
-          "title": "Check direct details",
-          "text": "Always confirm current schedules, prices and availability with the facilitator."
+          "title": "A welcoming community",
+          "text": "Travellers, retreat guests, digital nomads, families and island residents come together in an inclusive environment."
+        },
+        {
+          "title": "The Gili Air experience",
+          "text": "Two distinctive studios on a peaceful, car-free island, with space for movement, nature and connection."
         }
       ],
       "links": {
@@ -937,7 +976,7 @@ window.HTL_DATA = {
         "facebook": "https://www.facebook.com/flowersandfiregiliair/",
         "whatsapp": "",
         "email": "flowersandfireyoga@gmail.com",
-        "map": "https://maps.google.com/?q=Flowers+and+Fire+Yoga+Gili+Air"
+        "map": "https://maps.app.goo.gl/WtP6xgwXLHemonoi7"
       },
       "publicationStatus": "published",
       "review": {
@@ -947,21 +986,34 @@ window.HTL_DATA = {
           "https://flowersandfire.yoga/",
           "https://flowersandfire.yoga/contact-2/"
         ],
-        "note": "Official site confirms two Gili Air yoga locations and public email/telephone. Added email. Confirm ceremony availability through current event listings.",
+        "note": "Profile copy, practice descriptions, two location links and photographs supplied by Flowers & Fire; processed 17 November 2026. Confirm current schedules directly.",
         "contactFieldsChecked": [
           "website",
           "email"
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider.",
+      "contentSubmitted": true,
+      "editorialOrder": 2,
+      "imageSource": "Provider-supplied photographs",
+      "locations": [
+        {
+          "name": "Yoga Garden",
+          "map": "https://maps.app.goo.gl/WtP6xgwXLHemonoi7"
+        },
+        {
+          "name": "Seaside Yoga Studio",
+          "map": "https://maps.app.goo.gl/GTEaDvq6yhZUd9Nd9"
+        }
+      ]
     },
     {
       "id": 9,
       "name": "H2O Yoga & Meditation",
       "region": "Gili Air",
       "description": "H2O Yoga and Meditation Center on Gili Air offers daily yoga classes, meditation, interactive workshops, a health-conscious café, massage and holistic healing treatments.",
-      "image": "https://www.h2oyogaandmeditation.com/wp-content/uploads/2018/04/front-logo-copy-1.png",
+      "image": "/assets/images/providers/h2o-yoga-and-meditation-gili-air.webp",
       "lat": -8.3587,
       "lng": 116.0824,
       "categories": [
@@ -1065,14 +1117,15 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider.",
+      "imageSource": "https://www.h2oyogaandmeditation.com/wp-content/uploads/2018/04/front-logo-copy-1.png"
     },
     {
       "id": 10,
       "name": "Slow Spa & Yoga",
       "region": "Gili Air",
       "description": "At Slow Spa we offer different types of yoga classes and an array of treatments ranging from soothing massages to rejuvenating facials in a serene setting.",
-      "image": "",
+      "image": "/assets/images/providers/slow-spa-and-yoga-gili-air.webp",
       "lat": -8.3575,
       "lng": 116.0815,
       "categories": [
@@ -1165,14 +1218,15 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider.",
+      "imageSource": "https://slowgiliair.com/wp-content/uploads/2024/05/slow-spa.jpg"
     },
     {
       "id": 11,
       "name": "Gili Yoga",
       "region": "Gili Trawangan",
       "description": "Gili Trawangan’s original yoga & breathwork oasis. Daily classes in our garden studio just steps from the beach.",
-      "image": "https://images.squarespace-cdn.com/content/v1/65cae9c98c445d6af1178fc7/f25885b4-6a61-4145-b4c8-5a4e737868a9/426988832.jpg",
+      "image": "/assets/images/providers/gili-yoga-gili-trawangan.webp",
       "lat": -8.3465,
       "lng": 116.0385,
       "categories": [
@@ -1267,7 +1321,8 @@ window.HTL_DATA = {
         ],
         "confirmedByProvider": false
       },
-      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider.",
+      "imageSource": "https://images.squarespace-cdn.com/content/v1/65cae9c98c445d6af1178fc7/f25885b4-6a61-4145-b4c8-5a4e737868a9/426988832.jpg"
     },
     {
       "id": 14,
@@ -1471,7 +1526,7 @@ window.HTL_DATA = {
       "name": "Ingeborg Leonoor",
       "region": "Lombok · location by enquiry",
       "description": "Reiki and breathwork facilitator associated with Lombok. Current session availability and meeting place need direct confirmation.",
-      "image": "https://static.wixstatic.com/media/7205a5_3de46b15906b45d5bec8c7cc9481437d~mv2.jpg/v1/fill/w_490,h_397,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/7205a5_3de46b15906b45d5bec8c7cc9481437d~mv2.jpg",
+      "image": "/assets/images/providers/ingeborg-leonoor-lombok.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -1553,14 +1608,15 @@ window.HTL_DATA = {
         "contactFieldsChecked": [],
         "confirmedByProvider": false
       },
-      "availabilityNote": "The provider’s website was unavailable during this review. A venue partner corroborates Reiki and breathwork, but current sessions and location still need confirmation."
+      "availabilityNote": "The provider’s website was unavailable during this review. A venue partner corroborates Reiki and breathwork, but current sessions and location still need confirmation.",
+      "imageSource": "https://static.wixstatic.com/media/7205a5_3de46b15906b45d5bec8c7cc9481437d~mv2.jpg/v1/fill/w_490,h_397,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/7205a5_3de46b15906b45d5bec8c7cc9481437d~mv2.jpg"
     },
     {
       "id": 17,
       "name": "Rascals Yoga",
       "region": "Kuta Lombok",
       "description": "Yoga classes and breathwork in an adults-only garden setting in central Kuta, with a direct class-booking page.",
-      "image": "",
+      "image": "/assets/images/providers/rascals-yoga-kuta-lombok.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -1616,14 +1672,15 @@ window.HTL_DATA = {
           "whatsapp"
         ],
         "confirmedByProvider": false
-      }
+      },
+      "imageSource": "https://static.wixstatic.com/media/de3a49_b45d8dedc00d42fda9a2c4a1f282c5af~mv2.jpg"
     },
     {
       "id": 18,
       "name": "Zora Yoga",
       "region": "Kuta Lombok",
       "description": "An open-air yoga studio in central Kuta, with classes, workshops and a direct online schedule.",
-      "image": "",
+      "image": "/assets/images/providers/zora-yoga-kuta-lombok.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -1673,14 +1730,15 @@ window.HTL_DATA = {
           "whatsapp"
         ],
         "confirmedByProvider": false
-      }
+      },
+      "imageSource": "https://www.zorayogalombok.com/images/hero-sun.jpg"
     },
     {
       "id": 19,
       "name": "Ola Ola Lombok",
       "region": "Selong Belanak",
       "description": "Yoga and mat Pilates near Selong Belanak, with morning classes and drop-in options for visiting travellers.",
-      "image": "",
+      "image": "/assets/images/providers/ola-ola-yoga-selong-belanak.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -1730,14 +1788,15 @@ window.HTL_DATA = {
           "email"
         ],
         "confirmedByProvider": false
-      }
+      },
+      "imageSource": "https://cdn.sanity.io/images/tfaemik4/production/8a15131f474f7c8991be7158d98996a3597b7492-1920x500.jpg?w=2000&q=80&auto=format"
     },
     {
       "id": 20,
       "name": "Puri Mas Spa & Wellness Center",
       "region": "Kerandangan / Senggigi",
       "description": "Spa treatments, yoga and meditation in Kerandangan near Senggigi, with options for visitors who are not staying at the resort.",
-      "image": "",
+      "image": "/assets/images/providers/puri-mas-spa-wellness-senggigi.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -1789,14 +1848,15 @@ window.HTL_DATA = {
           "whatsapp"
         ],
         "confirmedByProvider": false
-      }
+      },
+      "imageSource": "https://www.purimas-lombok.com/media/puri-mas-banneredit-file.jpg"
     },
     {
       "id": 21,
       "name": "Xanadu Surf & Yoga",
       "region": "Kuta Lombok",
       "description": "Surf and yoga stays in Kuta, with two locations and dedicated yoga immersion programmes.",
-      "image": "",
+      "image": "/assets/images/providers/xanadu-surf-yoga-kuta-lombok.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -1847,14 +1907,15 @@ window.HTL_DATA = {
           "email"
         ],
         "confirmedByProvider": false
-      }
+      },
+      "imageSource": "https://xanadusurf.com/wp-content/uploads/2025/10/hero.webp"
     },
     {
       "id": 22,
       "name": "GLAZE House of Wellness",
       "region": "Kuta Lombok",
       "description": "Massage and bodywork at GLAZE House of Wellness in Kuta, with direct contact and online treatment booking.",
-      "image": "",
+      "image": "/assets/images/providers/glaze-house-of-wellness-kuta-lombok.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -1906,14 +1967,15 @@ window.HTL_DATA = {
           "whatsapp"
         ],
         "confirmedByProvider": false
-      }
+      },
+      "imageSource": "https://www.glazehouseofwellness.com/images/house-lobby.jpg"
     },
     {
       "id": 23,
       "name": "XENO FIT Lombok",
       "region": "Kuta Lombok",
       "description": "Yoga classes within a Kuta fitness and community venue, with the current weekly programme published online.",
-      "image": "",
+      "image": "/assets/images/providers/xeno-fit-yoga-kuta-lombok.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -1962,14 +2024,15 @@ window.HTL_DATA = {
           "whatsapp"
         ],
         "confirmedByProvider": false
-      }
+      },
+      "imageSource": "https://xenolombok.com/assets/tropical-bamboo-interior.webp"
     },
     {
       "id": 24,
       "name": "maoMeno Yoga Resort",
       "region": "Gili Meno",
       "description": "A yoga and retreat space in the south of Gili Meno, with classes, private sessions and retreat-hosting information.",
-      "image": "",
+      "image": "/assets/images/providers/maomeno-yoga-resort-gili-meno.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -2023,14 +2086,15 @@ window.HTL_DATA = {
           "email"
         ],
         "confirmedByProvider": false
-      }
+      },
+      "imageSource": "https://static.wixstatic.com/media/5a465b_d40314f118d5476e93dc913fce27af12~mv2.jpg"
     },
     {
       "id": 25,
       "name": "SENJA Wellness at Selong Selo",
       "region": "Selong Belanak",
       "description": "Massage and bodywork within Selong Selo Resort, in the hills above the Selong Belanak area.",
-      "image": "",
+      "image": "/assets/images/providers/senja-wellness-selong-selo.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -2081,14 +2145,15 @@ window.HTL_DATA = {
           "whatsapp"
         ],
         "confirmedByProvider": false
-      }
+      },
+      "imageSource": "https://senja.selongselo.com/wp-content/uploads/2024/10/Therapeutic-Massage_1440px-1024x473.webp"
     },
     {
       "id": 26,
       "name": "Seri Resort — Spa & Retreat Space",
       "region": "Gili Meno",
       "description": "Massage services and a space for hosting yoga retreats on Gili Meno, with current bookings arranged through the resort.",
-      "image": "",
+      "image": "/assets/images/providers/seri-resort-spa-retreat-space-gili-meno.webp",
       "lat": null,
       "lng": null,
       "categories": [
@@ -2141,7 +2206,8 @@ window.HTL_DATA = {
           "whatsapp"
         ],
         "confirmedByProvider": false
-      }
+      },
+      "imageSource": "https://framerusercontent.com/images/b0yMEEOPG65mLGrZ9umvc3EkWtc.jpg"
     }
   ],
   "events": [

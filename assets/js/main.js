@@ -1,6 +1,6 @@
 (function(){
 const sourceData = window.HTL_DATA || { facilitators: [], events: [], categories: [] };
-const data = { ...sourceData, facilitators: sourceData.facilitators.filter(f => f.publicationStatus !== "review") };
+const data = { ...sourceData, facilitators: sourceData.facilitators.filter(f => f.publicationStatus !== "review").sort((a,b) => Number(!!b.contentSubmitted)-Number(!!a.contentSubmitted) || (a.editorialOrder ?? 99)-(b.editorialOrder ?? 99)) };
 const availableCategories = data.categories.filter(cat => data.facilitators.some(f => f.categories.includes(cat)));
 const $ = (sel, root=document) => root.querySelector(sel);
 const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
