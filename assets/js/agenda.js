@@ -21,7 +21,9 @@
   function formatDate(value) {
     return new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', year:'numeric', timeZone:'UTC'}).format(new Date(value+'T12:00:00Z'));
   }
-  const logic = {localNow, isUpcoming, isCurrent, withinRange};
+  function matchesPractice(item, practice) { return !practice || (item.practices || [item.type]).includes(practice); }
+  const logic = {localNow, isUpcoming, isCurrent, withinRange, matchesPractice};
+  if (typeof window !== 'undefined') window.HTLAgendaLogic = logic;
   if (typeof module !== 'undefined' && module.exports) module.exports = logic;
   if (typeof document === 'undefined' || !document.querySelector('.agenda-page')) return;
   const data = window.HTL_AGENDA;
@@ -31,16 +33,17 @@
   const params = new URLSearchParams(location.search);
   let tab = params.get('view') === 'events' ? 'events' : 'weekly';
   let day = 'all';
-  const search = $('#agenda-search'), area = $('#agenda-area'), type = $('#agenda-type');
+  const search = $('#agenda-search'), area = $('#agenda-area'), type = $('#agenda-type'), practice = $('#agenda-practice');
   const from = $('#agenda-from'), to = $('#agenda-to');
   search.value = params.get('q') || '';
+  if (Array.from(practice.options).some(o => o.value === params.get('practice'))) practice.value = params.get('practice');
   if (Array.from(area.options).some(o => o.value === params.get('area'))) area.value = params.get('area');
   const tabs = Array.from(document.querySelectorAll('[data-agenda-tab]'));
   const empty = '<div class="agenda-empty"><h3>No matching listings yet.</h3><p>Try another day, area or activity, or reset the filters. The studios below may have more sessions in their own timetable.</p><button type="button" class="agenda-reset" data-empty-reset>Reset filters</button></div>';
   function matches(item) {
     const f = providers.get(item.facilitatorId);
     const text = [item.title, item.location, item.summary, f?.name, f?.region].join(' ').toLowerCase();
-    return (!search.value.trim() || text.includes(search.value.trim().toLowerCase())) && (!area.value || item.area === area.value) && (!type.value || item.type === type.value);
+    return (!search.value.trim() || text.includes(search.value.trim().toLowerCase())) && (!area.value || item.area === area.value) && (!type.value || item.type === type.value) && matchesPractice(item, practice.value);
   }
   function providerLink(item) {
     const f = providers.get(item.facilitatorId);
@@ -61,7 +64,7 @@
   function studioMatches(item) {
     const f = providers.get(item.facilitatorId);
     const q = search.value.trim().toLowerCase();
-    return (!area.value || item.area === area.value) && (!q || [f?.name, f?.region, item.summary].join(' ').toLowerCase().includes(q)) && (!type.value || f?.categories.includes(type.value) || (type.value === 'Pilates' && [2,19].includes(item.facilitatorId)));
+    return matchesPractice(item, practice.value) && (!area.value || item.area === area.value) && (!q || [f?.name, f?.region, item.summary].join(' ').toLowerCase().includes(q)) && (!type.value || f?.categories.includes(type.value) || (type.value === 'Pilates' && [2,19].includes(item.facilitatorId)));
   }
   function updateTypes() {
     const selected = type.value;
@@ -72,6 +75,9 @@
   }
   function render() {
     const now = localNow();
+    const currentUrl = new URL(location.href);
+    for (const [key,value] of [['practice',practice.value],['q',search.value],['area',area.value]]) {if(value)currentUrl.searchParams.set(key,value);else currentUrl.searchParams.delete(key);}
+    history.replaceState(null,'',currentUrl);
     const weekly = data.weekly.filter(x => isCurrent(x,now) && matches(x));
     $('[data-agenda-days]').innerHTML = [['all','All week'],...order.map(d => [String(d), days[d].slice(0,3)])].map(([value,label]) => `<button type="button" data-day="${value}" aria-pressed="${String(day===value)}">${label}</button>`).join('');
     let slots = 0;
@@ -99,10 +105,10 @@
     const url=new URL(location.href);if(tab==='events')url.searchParams.set('view','events');else url.searchParams.delete('view');history.replaceState(null,'',url);
     updateTypes();render();
   }
-  function reset() {search.value='';area.value='';type.value='';from.value='';to.value='';day='all';render();}
+  function reset() {search.value='';area.value='';type.value='';practice.value='';from.value='';to.value='';day='all';render();}
   tabs.forEach(button => {button.addEventListener('click',() => setTab(button.dataset.agendaTab));button.addEventListener('keydown',e => {if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();setTab(e.key==='Home'?'weekly':e.key==='End'?'events':tab==='weekly'?'events':'weekly',true);}});});
   $('[data-agenda-days]').addEventListener('click',e=>{const button=e.target.closest('[data-day]');if(button){day=button.dataset.day;render();}});
-  [search,area,type,from,to].forEach(input=>input.addEventListener(input===search?'input':'change',render));
+  [search,area,type,practice,from,to].forEach(input=>input.addEventListener(input===search?'input':'change',render));
   $('[data-agenda-reset]').addEventListener('click',reset);
   setTab(tab);
   // Keep a tab left open overnight current in Lombok time, without a rebuild.

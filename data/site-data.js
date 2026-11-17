@@ -2226,7 +2226,10 @@ window.HTL_DATA = {
       "summary": "A scheduled breathwork and somatic movement workshop. Book directly through Zora’s agenda.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "single"
+      "eventKind": "single",
+      "practices": [
+        "Breathwork"
+      ]
     },
     {
       "id": "xanadu-2026-11-21",
@@ -2243,7 +2246,13 @@ window.HTL_DATA = {
       "summary": "A seven-night programme with Hatha yoga, meditation, breathwork and meals. Confirm remaining places with Xanadu.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Meditation",
+        "Retreats"
+      ]
     },
     {
       "id": "zora-brunch-20261121",
@@ -2260,7 +2269,10 @@ window.HTL_DATA = {
       "summary": "A yoga and brunch event listed by Zora Yoga at Kenza’s Garden.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "single"
+      "eventKind": "single",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "id": "mana-mini-20261127",
@@ -2277,7 +2289,12 @@ window.HTL_DATA = {
       "summary": "A four-day yoga and breathwork retreat. Ask Mana about availability and accommodation options.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Retreats"
+      ]
     },
     {
       "id": "xanadu-2026-12-05",
@@ -2294,7 +2311,13 @@ window.HTL_DATA = {
       "summary": "A seven-night programme with Hatha yoga, meditation, breathwork and meals. Confirm remaining places with Xanadu.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Meditation",
+        "Retreats"
+      ]
     },
     {
       "id": "xanadu-2026-12-19",
@@ -2311,7 +2334,13 @@ window.HTL_DATA = {
       "summary": "A seven-night programme with Hatha yoga, meditation, breathwork and meals. Confirm remaining places with Xanadu.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Meditation",
+        "Retreats"
+      ]
     },
     {
       "id": "ashtari-aspire-20261221",
@@ -2328,7 +2357,10 @@ window.HTL_DATA = {
       "summary": "A six-day Hatha-based immersion with Almitra, with a 90-minute morning session each day.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "id": "xanadu-2027-01-02",
@@ -2345,7 +2377,13 @@ window.HTL_DATA = {
       "summary": "A seven-night programme with Hatha yoga, meditation, breathwork and meals. Confirm remaining places with Xanadu.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Meditation",
+        "Retreats"
+      ]
     },
     {
       "id": "xanadu-2027-01-23",
@@ -2362,7 +2400,13 @@ window.HTL_DATA = {
       "summary": "A seven-night programme with Hatha yoga, meditation, breathwork and meals. Confirm remaining places with Xanadu.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Meditation",
+        "Retreats"
+      ]
     }
   ]
 };

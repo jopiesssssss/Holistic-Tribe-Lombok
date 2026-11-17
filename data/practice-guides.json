@@ -1,0 +1,741 @@
+[
+  {
+    "slug": "yoga",
+    "name": "Yoga",
+    "category": "Yoga",
+    "heading": "Find your kind of yoga.",
+    "lead": "From a steady Hatha class to a flowing Vinyasa practice: understand the styles, choose a teacher and find yoga across Lombok and the Gili Islands.",
+    "introduction": "Yoga brings together movement, breathing, attention and, in many traditions, a wider philosophy. A studio timetable shows only part of that world. The pace, teaching approach and room for adapting a posture can matter as much as the name on the class. You do not have to be flexible to begin.",
+    "forms": [
+      {
+        "name": "Hatha",
+        "group": "Steady",
+        "description": "A posture-based class that often allows time to settle between movements.",
+        "detail": "Hatha is also a broad historical term. On modern timetables it often indicates a steadier pace, but the actual intensity depends on the teacher.",
+        "tip": "Ask how much standing work and how long the holds are."
+      },
+      {
+        "name": "Vinyasa",
+        "group": "Dynamic",
+        "description": "A flowing sequence in which movement is coordinated with breathing.",
+        "detail": "Sequences vary between teachers. Transitions can be a substantial part of the practice, so a beginner class can help you learn them without rushing.",
+        "tip": "Look for an introductory or slow-flow class for your first visit."
+      },
+      {
+        "name": "Yin",
+        "group": "Quiet",
+        "description": "Mostly floor-based postures held for longer periods.",
+        "detail": "Yin can feel physically and mentally demanding despite its slower pace. Props and a smaller range of movement can change the experience.",
+        "tip": "Choose a manageable sensation; strong pain is a reason to stop."
+      },
+      {
+        "name": "Restorative",
+        "group": "Quiet",
+        "description": "Supported positions with blankets, bolsters or blocks and little movement.",
+        "detail": "Restorative classes usually use props to make resting positions comfortable. This differs from long stretches that ask for sustained effort.",
+        "tip": "Check which props are provided."
+      },
+      {
+        "name": "Ashtanga",
+        "group": "Dynamic",
+        "description": "A structured practice built around established sequences.",
+        "detail": "A led class follows the teacher’s rhythm. A Mysore-style class usually lets students work individually with guidance; ask how newcomers are introduced.",
+        "tip": "Confirm whether the class is led or Mysore-style."
+      },
+      {
+        "name": "Private & adapted yoga",
+        "group": "Steady",
+        "description": "A session arranged around your experience, interests and practical needs.",
+        "detail": "Private tuition can make space for questions and variations. A private class is not automatically a clinical treatment or rehabilitation programme.",
+        "tip": "Explain what you want to learn before booking."
+      }
+    ],
+    "insights": [
+      {
+        "title": "The label is a starting point",
+        "text": "Two classes with the same name can differ in pace, heat and instruction. Read the class description and ask about the teacher’s approach."
+      },
+      {
+        "title": "A prop is part of the practice",
+        "text": "Blocks, straps and cushions can make a position more accessible. Using support does not make your practice less complete."
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Asana",
+        "text": "A posture or seat; in a studio class, usually the physical positions."
+      },
+      {
+        "term": "Pranayama",
+        "text": "Yoga breathing practices. Ask which technique is included, especially if holds or forceful breathing are involved."
+      },
+      {
+        "term": "Shala",
+        "text": "A place for practice or teaching; it does not describe a particular yoga style."
+      },
+      {
+        "term": "Savasana",
+        "text": "A resting posture commonly used near the end of class. You can ask for another comfortable position."
+      }
+    ],
+    "questions": [
+      "Is the class suitable for my experience, and are alternatives offered?",
+      "Is this a drop-in studio class, a private appointment or part of a stay?",
+      "Are mats and props included, and what is the cancellation policy?"
+    ],
+    "care": "An appropriately adapted class matters if you have an injury, are pregnant, have recently had surgery or have a health condition. Discuss relevant needs with the teacher and a qualified health professional when appropriate. You can skip a posture or rest at any point.",
+    "local": "Kuta has several studios with public class information. On Gili Air, check the exact Flowers & Fire studio or H2O location; on Gili Trawangan, compare Gili Yoga and Sunset Beach Yoga. A resort listing does not automatically mean outside visitors can attend. The related profiles explain access and booking arrangements.",
+    "faq": [
+      {
+        "q": "Can a beginner join yoga in Lombok?",
+        "a": "Many venues offer classes for different levels. Check the individual description and tell the teacher it is your first class."
+      },
+      {
+        "q": "Should I choose a class near my accommodation?",
+        "a": "That is often practical. Lombok and the Gili Islands are separate destinations; check the location before building a day around a class."
+      },
+      {
+        "q": "Do all listed providers teach every style in this guide?",
+        "a": "No. The style descriptions explain yoga generally. Open a provider’s timetable to see what that provider actually offers."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NCCIH · Yoga: effectiveness and safety",
+        "url": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety"
+      }
+    ],
+    "related": [
+      "meditation",
+      "breathwork",
+      "retreats"
+    ],
+    "background": "Yoga has roots in South Asian philosophical and spiritual traditions. Contemporary studio classes often emphasise postures, while other traditions place greater emphasis on meditation, ethics, devotional practice or breath. These traditions should not be reduced to a single exercise format.",
+    "updatedAt": "2026-11-17",
+    "image": "/assets/images/practices/yoga-mandala.webp"
+  },
+  {
+    "slug": "breathwork",
+    "name": "Breathwork",
+    "category": "Breathwork",
+    "heading": "Get to know the practice behind the breath.",
+    "lead": "Gentle breathing, yoga breath practices and more intensive journeys are different experiences. Learn the distinctions before choosing a session.",
+    "introduction": "Breathwork is an umbrella term for deliberately attending to or changing breathing. Some sessions simply help you notice an ordinary breath. Others use counted rhythms, pauses or faster patterns. The technique and the way it is taught matter more than an ambitious session title.",
+    "forms": [
+      {
+        "name": "Breath awareness",
+        "group": "Gentle",
+        "description": "Notice the breath without trying to change its depth or speed.",
+        "detail": "This can be part of meditation, yoga or a standalone session. The focus is observation, with permission to use another point of attention if breath feels uncomfortable.",
+        "tip": "Ask whether you can keep your eyes open or sit up."
+      },
+      {
+        "name": "Slow, comfortable breathing",
+        "group": "Gentle",
+        "description": "A guided rhythm that stays easy and unforced.",
+        "detail": "A teacher may suggest a slower pace or comfortable exhale. More effort is not necessarily more useful; a forced deep breath can feel unpleasant.",
+        "tip": "Choose a comfortable position and return to normal breathing if needed."
+      },
+      {
+        "name": "Pranayama",
+        "group": "Yoga traditions",
+        "description": "A broad family of breathing methods within yoga traditions.",
+        "detail": "Methods differ: some use alternate nostrils, while others involve holds or forceful breathing. A familiar yoga label does not make every method equally suitable.",
+        "tip": "Ask for the actual technique rather than only the Sanskrit name."
+      },
+      {
+        "name": "Connected breathing journeys",
+        "group": "Intensive",
+        "description": "Sustained connected patterns, often accompanied by music and facilitation.",
+        "detail": "Some formats use faster or deeper breathing and can produce strong physical sensations. Their screening, support and stopping options deserve careful discussion beforehand.",
+        "tip": "Ask about health screening, group size and how to pause."
+      }
+    ],
+    "insights": [
+      {
+        "title": "An intense sensation is not a target",
+        "text": "Tingling, dizziness or emotional responses do not prove that a treatment is working or that a particular trauma has been released. Tell the facilitator when something feels uncomfortable."
+      },
+      {
+        "title": "Research is method-specific",
+        "text": "A controlled study of short daily breathing exercises found changes in mood and breathing rate. That result does not establish the same effects for every breathwork workshop or a single intensive journey."
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Pacing",
+        "text": "The speed or rhythm suggested during a breathing exercise."
+      },
+      {
+        "term": "Breath retention",
+        "text": "A pause after breathing in or out. It should be explained before a session."
+      },
+      {
+        "term": "Integration",
+        "text": "Time to rest, reflect or discuss the experience after a session."
+      },
+      {
+        "term": "Consent",
+        "text": "Your ongoing choice about participation, touch and whether to stop."
+      }
+    ],
+    "questions": [
+      "What breathing pattern do you teach, and how intensive is it?",
+      "What health screening do you use, and can I choose a gentler option?",
+      "What support is available during and after the session?"
+    ],
+    "care": "Intensive breathing and breath holds are not suitable for everyone. Discuss pregnancy, cardiovascular or respiratory conditions, epilepsy, panic and relevant mental-health concerns before booking. Seek individual clinical advice where needed. Never practise intensive breathwork while driving, swimming or in water.",
+    "local": "Ashtari, Mana, Flowers & Fire and other published profiles list breathwork-related offerings. A dated workshop can appear in the agenda even when a venue’s permanent profile only lists yoga. Check the specific event description and the facilitator for that session.",
+    "faq": [
+      {
+        "q": "Is breathwork always intense?",
+        "a": "No. Breath awareness and comfortable paced breathing can be gentle. Ask which method a session uses."
+      },
+      {
+        "q": "Must I continue if I feel uncomfortable?",
+        "a": "No. A facilitator should explain how to pause, return to ordinary breathing and ask for help."
+      },
+      {
+        "q": "Does a workshop guarantee an emotional breakthrough?",
+        "a": "No. Experiences vary, and dramatic reactions are not a measure of success."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NHS · Breathing exercises for stress",
+        "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/"
+      },
+      {
+        "label": "Balban et al. · Controlled study of brief breathing practices (2023)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9873947/"
+      }
+    ],
+    "related": [
+      "yoga",
+      "meditation",
+      "sound-healing"
+    ],
+    "background": "Breath practices appear in multiple contemplative and movement traditions. Modern breathwork also includes recently developed methods. A workshop may borrow from several approaches; it is reasonable to ask the teacher to name the method and explain their training.",
+    "updatedAt": "2026-11-17",
+    "image": "/assets/images/practices/breathwork-mandala.webp"
+  },
+  {
+    "slug": "sound-healing",
+    "name": "Sound healing",
+    "category": "Sound healing",
+    "heading": "Listen closer. Discover the sound bath.",
+    "lead": "Bowls, gongs, voice or quieter instruments: explore the formats, understand the experience and find sound sessions around Lombok.",
+    "introduction": "Sound healing is commonly used as a name for sessions centred on listening and the felt experience of sound. Many are described as sound baths: participants sit or lie down while a facilitator plays instruments. The name describes an offering; it is not evidence that the session treats a medical condition.",
+    "forms": [
+      {
+        "name": "Group sound bath",
+        "group": "Group",
+        "description": "A shared listening session, usually with mats or cushions.",
+        "detail": "The room, instruments and distance from the player shape the experience. Participants can have very different responses to the same performance.",
+        "tip": "Ask about seating, volume and whether leaving quietly is possible."
+      },
+      {
+        "name": "Singing bowls",
+        "group": "Instruments",
+        "description": "Metal or crystal bowls played by striking or moving a mallet around the rim.",
+        "detail": "Different bowls and playing techniques produce different timbres and layers. A particular frequency is not proof of a specific healing effect.",
+        "tip": "Tell the facilitator about sound sensitivity in advance."
+      },
+      {
+        "name": "Gong & layered sound",
+        "group": "Instruments",
+        "description": "A session with a wider range of resonant or sustained sounds.",
+        "detail": "A gong can move from soft tones to a powerful wash of sound. Ask whether the advertised session includes louder passages.",
+        "tip": "Choose a place further from the instruments if that feels better."
+      },
+      {
+        "name": "Private sound session",
+        "group": "Individual",
+        "description": "A session arranged for one person or a small private group.",
+        "detail": "Some practitioners include instruments near the body or combine sound with other practices. Ask what is included and agree separately to touch.",
+        "tip": "Discuss the format and your boundaries before paying."
+      }
+    ],
+    "insights": [
+      {
+        "title": "Listening is enough",
+        "text": "You do not need to visualise, meditate perfectly or feel a vibration in a particular place. Sitting comfortably and listening can be the whole activity."
+      },
+      {
+        "title": "Music therapy is a separate field",
+        "text": "Research on music-based interventions does not automatically validate commercial sound-healing claims. A wellness sound bath and clinical music therapy have different aims and professional contexts."
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Sound bath",
+        "text": "An immersive listening session; no water is involved."
+      },
+      {
+        "term": "Resonance",
+        "text": "The way an object or space responds to sound. Spiritual uses of the word may mean something different."
+      },
+      {
+        "term": "Timbre",
+        "text": "The quality or character that makes one instrument sound different from another."
+      },
+      {
+        "term": "Facilitation",
+        "text": "How the host introduces, adjusts and closes the session."
+      }
+    ],
+    "questions": [
+      "Which instruments are used, and how loud can the session become?",
+      "Can I sit in a chair, move further away or leave quietly?",
+      "Does the session include touch, breathing exercises or other practices?"
+    ],
+    "care": "Tell the host about tinnitus, hearing sensitivity, sound-triggered symptoms or any concern about loud sound. Ask about volume and your distance from instruments. If a session includes other practices, check their suitability separately. Sound sessions do not replace medical or psychological care.",
+    "local": "Flowers & Fire publishes sound offerings on Gili Air, while Ashtari and Shanti describe options around Kuta. Shanti works by appointment. Cocoon’s profile carries an availability limitation; do not interpret its listing as a daily walk-in treatment schedule.",
+    "faq": [
+      {
+        "q": "Is there water in a sound bath?",
+        "a": "No. The phrase describes being surrounded by sound."
+      },
+      {
+        "q": "Will I definitely feel relaxed?",
+        "a": "No. Some people enjoy the experience; others find particular sounds distracting or uncomfortable."
+      },
+      {
+        "q": "Can I find a regular session?",
+        "a": "Where a source publishes a current weekly time, it appears below. Otherwise use the provider’s schedule or enquire directly."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NCCIH · Music and health: scope and evidence",
+        "url": "https://www.nccih.nih.gov/health/music-and-health-what-you-need-to-know"
+      }
+    ],
+    "related": [
+      "meditation",
+      "reiki",
+      "breathwork"
+    ],
+    "background": "Listening, singing and instrumental sound have many cultural and ceremonial histories. Today’s studio sound baths can combine instruments from different settings. A modern mixed-instrument session should not be described as one single ancient tradition without a specific source.",
+    "updatedAt": "2026-11-17",
+    "image": "/assets/images/practices/sound-healing-mandala.webp"
+  },
+  {
+    "slug": "reiki",
+    "name": "Reiki",
+    "category": "Reiki",
+    "heading": "Understand Reiki before your first session.",
+    "lead": "A quiet, usually fully clothed session with light touch or hands held nearby. Discover the approach and the questions worth asking.",
+    "introduction": "Reiki is a complementary practice in which practitioners place their hands lightly on or just above a person’s body. Practitioners commonly describe it in terms of energy. That is part of the tradition’s explanation, rather than an established scientific mechanism.",
+    "forms": [
+      {
+        "name": "Hands-on session",
+        "group": "In person",
+        "description": "Light hand placement, usually while you rest fully clothed.",
+        "detail": "The practitioner should explain where their hands may be placed and ask your permission. You can exclude any area without having to justify your decision.",
+        "tip": "Agree on touch and boundaries before beginning."
+      },
+      {
+        "name": "Hands-off session",
+        "group": "In person",
+        "description": "Hands are held above or near the body without direct contact.",
+        "detail": "This format may appeal if you prefer no touch. Check that the practitioner will keep to the agreed approach throughout.",
+        "tip": "Ask explicitly for a no-touch session if you want one."
+      },
+      {
+        "name": "Distance Reiki",
+        "group": "Remote",
+        "description": "A practitioner offers a session without being physically present.",
+        "detail": "This is offered within some Reiki traditions. Scientific evidence does not establish a remote energy-healing mechanism or treatment effect.",
+        "tip": "Ask what the appointment involves and what follow-up is included."
+      },
+      {
+        "name": "Training & attunement",
+        "group": "Learning",
+        "description": "A course presenting a Reiki lineage, practice and initiation process.",
+        "detail": "Course levels and certificates vary. A Reiki certificate is not a medical qualification or evidence that a practitioner can diagnose or treat disease.",
+        "tip": "Ask about lineage, syllabus, practice time and supervision."
+      }
+    ],
+    "insights": [
+      {
+        "title": "A quiet experience can still vary",
+        "text": "You may notice warmth, thoughts or rest, or nothing particularly unusual. None of these responses confirms a diagnosis or an energy blockage."
+      },
+      {
+        "title": "Keep the claim separate from the experience",
+        "text": "NCCIH reports that Reiki has not been clearly shown to be effective for a health-related purpose. You can choose an experience for personal reasons while retaining realistic expectations."
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Lineage",
+        "text": "The teaching succession identified by a practitioner or school."
+      },
+      {
+        "term": "Attunement",
+        "text": "A ritual or initiation used in Reiki training traditions."
+      },
+      {
+        "term": "Energy",
+        "text": "A term in the tradition’s explanation; it is not interchangeable with a measured medical quantity."
+      },
+      {
+        "term": "Boundaries",
+        "text": "The agreement about touch, personal information and what a practitioner can responsibly offer."
+      }
+    ],
+    "questions": [
+      "Will this be hands-on or hands-off, and how is consent checked?",
+      "What training and experience do you have?",
+      "What happens during the appointment, and what does it cost?"
+    ],
+    "care": "Reiki should not delay diagnosis or replace established treatment. Be cautious about anyone who promises a cure, diagnoses an illness through energy readings or advises stopping prescribed care. Discuss your comfort, mobility and touch preferences with the practitioner.",
+    "local": "The published directory includes Reiki-related profiles around Kuta, Gili Air and enquiry-based locations. Check the current profile notes carefully. A profile listing is separate from a dated appointment, and some providers require an availability enquiry.",
+    "faq": [
+      {
+        "q": "Do I stay dressed?",
+        "a": "Sessions are usually fully clothed. Confirm the format when booking."
+      },
+      {
+        "q": "Is touch required?",
+        "a": "No. Some practitioners offer hands-off sessions; agree on the format beforehand."
+      },
+      {
+        "q": "Is Reiki a medical treatment?",
+        "a": "It is offered as a complementary practice. Evidence has not clearly established effectiveness for health conditions, and it should not replace appropriate care."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NCCIH · Reiki: evidence and safety",
+        "url": "https://www.nccih.nih.gov/health/reiki"
+      }
+    ],
+    "related": [
+      "sound-healing",
+      "meditation",
+      "massage"
+    ],
+    "background": "Modern Reiki is commonly traced to Mikao Usui in early twentieth-century Japan. Schools and lineages developed as the practice spread. A practitioner should be able to explain which approach they teach without presenting lineage as proof of clinical effectiveness.",
+    "updatedAt": "2026-11-17",
+    "image": "/assets/images/practices/reiki-mandala.webp"
+  },
+  {
+    "slug": "meditation",
+    "name": "Meditation",
+    "category": "Meditation",
+    "heading": "You do not have to switch off your thoughts.",
+    "lead": "Explore different ways to practise attention, from a guided body scan to walking meditation, and find teachers around Lombok and the Gilis.",
+    "introduction": "Meditation describes many practices for working with attention and awareness. Some return to one point, such as a sound or a comfortable breath. Others notice changing sensations, thoughts or feelings. A wandering mind is part of the experience; the invitation is to notice and return, without needing to achieve a special state.",
+    "forms": [
+      {
+        "name": "Focused attention",
+        "group": "Attention",
+        "description": "Return to a chosen point, such as a sound, visual object or breath.",
+        "detail": "The point of focus gives the session a clear reference. If breath awareness feels uncomfortable, ask whether an external sound or a visual point is an option.",
+        "tip": "Begin with a short guided session rather than a long silent sitting."
+      },
+      {
+        "name": "Body scan",
+        "group": "Guided",
+        "description": "Bring attention to different areas of the body in sequence.",
+        "detail": "This may be taught sitting or lying down. You can skip an area or return to the room around you if inward attention feels difficult.",
+        "tip": "Choose a position you can change easily."
+      },
+      {
+        "name": "Walking meditation",
+        "group": "Movement",
+        "description": "Attend to walking, contact with the ground and the surroundings.",
+        "detail": "A walking practice can be slow and formal or more informal. It offers a movement-based alternative to extended sitting.",
+        "tip": "Ask whether the route is shaded and accessible."
+      },
+      {
+        "name": "Loving-kindness",
+        "group": "Intention",
+        "description": "Use phrases or intentions of goodwill towards yourself and others.",
+        "detail": "Often called metta, this practice has Buddhist roots. Teachers may offer a traditional or a secular introduction.",
+        "tip": "You can adapt a phrase that does not feel natural."
+      },
+      {
+        "name": "Guided rest & yoga nidra",
+        "group": "Guided",
+        "description": "A teacher leads attention through a structured resting practice.",
+        "detail": "Yoga nidra comes from yoga traditions and is often offered lying down. A guided rest session is not the same as a silent meditation retreat.",
+        "tip": "Check the duration and whether mats or cushions are provided."
+      }
+    ],
+    "insights": [
+      {
+        "title": "A comfortable position helps",
+        "text": "Meditation does not require sitting cross-legged. A chair, supported seat or standing position can make participation easier."
+      },
+      {
+        "title": "Mindfulness is broader than a class",
+        "text": "Mindfulness often describes attending to present experience. It can be practised in meditation or in everyday activities, and is taught in different religious and secular contexts."
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Anchor",
+        "text": "A point you return attention to, such as sound or the feeling of your feet."
+      },
+      {
+        "term": "Mindfulness",
+        "text": "A way of attending to present experience; definitions vary across traditions."
+      },
+      {
+        "term": "Metta",
+        "text": "A Pali term often translated as loving-kindness or goodwill."
+      },
+      {
+        "term": "Guided practice",
+        "text": "A session in which a teacher gives spoken prompts during the practice."
+      }
+    ],
+    "questions": [
+      "Is the session guided or silent, and how long are the sitting periods?",
+      "Can I use a chair, keep my eyes open or change position?",
+      "What support is available if the practice feels difficult?"
+    ],
+    "care": "Meditation is not comfortable for everyone at every time. Anxiety or other difficult experiences can occur. Start with a manageable duration, stop if needed and seek suitable professional support for persistent distress. A teacher should respect your choice to use an external focus or leave a practice.",
+    "local": "Look for meditation within the published offerings at H2O, Flowers & Fire, Mana and other yoga spaces. Being listed for meditation does not establish a daily standalone class. Retreat events below are included only where meditation is explicitly part of the published programme.",
+    "faq": [
+      {
+        "q": "Am I doing it wrong if my mind wanders?",
+        "a": "No. Many practices involve noticing that attention has wandered and returning to the chosen focus."
+      },
+      {
+        "q": "Do I have to sit on the floor?",
+        "a": "No. Ask about chairs or another comfortable position."
+      },
+      {
+        "q": "Is every retreat a meditation retreat?",
+        "a": "No. Check the programme. Some yoga retreats include short meditation sessions, while intensive silent retreats are a different commitment."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NCCIH · Meditation and mindfulness: effectiveness and safety",
+        "url": "https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety"
+      }
+    ],
+    "related": [
+      "yoga",
+      "breathwork",
+      "retreats"
+    ],
+    "background": "Meditation practices appear in many religious, philosophical and secular settings. Buddhist, Hindu and other traditions have distinct methods and aims. A contemporary class may use selected practices in a secular format; ask the teacher how they describe their approach.",
+    "updatedAt": "2026-11-17",
+    "image": "/assets/images/practices/meditation-mandala.webp"
+  },
+  {
+    "slug": "massage",
+    "name": "Massage",
+    "category": "Massage",
+    "heading": "Choose a massage that suits you.",
+    "lead": "Compare treatment styles, understand pressure and consent, and find massage and bodywork in Lombok and the Gili Islands.",
+    "introduction": "Massage involves working with soft tissues through touch, movement and pressure. Spa menus can use familiar names in different ways, so ask what the treatment actually includes. A useful choice starts with your comfort, the therapist’s training and a clear agreement about the appointment.",
+    "forms": [
+      {
+        "name": "Relaxation & oil massage",
+        "group": "Gentle",
+        "description": "An appointment with flowing strokes and pressure adapted to your preference.",
+        "detail": "Menus may call this relaxation, Swedish-inspired or aromatherapy massage. Oils, scents and techniques vary by venue.",
+        "tip": "Tell the therapist about fragrance sensitivities and preferred pressure."
+      },
+      {
+        "name": "Deep-tissue massage",
+        "group": "Focused",
+        "description": "More sustained work directed at selected areas of soft tissue.",
+        "detail": "Deep pressure is not automatically better. A therapist should be willing to reduce pressure and explain their approach without treating pain as a requirement.",
+        "tip": "Agree on how you will communicate if the pressure is too much."
+      },
+      {
+        "name": "Balinese-style massage",
+        "group": "Spa traditions",
+        "description": "A spa label often combining several manual techniques.",
+        "detail": "Individual treatments can draw on different influences. The menu name alone does not establish the therapist’s exact method or qualification.",
+        "tip": "Ask what the session includes, rather than relying on the name."
+      },
+      {
+        "name": "Thai-style bodywork",
+        "group": "Movement",
+        "description": "A format that may combine pressure with assisted positions or stretches.",
+        "detail": "It is often performed clothed, sometimes on a mat. The amount of stretching and the treatment setup vary.",
+        "tip": "Mention injuries and ask for changes before a stretch becomes uncomfortable."
+      },
+      {
+        "name": "Targeted or sports massage",
+        "group": "Focused",
+        "description": "An appointment organised around a selected area or activity.",
+        "detail": "A sports label can describe many approaches. If you need assessment or injury rehabilitation, check the practitioner’s clinical qualifications separately.",
+        "tip": "Explain whether you want general comfort or help with a diagnosed condition."
+      }
+    ],
+    "insights": [
+      {
+        "title": "Consent continues throughout",
+        "text": "You can change the agreed pressure, ask to skip a body area or stop. A professional therapist should explain draping and allow privacy when changing."
+      },
+      {
+        "title": "A venue and a treatment are separate choices",
+        "text": "A beautiful resort setting does not tell you which therapist or technique will be available. Confirm the menu, appointment length and access for outside guests."
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Draping",
+        "text": "The towel or sheet arrangements used to preserve privacy during a treatment."
+      },
+      {
+        "term": "Pressure",
+        "text": "How firmly the therapist works; it should be agreed and adjustable."
+      },
+      {
+        "term": "Bodywork",
+        "text": "A broad label for hands-on approaches; ask which method is meant."
+      },
+      {
+        "term": "Treatment time",
+        "text": "The hands-on portion of an appointment, which may differ from the total booking length."
+      }
+    ],
+    "questions": [
+      "Which treatment and therapist would suit my preferences?",
+      "How are pressure, privacy and touch boundaries agreed?",
+      "Can outside guests book, and where is the actual spa entrance?"
+    ],
+    "care": "Mention injuries, recent operations, pregnancy, blood-thinning medication and relevant health conditions before treatment. Strong massage may be inappropriate in some circumstances; seek individual advice if unsure. Do not use massage to postpone assessment of unexplained or worsening symptoms.",
+    "local": "Kuta has day-spa options including My Spa and GLAZE. Other providers are based at resorts or on the Gilis. Puri Mas has a separate wellness location; resort guest access elsewhere varies. Massage is generally booked by appointment, so an empty event list does not imply that no appointments are available.",
+    "faq": [
+      {
+        "q": "Does stronger pressure mean a better massage?",
+        "a": "No. Choose a level you can tolerate comfortably and ask for it to be adjusted."
+      },
+      {
+        "q": "Can I visit a resort spa without staying there?",
+        "a": "That depends on the venue. Check the access notes and book directly before travelling."
+      },
+      {
+        "q": "Will every listed spa offer every style here?",
+        "a": "No. The guide explains common menu terms. The provider’s own current menu determines the available treatments."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NCCIH · Massage therapy: evidence and safety",
+        "url": "https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+      }
+    ],
+    "related": [
+      "reiki",
+      "yoga",
+      "retreats"
+    ],
+    "background": "Massage and bodywork have developed in many cultures. Modern spa menus often bring several approaches together. Descriptions such as Balinese, Thai or Swedish are useful clues, but should be paired with a clear explanation of the individual treatment.",
+    "updatedAt": "2026-11-17",
+    "image": "/assets/images/practices/massage-mandala.webp"
+  },
+  {
+    "slug": "retreats",
+    "name": "Retreats",
+    "category": "Retreats",
+    "heading": "Find the retreat behind the beautiful setting.",
+    "lead": "A scheduled group retreat, a flexible wellness stay and a venue for hire are different things. Compare the programme before choosing the destination.",
+    "introduction": "A retreat is time set aside for a programme or personal focus away from everyday routines. Some have fixed dates and a teacher-led group. Others are accommodation packages with optional classes. A venue that hosts retreats may have no public programme you can currently join.",
+    "forms": [
+      {
+        "name": "Scheduled group retreat",
+        "group": "Hosted",
+        "description": "A programme with published dates, an organiser and shared activities.",
+        "detail": "Review the daily schedule, group size and the named teachers. Find out which sessions are optional and what happens if the programme changes.",
+        "tip": "Ask for the full itinerary and payment terms."
+      },
+      {
+        "name": "Flexible yoga or wellness stay",
+        "group": "Stay-based",
+        "description": "A stay package built around accommodation and selected activities.",
+        "detail": "Arrival dates may be flexible, while classes can follow a public studio schedule. It may feel different from a closed retreat group.",
+        "tip": "Check exactly which classes, meals and treatments are included."
+      },
+      {
+        "name": "Immersion & teacher training",
+        "group": "Learning",
+        "description": "A programme centred on sustained practice or study.",
+        "detail": "An immersion and a teacher-training qualification are not interchangeable. Course hours, assessment and recognition need their own checks.",
+        "tip": "Ask whether the programme is recreational study or a professional course."
+      },
+      {
+        "name": "Venue for retreat hosts",
+        "group": "Venue",
+        "description": "Accommodation and facilities offered to organisers bringing their own group.",
+        "detail": "A venue listing can describe rooms, a shala and catering without supplying the teacher or a public booking programme.",
+        "tip": "Contact the host about dates, capacity and what you need to organise."
+      }
+    ],
+    "insights": [
+      {
+        "title": "Read what the package leaves out",
+        "text": "Transfers, single-room supplements, treatments and equipment can change the real cost. Compare total package details rather than headline prices."
+      },
+      {
+        "title": "The exact place matters",
+        "text": "Kuta, Selong Belanak and the Gili Islands involve different travel plans. Confirm the specific property, arrival arrangements and realistic transfer time with the organiser."
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Immersion",
+        "text": "A period of focused practice or study; the label does not imply a qualification."
+      },
+      {
+        "term": "Single supplement",
+        "text": "An additional charge for using a room alone when a package is priced for sharing."
+      },
+      {
+        "term": "Retreat venue",
+        "text": "A place available to host a programme, distinct from the organiser or teacher."
+      },
+      {
+        "term": "Inclusions",
+        "text": "The accommodation, food, sessions and services covered by the package price."
+      }
+    ],
+    "questions": [
+      "Who leads the programme, and what experience or qualifications do they have?",
+      "What is included, what is optional, and what are the cancellation terms?",
+      "Which property is used, and how are transfers arranged?"
+    ],
+    "care": "Assess each activity separately, especially intensive breathing, prolonged silence, fasting or demanding physical sessions. Tell the organiser about relevant access and health needs before booking. A retreat is not a substitute for medical or psychological treatment.",
+    "local": "The directory includes venues and stay-based programmes, while the dated agenda lists specific published events. Mana and Xanadu have dated programmes in the current feed. Kuara and other venues may offer retreat space without a fixed public group departure. Check the individual listing and contact the organiser.",
+    "faq": [
+      {
+        "q": "Does a retreat venue always have a retreat I can join?",
+        "a": "No. A venue may host private groups or offer space to organisers. Look for a dated programme with a named host."
+      },
+      {
+        "q": "Can I join a single class instead?",
+        "a": "Some venues have public classes, while others centre on stays. Use the yoga guide and provider access notes."
+      },
+      {
+        "q": "Does a date in the agenda mean places are available?",
+        "a": "No. Dates reflect the published programme. Confirm capacity, price and terms directly with the organiser."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NCCIH · Yoga: effectiveness and safety",
+        "url": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety"
+      }
+    ],
+    "related": [
+      "yoga",
+      "meditation",
+      "massage"
+    ],
+    "background": "The word retreat is used for a wide range of contemporary travel and practice programmes. Traditional religious retreats, modern yoga holidays and resort wellness stays can have very different expectations. Ask how the organiser defines the programme and its aims.",
+    "updatedAt": "2026-11-17",
+    "image": "/assets/images/practices/retreats-mandala.webp"
+  }
+]

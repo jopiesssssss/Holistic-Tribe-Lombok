@@ -30,13 +30,8 @@ p=ROOT/'index.html';s=p.read_text();s=re.sub(r'<section class="container discove
 for label,slug in practiceurls.items():
  old='/facilitators/?'+urlencode({'practice':label});s=s.replace('class="practice-tile" href="'+old+'"','class="practice-tile" href="/'+slug+'/"')
 s=s.replace('</main>','<section class="container discovery-home-links"><a class="island-text-link" href="/explore/">Explore practices & places in Lombok ↗</a></section></main>');s=s.replace('</head>',f'<link rel="stylesheet" href="/assets/css/discovery.css?v={VERSION}" /></head>');p.write_text(s)
-for slug in ['sound-healing','reiki','breathwork']:
- p=ROOT/'holistic-practices'/slug/'index.html';s=p.read_text();s=re.sub(r'<section class="discovery-crosslinks">[\s\S]*?</section>','',s);s=re.sub(r'<link rel="stylesheet" href="/assets/css/discovery.css[^"]*" />','',s);land='sound-healing-lombok' if slug=='sound-healing' else 'explore';s=s.replace('</main>','<section class="discovery-crosslinks"><h2>Find a provider in Lombok</h2><a href="/'+land+'/">Compare local providers ↗</a><a href="/agenda/">Weekly classes & events ↗</a></section></main>');s=s.replace('</head>',f'<link rel="stylesheet" href="/assets/css/discovery.css?v={VERSION}" /></head>');p.write_text(s)
 # Kuara: presentation only. Do not change any content inside main.
 p=ROOT/'facilitators/kuara-lombok-south-lombok/index.html';s=p.read_text();s=re.sub(r'<link rel="stylesheet" href="/assets/css/discovery.css[^"]*" />','',s);s=s.replace('<body data-page="profile">','<body class="kuara-profile" data-page="profile">');s=s.replace('</head>',f'<link rel="stylesheet" href="/assets/css/discovery.css?v={VERSION}" /></head>');p.write_text(s)
-# Agenda direct links can open a provider-specific search without hidden filters.
-p=ROOT/'assets/js/agenda.js';s=p.read_text();needle="const from = $('#agenda-from'), to = $('#agenda-to');";initial="\n  search.value = params.get('q') || '';\n  if (Array.from(area.options).some(o => o.value === params.get('area'))) area.value = params.get('area');";s=s.replace(initial,'').replace(needle,needle+initial);p.write_text(s)
-p=ROOT/'agenda/index.html';s=p.read_text().replace('agenda.js?v=20261117-agenda-v1','agenda.js?v='+VERSION);p.write_text(s)
 # Keep the generator’s common footer and headline link generation aligned.
 p=ROOT/'scripts/render-island-pages.py';s=p.read_text();s=s.replace('<a href="/facilitators/">All providers</a><a href="/agenda/">Agenda</a>','<a href="/facilitators/">All providers</a><a href="/explore/">Explore practices & places</a><a href="/agenda/">Agenda</a>');p.write_text(s)
 # Replace the obsolete renderer with the single provider renderer entry point.
@@ -67,6 +62,9 @@ for p in sorted(ROOT.rglob('index.html')):
  f=byurl.get(path)
  if f:title=f['name']+' · '+f['region']+' | Holistic Tribe Lombok'
  image=BASE+(f['image'] if f and f.get('image','').startswith('/') else '/assets/images/general/holistic-tribe-lombok-hero-refined.webp')
+ if path.startswith('/holistic-practices/'):
+  cover=re.search(r'<meta property="og:image" content="([^"]+)"',s)
+  if cover:image=html.unescape(cover.group(1))
  # Explicit canonical/URL/image metadata, one of each.
  s=re.sub(r'<link\b[^>]*rel=["\']canonical["\'][^>]*>','',s,flags=re.I)
  s=re.sub(r'<meta\b[^>]*(?:property=["\']og:(?:url|title|description|image)["\']|name=["\']twitter:(?:card|title|description|image)["\'])[^>]*>','',s,flags=re.I)

@@ -19,7 +19,10 @@ window.HTL_AGENDA = {
       "location": "Ola Ola Lombok, Selong Belanak",
       "link": "https://olaolalombok.com/yoga/",
       "checkedAt": "2026-11-17",
-      "validUntil": "2026-12-17"
+      "validUntil": "2026-12-17",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "id": "ola-wed-morning",
@@ -35,7 +38,10 @@ window.HTL_AGENDA = {
       "location": "Ola Ola Lombok, Selong Belanak",
       "link": "https://olaolalombok.com/yoga/",
       "checkedAt": "2026-11-17",
-      "validUntil": "2026-12-17"
+      "validUntil": "2026-12-17",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "id": "ola-spicy",
@@ -52,7 +58,10 @@ window.HTL_AGENDA = {
       "location": "Ola Ola Lombok, Selong Belanak",
       "link": "https://olaolalombok.com/yoga/",
       "checkedAt": "2026-11-17",
-      "validUntil": "2026-12-17"
+      "validUntil": "2026-12-17",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "id": "ola-friday-spicy",
@@ -68,7 +77,10 @@ window.HTL_AGENDA = {
       "location": "Ola Ola Lombok, Selong Belanak",
       "link": "https://olaolalombok.com/yoga/",
       "checkedAt": "2026-11-17",
-      "validUntil": "2026-12-17"
+      "validUntil": "2026-12-17",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "id": "ola-yinyang",
@@ -85,7 +97,10 @@ window.HTL_AGENDA = {
       "location": "Ola Ola Lombok, Selong Belanak",
       "link": "https://olaolalombok.com/yoga/",
       "checkedAt": "2026-11-17",
-      "validUntil": "2026-12-17"
+      "validUntil": "2026-12-17",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "id": "ola-pilates",
@@ -101,7 +116,10 @@ window.HTL_AGENDA = {
       "location": "Ola Ola Lombok, Selong Belanak",
       "link": "https://olaolalombok.com/yoga/",
       "checkedAt": "2026-11-17",
-      "validUntil": "2026-12-17"
+      "validUntil": "2026-12-17",
+      "practices": [
+        "Pilates"
+      ]
     },
     {
       "id": "flowers-reset",
@@ -117,7 +135,10 @@ window.HTL_AGENDA = {
       "location": "Flowers & Fire Seaside Yoga, Gili Air",
       "link": "https://flowersandfire.yoga/schedule/",
       "checkedAt": "2026-11-17",
-      "validUntil": "2026-11-22"
+      "validUntil": "2026-11-22",
+      "practices": [
+        "Workshop"
+      ]
     },
     {
       "id": "flowers-dance",
@@ -133,7 +154,10 @@ window.HTL_AGENDA = {
       "location": "Flowers & Fire Seaside Yoga, Gili Air",
       "link": "https://flowersandfire.yoga/schedule/",
       "checkedAt": "2026-11-17",
-      "validUntil": "2026-11-22"
+      "validUntil": "2026-11-22",
+      "practices": [
+        "Dance"
+      ]
     },
     {
       "id": "flowers-sound",
@@ -149,7 +173,10 @@ window.HTL_AGENDA = {
       "location": "Flowers & Fire Seaside Yoga, Gili Air",
       "link": "https://flowersandfire.yoga/schedule/",
       "checkedAt": "2026-11-17",
-      "validUntil": "2026-11-22"
+      "validUntil": "2026-11-22",
+      "practices": [
+        "Sound healing"
+      ]
     }
   ],
   "schedules": [
@@ -158,42 +185,60 @@ window.HTL_AGENDA = {
       "area": "kuta",
       "link": "https://www.ashtarilombok.com/class",
       "summary": "Daily yoga. Styles and times are listed in the studio’s current timetable.",
-      "checkedAt": "2026-11-17"
+      "checkedAt": "2026-11-17",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "facilitatorId": 2,
       "area": "kuta",
       "link": "https://manalombok.com/yoga-lombok/",
       "summary": "Daily yoga and Pilates. Check the current timetable; registration opens 30 minutes before class.",
-      "checkedAt": "2026-11-17"
+      "checkedAt": "2026-11-17",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "facilitatorId": 8,
       "area": "gili-air",
       "link": "https://flowersandfire.yoga/schedule/",
       "summary": "Daily yoga across the Yoga Garden and Seaside Yoga Studio.",
-      "checkedAt": "2026-11-17"
+      "checkedAt": "2026-11-17",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "facilitatorId": 11,
       "area": "gili-trawangan",
       "link": "https://www.giliyoga.com/",
       "summary": "Daily yoga for all levels. Check the timetable and sign in 10 minutes before class.",
-      "checkedAt": "2026-11-17"
+      "checkedAt": "2026-11-17",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "facilitatorId": 19,
       "area": "selong-belanak",
       "link": "https://olaolalombok.com/yoga/",
       "summary": "Weekly yoga and Pilates; see the studio’s current timetable.",
-      "checkedAt": "2026-11-17"
+      "checkedAt": "2026-11-17",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "facilitatorId": 18,
       "area": "kuta",
       "link": "https://www.zorayogalombok.com/agenda",
       "summary": "Dated yoga sessions and special events, with availability on the studio’s own calendar.",
-      "checkedAt": "2026-11-17"
+      "checkedAt": "2026-11-17",
+      "practices": [
+        "Yoga"
+      ]
     }
   ],
   "events": [
@@ -212,7 +257,10 @@ window.HTL_AGENDA = {
       "summary": "A scheduled breathwork and somatic movement workshop. Book directly through Zora’s agenda.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "single"
+      "eventKind": "single",
+      "practices": [
+        "Breathwork"
+      ]
     },
     {
       "id": "xanadu-2026-11-21",
@@ -229,7 +277,13 @@ window.HTL_AGENDA = {
       "summary": "A seven-night programme with Hatha yoga, meditation, breathwork and meals. Confirm remaining places with Xanadu.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Meditation",
+        "Retreats"
+      ]
     },
     {
       "id": "zora-brunch-20261121",
@@ -246,7 +300,10 @@ window.HTL_AGENDA = {
       "summary": "A yoga and brunch event listed by Zora Yoga at Kenza’s Garden.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "single"
+      "eventKind": "single",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "id": "mana-mini-20261127",
@@ -263,7 +320,12 @@ window.HTL_AGENDA = {
       "summary": "A four-day yoga and breathwork retreat. Ask Mana about availability and accommodation options.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Retreats"
+      ]
     },
     {
       "id": "xanadu-2026-12-05",
@@ -280,7 +342,13 @@ window.HTL_AGENDA = {
       "summary": "A seven-night programme with Hatha yoga, meditation, breathwork and meals. Confirm remaining places with Xanadu.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Meditation",
+        "Retreats"
+      ]
     },
     {
       "id": "xanadu-2026-12-19",
@@ -297,7 +365,13 @@ window.HTL_AGENDA = {
       "summary": "A seven-night programme with Hatha yoga, meditation, breathwork and meals. Confirm remaining places with Xanadu.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Meditation",
+        "Retreats"
+      ]
     },
     {
       "id": "ashtari-aspire-20261221",
@@ -314,7 +388,10 @@ window.HTL_AGENDA = {
       "summary": "A six-day Hatha-based immersion with Almitra, with a 90-minute morning session each day.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga"
+      ]
     },
     {
       "id": "xanadu-2027-01-02",
@@ -331,7 +408,13 @@ window.HTL_AGENDA = {
       "summary": "A seven-night programme with Hatha yoga, meditation, breathwork and meals. Confirm remaining places with Xanadu.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Meditation",
+        "Retreats"
+      ]
     },
     {
       "id": "xanadu-2027-01-23",
@@ -348,7 +431,13 @@ window.HTL_AGENDA = {
       "summary": "A seven-night programme with Hatha yoga, meditation, breathwork and meals. Confirm remaining places with Xanadu.",
       "checkedAt": "2026-11-17",
       "recurring": false,
-      "eventKind": "multi-day"
+      "eventKind": "multi-day",
+      "practices": [
+        "Yoga",
+        "Breathwork",
+        "Meditation",
+        "Retreats"
+      ]
     }
   ]
 };

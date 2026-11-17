@@ -134,6 +134,26 @@
       "source": "/facilitators/kuara-resort-lombok/",
       "destination": "/facilitators/kuara-lombok-south-lombok/",
       "permanent": true
+    },
+    {
+      "source": "/holistic-practices/retreats.html",
+      "destination": "/holistic-practices/retreats/",
+      "permanent": true
+    },
+    {
+      "source": "/holistic-practices/yoga.html",
+      "destination": "/holistic-practices/yoga/",
+      "permanent": true
+    },
+    {
+      "source": "/holistic-practices/massage.html",
+      "destination": "/holistic-practices/massage/",
+      "permanent": true
+    },
+    {
+      "source": "/holistic-practices/meditation.html",
+      "destination": "/holistic-practices/meditation/",
+      "permanent": true
     }
   ],
   "headers": [

@@ -112,9 +112,18 @@ Build the static pages in this order:
 python3 scripts/render-island-pages.py
 python3 scripts/render-discovery-pages.py
 python3 scripts/render-agenda-data.py
+python3 scripts/render-practice-guides.py
 python3 scripts/finalize-discovery-seo.py
 ```
 
 The data in `data/facilitators.json` remains the provider source. The new renderer updates 21 profiles. Sunset retains its separate photo design, and Kuara retains its complete checked main HTML; its refresh uses scoped CSS only. `data/agenda.json` remains the calendar source. Discovery pages select real published providers by their recorded categories and area; held-for-review profiles stay excluded.
 
 Finalization adds canonical metadata, provider/site/breadcrumb/list structured data, crawlable directory cards, internal links, redirects and a sitemap. Run finalization after rendering before publication. `data/seo-pages.json` records the indexable pages. No ratings, invented opening hours, guessed addresses, availability claims or guaranteed search rankings are added.
+
+## Practice library
+
+The seven English practice guides are maintained in `data/practice-guides.json`. Run `python3 scripts/render-practice-guides.py` after profile/homepage renderers and before SEO finalization. This also adds relevant guide links to published profiles, preserving the complete checked Kuara profile. Existing mandalas are retained; four new covers are in `assets/images/practices/`.
+
+Agenda listings carry explicit `practices` tags: a workshop can be tagged Breathwork without changing its event type or a provider’s permanent categories. `/agenda/?practice=Breathwork&view=events` opens a visible practice filter. Guide previews share the agenda’s WITA date and expiry logic. Unverified or expired weekly times stay hidden; provider timetables and appointment links remain available.
+
+Validate with `node scripts/test-practice-agenda.cjs` and `python3 scripts/check-practice-guides.py`.
