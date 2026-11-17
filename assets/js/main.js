@@ -1,5 +1,7 @@
 (function(){
-const data = window.HTL_DATA || { facilitators: [], events: [], categories: [] };
+const sourceData = window.HTL_DATA || { facilitators: [], events: [], categories: [] };
+const data = { ...sourceData, facilitators: sourceData.facilitators.filter(f => f.publicationStatus !== "review") };
+const availableCategories = data.categories.filter(cat => data.facilitators.some(f => f.categories.includes(cat)));
 const $ = (sel, root=document) => root.querySelector(sel);
 const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
 const escapeHtml = (str='') => String(str).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
@@ -17,7 +19,7 @@ function eventDateText(evt){ const start = parseLocalDate(evt.date); return evt.
 
 function facilitatorCard(f, prefix=''){
   return '<article class="facilitator-card" tabindex="0" role="button" data-open-facilitator="'+f.id+'" aria-label="Open quick view for '+escapeHtml(f.name)+'">'+
-    '<div class="card-image" style="background-image:url(\''+escapeHtml(f.image || '')+'\')"></div>'+
+    '<div class="card-image" style="background-image:url(\''+escapeHtml(f.image || '')+'\')">'+(f.image ? '' : '<span class="chip">Provider photo not available</span>')+'</div>'+
     '<div class="card-copy">'+
       '<div class="meta">'+escapeHtml(f.region)+'</div>'+
       '<h3>'+escapeHtml(f.name)+'</h3>'+
@@ -51,7 +53,7 @@ function initNav(){
 function initHome(){
   const catGrid = $('[data-category-grid]');
   if(catGrid){
-    catGrid.innerHTML = data.categories.map(cat => {
+    catGrid.innerHTML = availableCategories.map(cat => {
       const count = data.facilitators.filter(f => f.categories.includes(cat)).length;
       return '<button class="category-btn" type="button" data-category="'+escapeHtml(cat)+'"><strong>'+escapeHtml(cat)+'</strong><span>'+count+' listing'+(count===1?'':'s')+'</span></button>';
     }).join('');
@@ -114,7 +116,7 @@ function initFacilitators(){
   const filters = $('[data-facilitator-filters]');
   const count = $('[data-facilitator-count]');
   let active = '';
-  const cats = ['All', ...data.categories];
+  const cats = ['All', ...availableCategories];
   filters.innerHTML = cats.map(c => '<button class="filter-btn '+(c==='All'?'active':'')+'" type="button" data-filter="'+escapeHtml(c)+'">'+escapeHtml(c)+'</button>').join('');
 
   function render(){
@@ -269,12 +271,13 @@ function openFacilitator(id){
   if(!modal || !img || !copy) return;
 
   const websiteButton = f.website ? '<a class="secondary-btn pale" href="'+escapeHtml(f.website)+'" target="_blank" rel="noopener">Visit website</a>' : '';
-  img.style.backgroundImage = 'url("'+escapeHtml(f.image || 'assets/images/general/holistic-tribe-lombok-hero.webp')+'")';
+  img.style.backgroundImage = f.image ? 'url("'+escapeHtml(f.image)+'")' : 'none';
   copy.innerHTML =
     '<div class="meta">'+escapeHtml(f.region)+'</div>'+
     '<h2>'+escapeHtml(f.name)+'</h2>'+
     '<p>'+escapeHtml(f.description || f.profileLead || '')+'</p>'+
     '<div class="chip-row facilitator-modal-chips">'+chips(f.categories)+'</div>'+
+    (f.availabilityNote ? '<p class="notice small">'+escapeHtml(f.availabilityNote)+'</p>' : '')+
     '<div class="notice small">Facilitator and need something changed on this listing? Email hello@holistictribelombok.com.</div>'+
     '<div class="modal-actions">'+
       '<a class="primary-btn dark" href="'+escapeHtml(f.url)+'">Visit full profile</a>'+

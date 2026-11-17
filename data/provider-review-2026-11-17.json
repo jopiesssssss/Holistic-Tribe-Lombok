@@ -1,0 +1,251 @@
+{
+  "reviewDate": "2026-11-17",
+  "scope": "Public-source review of 15 existing profiles. No provider contacted. Not a confirmation of future availability, qualifications, service quality, image rights, or every legacy social link.",
+  "providers": [
+    {
+      "id": 6,
+      "name": "Kuara Resort Lombok",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "public_sources_checked",
+      "sources": [
+        "https://kuaralombok.com/wellness/",
+        "https://kuaralombok.com/contact-us/"
+      ],
+      "note": "Official spa and contact pages reviewed; WhatsApp and general email match. Confirm yoga timetable and access for outside guests directly.",
+      "contactFieldsChecked": [
+        "website",
+        "whatsapp",
+        "email"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 13,
+      "name": "Sunset Beach Yoga",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "partial",
+      "sources": [
+        "https://www.airbnb.com/rooms/1724086",
+        "https://www.lacocoteraiegili.com/_files/ugd/8823f6_67c5cab882fc42b7ac863ce0effa2d3d.pdf"
+      ],
+      "note": "Provider-managed accommodation listing corroborates yoga and the existing WhatsApp number. Instagram could not be read. No current timetable independently verified; the hotel PDF is historical corroboration only.",
+      "contactFieldsChecked": [
+        "whatsapp"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 1,
+      "name": "Ashtari Yoga & Retreat",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "public_sources_checked",
+      "sources": [
+        "https://www.ashtarilombok.com/",
+        "https://www.ashtarilombok.com/class"
+      ],
+      "note": "Official site now redirects from ashtari.yoga to ashtarilombok.com. Yoga contact number and public email found; classes and booking instructions reviewed.",
+      "contactFieldsChecked": [
+        "website",
+        "whatsapp",
+        "email"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 2,
+      "name": "Mana Yoga Retreat",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "public_sources_checked",
+      "sources": [
+        "https://manalombok.com/yoga-lombok/",
+        "https://manalombok.com/contact/",
+        "https://manalombok.com/mana-mini-retreat/"
+      ],
+      "note": "Homepage timed out, but official yoga page and contact search result confirm yoga, location and contacts; official retreat page confirms breathwork.",
+      "contactFieldsChecked": [
+        "website",
+        "whatsapp",
+        "email"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 3,
+      "name": "Cocoon Healing Lombok",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "public_sources_checked",
+      "sources": [
+        "https://cocoon-healing.com/en"
+      ],
+      "note": "Official site says on-site physical treatments are paused during restructuring, while separate Reiki/sound pages remain listed. Massage removed from active categories; confirm all session availability by email. Existing WhatsApp was not reverified.",
+      "contactFieldsChecked": [
+        "website",
+        "email"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 4,
+      "name": "Shanti Holistic Wellness Lombok",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "public_sources_checked",
+      "sources": [
+        "https://shantiyogalombok.com/",
+        "https://shantiyogalombok.com/contact/"
+      ],
+      "note": "Now a freelance/private wellness practice by appointment, with pop-ups and no fixed studio schedule. Old Jivana location and map pin removed. WhatsApp matches official contact.",
+      "contactFieldsChecked": [
+        "website",
+        "whatsapp"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 5,
+      "name": "Ikara Yoga",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "partial",
+      "sources": [
+        "https://www.ikarayoga.com/",
+        "https://www.indonesia.travel/id/id/travel-ideas/category-wellness/5-tempat-yoga-di-lombok-dijamin-bisa-menenangkan-pikiranmu"
+      ],
+      "note": "Official site blocks automated reading (403). Indonesia tourism authority corroborates studio, Kuta location, yoga and reservation phone. Other offerings and live schedule require direct confirmation. Existing photo shares the Gili Yoga image account and is withheld pending attribution.",
+      "contactFieldsChecked": [
+        "whatsapp"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 7,
+      "name": "My Spa Lombok",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "public_sources_checked",
+      "sources": [
+        "https://myspalombok.com/"
+      ],
+      "note": "Official page confirms Kuta/Mandalika massage and WhatsApp. Existing hello@ email not located in the reviewed public text; removed pending verification.",
+      "contactFieldsChecked": [
+        "website",
+        "whatsapp"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 8,
+      "name": "Flowers & Fire",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "public_sources_checked",
+      "sources": [
+        "https://flowersandfire.yoga/",
+        "https://flowersandfire.yoga/contact-2/"
+      ],
+      "note": "Official site confirms two Gili Air yoga locations and public email/telephone. Added email. Confirm ceremony availability through current event listings.",
+      "contactFieldsChecked": [
+        "website",
+        "email"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 9,
+      "name": "H2O Yoga & Meditation",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "public_sources_checked",
+      "sources": [
+        "https://www.h2oyogaandmeditation.com/",
+        "https://www.h2oyogaandmeditation.com/contact-us/",
+        "https://h2oyogaandmeditation.wordpress.com/contact/"
+      ],
+      "note": "Official site confirms Gili Air location, yoga, meditation, Reiki, massage and current WhatsApp. Existing email supported by historical provider page; current contact page masks the email in retrieved text.",
+      "contactFieldsChecked": [
+        "website",
+        "whatsapp"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 10,
+      "name": "Slow Spa & Yoga",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "public_sources_checked",
+      "sources": [
+        "https://slowgiliair.com/experiences/slow-spa-yoga/"
+      ],
+      "note": "Official page confirms Gili Air spa/yoga and public email/WhatsApp. Placeholder website fixed. Removed a My Spa Lombok image incorrectly used for this provider.",
+      "contactFieldsChecked": [
+        "website",
+        "whatsapp",
+        "email"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 11,
+      "name": "Gili Yoga",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "public_sources_checked",
+      "sources": [
+        "https://www.giliyoga.com/"
+      ],
+      "note": "Official site confirms Gili Trawangan classes, beginner access, drop-in guidance and public email.",
+      "contactFieldsChecked": [
+        "website",
+        "email"
+      ],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 14,
+      "name": "Chi in Harmony",
+      "publicationStatus": "review",
+      "checkedAt": "2026-11-17",
+      "status": "excluded",
+      "sources": [
+        "https://www.chi-inharmony.com/",
+        "https://www.indoindians.com/6-places-to-learn-tai-chi-in-indonesia/"
+      ],
+      "note": "Identity mismatch: linked hyphenated domain belongs to Diane Miralis serving Florida. Historical Lombok reference names a different domain (chiinharmony.com) and different contact details. No current Lombok operation verified. Removed from active discovery; record retained for review.",
+      "contactFieldsChecked": [],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 15,
+      "name": "Tetebatu Retreats",
+      "publicationStatus": "review",
+      "checkedAt": "2026-11-17",
+      "status": "excluded",
+      "sources": [
+        "https://tetebatu.com/"
+      ],
+      "note": "Existing record is explicitly a destination concept rather than a named operator. Linked site is a tour service; no evidence for the claimed yoga/meditation retreat provider. Removed from active discovery; Tetebatu travel guide retained.",
+      "contactFieldsChecked": [],
+      "confirmedByProvider": false
+    },
+    {
+      "id": 16,
+      "name": "Ingeborg Leonoor",
+      "publicationStatus": "published",
+      "checkedAt": "2026-11-17",
+      "status": "partial",
+      "sources": [
+        "https://www.ingeborgleonoor.com/",
+        "https://jivanaresortlombok.com/yoga/"
+      ],
+      "note": "Own website returns 404. Venue partner describes Ingeborg as Lombok-based Reiki/breathwork facilitator. Specific location, online sessions, circles and trainings not currently verified. Broken website and generic map pin removed; Instagram retained as the existing enquiry channel, not reverified.",
+      "contactFieldsChecked": [],
+      "confirmedByProvider": false
+    }
+  ]
+}

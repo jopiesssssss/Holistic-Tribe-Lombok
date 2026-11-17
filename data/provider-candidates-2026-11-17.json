@@ -1,0 +1,234 @@
+{
+  "reviewDate": "2026-11-17",
+  "scope": "New providers absent from the 15-record source directory; research only, no outreach and no new public profiles.",
+  "candidates": [
+    {
+      "name": "Rascals Yoga",
+      "region": "Kuta Lombok",
+      "categories": [
+        "Yoga",
+        "Breathwork",
+        "Meditation"
+      ],
+      "sources": [
+        "https://www.rascalskutalombok.com/yoga",
+        "https://www.rascalskutalombok.com/yoga-class-booking",
+        "https://www.rascalskutalombok.com/service-page/community-breathwork-meditation"
+      ],
+      "contact": {
+        "booking": "https://www.rascalskutalombok.com/yoga-class-booking",
+        "phone": "+62 821 4535 4865"
+      },
+      "note": "Official yoga and booking pages describe public classes, with a separate breathwork/meditation session. Check current booking slots; adults-only venue.",
+      "status": "ready_for_profile_draft",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    },
+    {
+      "name": "Zora Yoga",
+      "region": "Kuta Lombok",
+      "categories": [
+        "Yoga"
+      ],
+      "sources": [
+        "https://www.zorayogalombok.com/",
+        "https://www.zorayogalombok.com/contact"
+      ],
+      "contact": {
+        "email": "info@zorayogalombok.com",
+        "whatsapp": "https://wa.me/6282147925613"
+      },
+      "note": "Official class and contact pages; address Jl. Raya Kuta No.5. Include yoga; do not infer sound healing or other ceremonies from the general events label.",
+      "status": "ready_for_profile_draft",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    },
+    {
+      "name": "Ola Ola Lombok",
+      "region": "Selong Belanak",
+      "categories": [
+        "Yoga"
+      ],
+      "sources": [
+        "https://olaolalombok.com/yoga/"
+      ],
+      "contact": {
+        "email": "olaolalombok@gmail.com",
+        "phone": "+62 853 3813 4195",
+        "booking": "https://olaolalombok.com/yoga/"
+      },
+      "note": "Official page describes yoga and mat Pilates, with drop-in access. Two different phone/WhatsApp numbers appear; use published email and booking page until the WhatsApp number is clarified.",
+      "status": "ready_for_profile_draft",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    },
+    {
+      "name": "Puri Mas Spa & Wellness Center",
+      "region": "Kerandangan / Senggigi",
+      "categories": [
+        "Yoga",
+        "Meditation",
+        "Massage"
+      ],
+      "sources": [
+        "https://www.purimas-lombok.com/puri-mas-spa-wellness-center"
+      ],
+      "contact": {
+        "email": "info@purimas-lombok.com",
+        "whatsapp": "https://wa.me/6287865615553"
+      },
+      "note": "Official page explicitly welcomes outside spa guests by appointment and outside yoga visitors. Keep spa location separate from beach resort; confirm current classes directly.",
+      "status": "ready_for_profile_draft",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    },
+    {
+      "name": "Xanadu Surf & Yoga",
+      "region": "Kuta Lombok",
+      "categories": [
+        "Yoga",
+        "Retreats"
+      ],
+      "sources": [
+        "https://xanadusurf.com/",
+        "https://xanadusurf.com/contact/"
+      ],
+      "contact": {
+        "email": "contact@xanadusurf.com",
+        "booking": "https://xanadusurf.com/contact/"
+      },
+      "note": "Two locations under one operator: Village and Boutique Retreat. Present as one provider with two venues, primarily stay/retreat packages. Do not promise drop-in access. Email address is also corroborated by Indonesia’s tourism authority.",
+      "status": "ready_for_profile_draft",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    },
+    {
+      "name": "GLAZE House of Wellness",
+      "region": "Kuta Lombok",
+      "categories": [
+        "Massage"
+      ],
+      "sources": [
+        "https://www.glazehouseofwellness.com/",
+        "https://glazehouseofwellness.com/menu"
+      ],
+      "contact": {
+        "whatsapp": "https://wa.me/6282313019528",
+        "instagram": "https://www.instagram.com/glazelombok/"
+      },
+      "note": "Official site and treatment menu support massage/bodywork. Include relevant treatments; do not label beauty treatments as Reiki, breathwork or sound healing. Verify exact map pin before mapping.",
+      "status": "ready_for_profile_draft",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    },
+    {
+      "name": "XENO FIT Lombok",
+      "region": "Kuta Lombok",
+      "categories": [
+        "Yoga"
+      ],
+      "sources": [
+        "https://xenolombok.com/class-schedule/"
+      ],
+      "contact": {
+        "email": "info@xenolombok.com",
+        "whatsapp": "https://wa.me/6281239704735"
+      },
+      "note": "Fitness venue with explicitly scheduled yoga and Pilates. Include only relevant yoga offering; use current schedule link rather than copying weekly hours into the site.",
+      "status": "ready_for_profile_draft",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    },
+    {
+      "name": "maoMeno Yoga Resort",
+      "region": "Gili Meno",
+      "categories": [
+        "Yoga",
+        "Retreats"
+      ],
+      "sources": [
+        "https://www.mao-meno.com/",
+        "https://www.mao-meno.com/yoga",
+        "https://www.mao-meno.com/contact",
+        "https://www.mao-meno.com/_files/ugd/5a465b_f93d219a8be842c689b98b02d45cec21.pdf"
+      ],
+      "contact": {
+        "email": "info@mao-meno.com",
+        "booking": "https://www.mao-meno.com/contact"
+      },
+      "note": "Official site links yoga, retreat hosting and a schedule PDF. Contact page and footer list different phone numbers; use email. PDF has no current date, so confirm timetable before publishing specific sessions.",
+      "status": "ready_for_profile_draft",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    },
+    {
+      "name": "SENJA Wellness at Selong Selo",
+      "region": "Selong Belanak",
+      "categories": [
+        "Massage"
+      ],
+      "sources": [
+        "https://senja.selongselo.com/"
+      ],
+      "contact": {
+        "whatsapp": "https://wa.me/6281238135552"
+      },
+      "note": "Massage/bodywork described on official page; dedicated yoga shala explicitly marked coming soon. Confirm outside-guest access. Do not publish as an operating yoga studio.",
+      "status": "needs_availability_check",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    },
+    {
+      "name": "Jaya Villa Resort Spa & Yoga",
+      "region": "Selong Belanak",
+      "categories": [
+        "Yoga",
+        "Meditation",
+        "Massage",
+        "Sound healing",
+        "Breathwork"
+      ],
+      "sources": [
+        "https://jayavilla.com/spa-yoga/"
+      ],
+      "contact": {
+        "email": "jvrlombok@gmail.com",
+        "whatsapp": "https://wa.me/6282266511300"
+      },
+      "note": "Official page lists these experiences, but site also says STAY TUNED. Confirm opening, actual session availability and outside-guest access before treating as active.",
+      "status": "needs_availability_check",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    },
+    {
+      "name": "Seri Resort / Amber yoga space",
+      "region": "Gili Meno",
+      "categories": [
+        "Massage",
+        "Yoga"
+      ],
+      "sources": [
+        "https://www.seriresortgilimeno.com/activities",
+        "https://www.seriresortgilimeno.com/events"
+      ],
+      "contact": {
+        "contactPage": "https://www.seriresortgilimeno.com/activities"
+      },
+      "note": "Official daily-yoga dates cover 26 January–28 February 2026, already past. Current page supports massage and private-practice/retreat space, not a verified November public class schedule. Do not create a separate duplicate Amber provider.",
+      "status": "needs_availability_check",
+      "checkedAt": "2026-11-17",
+      "published": false,
+      "confirmedByProvider": false
+    }
+  ]
+}

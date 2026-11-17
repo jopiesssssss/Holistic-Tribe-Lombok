@@ -108,7 +108,24 @@ window.HTL_DATA = {
         "whatsapp": "https://wa.me/6281138310885",
         "email": "info@kuaralombok.com",
         "map": "https://maps.google.com/?q=Kuara+Lombok+Bumbang+Beach"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://kuaralombok.com/wellness/",
+          "https://kuaralombok.com/contact-us/"
+        ],
+        "note": "Official spa and contact pages reviewed; WhatsApp and general email match. Confirm yoga timetable and access for outside guests directly.",
+        "contactFieldsChecked": [
+          "website",
+          "whatsapp",
+          "email"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 13,
@@ -195,7 +212,22 @@ window.HTL_DATA = {
         "whatsapp": "https://wa.me/6287862125860",
         "email": "",
         "map": "https://maps.app.goo.gl/k7wbzXbepmW9UKXK7?g_st=iwb"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "partial",
+        "sources": [
+          "https://www.airbnb.com/rooms/1724086",
+          "https://www.lacocoteraiegili.com/_files/ugd/8823f6_67c5cab882fc42b7ac863ce0effa2d3d.pdf"
+        ],
+        "note": "Provider-managed accommodation listing corroborates yoga and the existing WhatsApp number. Instagram could not be read. No current timetable independently verified; the hotel PDF is historical corroboration only.",
+        "contactFieldsChecked": [
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 1,
@@ -213,7 +245,7 @@ window.HTL_DATA = {
         "Reiki",
         "Cacao ceremony"
       ],
-      "website": "https://ashtari.yoga/",
+      "website": "https://www.ashtarilombok.com/",
       "logoDomain": "ashtari.yoga",
       "logoText": "A",
       "slug": "ashtari-yoga-kuta-lombok",
@@ -281,13 +313,30 @@ window.HTL_DATA = {
         }
       ],
       "links": {
-        "website": "https://ashtari.yoga/",
+        "website": "https://www.ashtarilombok.com/",
         "instagram": "https://www.instagram.com/ashtari_yoga/",
         "facebook": "https://www.facebook.com/AshtariYoga/",
         "whatsapp": "https://api.whatsapp.com/send/?app_absent=0&phone=6282340539445&text=&type=phone_number",
-        "email": "",
+        "email": "contact@ashtarilombok.com",
         "map": "https://maps.google.com/?q=Ashtari+Yoga+Kuta+Lombok"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://www.ashtarilombok.com/",
+          "https://www.ashtarilombok.com/class"
+        ],
+        "note": "Official site now redirects from ashtari.yoga to ashtarilombok.com. Yoga contact number and public email found; classes and booking instructions reviewed.",
+        "contactFieldsChecked": [
+          "website",
+          "whatsapp",
+          "email"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 2,
@@ -304,7 +353,7 @@ window.HTL_DATA = {
         "Retreats",
         "Massage"
       ],
-      "website": "https://manalombok.com/",
+      "website": "https://manalombok.com/yoga-lombok/",
       "logoDomain": "manalombok.com",
       "logoText": "M",
       "slug": "mana-yoga-retreat-kuta-lombok",
@@ -373,36 +422,54 @@ window.HTL_DATA = {
         }
       ],
       "links": {
-        "website": "https://manalombok.com/",
+        "website": "https://manalombok.com/yoga-lombok/",
         "instagram": "https://www.instagram.com/manayogaretreat/",
         "facebook": "https://www.facebook.com/manayogalombok",
         "whatsapp": "https://wa.me/6285338628659",
         "email": "manalombok@gmail.com",
         "map": "https://maps.google.com/?q=Mana+Retreat+Lombok"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://manalombok.com/yoga-lombok/",
+          "https://manalombok.com/contact/",
+          "https://manalombok.com/mana-mini-retreat/"
+        ],
+        "note": "Homepage timed out, but official yoga page and contact search result confirm yoga, location and contacts; official retreat page confirms breathwork.",
+        "contactFieldsChecked": [
+          "website",
+          "whatsapp",
+          "email"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 3,
       "name": "Cocoon Healing Lombok",
       "region": "Kuta Lombok",
-      "description": "A small sanctuary on a hill of the beautiful island of Lombok. Our peaceful retreat venue offers everything you need for relaxation, healing and growth.",
+      "description": "Retreat venue and accommodation near Kuta. On-site physical treatments are currently paused; enquire about Reiki and sound sessions before visiting.",
       "image": "https://cocoon-healing.com/media/pages/home/start/cocoon-healing-hut/7936fb86a0-1641236941/chillipictures-lombok-drop-in-surf-camp-108-400x.jpg",
       "lat": -8.8955,
       "lng": 116.281,
       "categories": [
         "Reiki",
         "Sound healing",
-        "Massage"
+        "Retreats"
       ],
       "website": "https://cocoon-healing.com/en",
       "logoDomain": "cocoon-healing.com",
       "logoText": "C",
       "slug": "cocoon-healing-hut-kuta-lombok",
       "url": "/facilitators/cocoon-healing-hut-kuta-lombok/",
-      "profileLead": "A small healing sanctuary on a hill east of Kuta Lombok offering retreat space, accommodation, energy work and wellness treatments in a calm natural setting.",
-      "overview": "Cocoon Healing Hut presents itself as a peaceful sanctuary on a hill near Kuta Lombok for hosting retreats, booking wellness stays and exploring treatments and energy work such as Reiki and sound healing.",
+      "profileLead": "A retreat venue and small accommodation near Kuta Lombok. The provider currently reports a pause in on-site physical treatments.",
+      "overview": "Cocoon offers a venue for hosted retreats and accommodation. Its website reports paused on-site physical treatments during restructuring; Reiki and sound sessions are still described separately, so confirm availability before booking.",
       "about": "Cocoon Healing Hut describes itself as a small sanctuary on a hill in Lombok, designed for people who want to slow down, reconnect and support well-being in body, mind and soul. The site says it is about ten minutes by scooter east of Kuta, with views over rice fields, villages and the sea.",
-      "practicesIntro": "Cocoon focuses on a softer, restorative mix of stays, treatments and energy work.",
+      "practicesIntro": "Retreat hosting and accommodation; Reiki and sound sessions are subject to direct availability checks.",
       "location": "Jalan Kener, Desa Sukadana Kuta NTB, Lombok 83573, Indonesia",
       "gallery": [
         "https://cocoon-healing.com/media/pages/home/start/cocoon-healing-hut/7936fb86a0-1641236941/chillipictures-lombok-drop-in-surf-camp-108-400x.jpg",
@@ -410,31 +477,23 @@ window.HTL_DATA = {
         "https://cocoon-healing.com/media/pages/home/start/cocoon-healing-hut/f38713cba7-1641236941/chillipictures-lombok-drop-in-surf-camp-102-400x.jpg"
       ],
       "offerings": [
-        "Reiki",
-        "Sound healing",
-        "Massage",
         "Retreat venue",
         "Accommodation",
-        "Ayurveda",
-        "Reflexology",
-        "Wellness packages",
-        "Indian head massage",
-        "Swedish body massage",
-        "Body scrub",
-        "Body mask"
+        "Reiki by enquiry",
+        "Sound sessions by enquiry"
       ],
       "stats": [
         {
-          "value": "10 min",
-          "label": "From Kuta"
-        },
-        {
-          "value": "Reiki",
-          "label": "Energy work"
-        },
-        {
           "value": "Stay",
+          "label": "Accommodation"
+        },
+        {
+          "value": "Host",
           "label": "Retreat venue"
+        },
+        {
+          "value": "Enquire",
+          "label": "Session availability"
         }
       ],
       "highlights": [
@@ -464,21 +523,36 @@ window.HTL_DATA = {
         "whatsapp": "https://wa.me/6287865973169",
         "email": "info@cocoon-healing.com",
         "map": "https://maps.google.com/?q=Cocoon+Healing+Lombok"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://cocoon-healing.com/en"
+        ],
+        "note": "Official site says on-site physical treatments are paused during restructuring, while separate Reiki/sound pages remain listed. Massage removed from active categories; confirm all session availability by email. Existing WhatsApp was not reverified.",
+        "contactFieldsChecked": [
+          "website",
+          "email"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "The provider reports that on-site physical treatments are paused during restructuring. Please email to confirm whether Reiki, sound sessions or retreat stays are currently available."
     },
     {
       "id": 4,
-      "name": "Shanti Yoga Lombok",
+      "name": "Shanti Holistic Wellness Lombok",
       "region": "Kuta Lombok",
-      "description": "Welcome to Shanti Yoga Lombok at Jivana Resort. We provide yoga classes, private sessions, retreats, sound healing and cacao ceremonies in a lush tropical setting.",
-      "image": "https://shantiyogalombok.com/wp-content/uploads/2023/09/Shanti-Yoga-Kuta-Lombok-Good-Vibes-768x432.jpeg",
-      "lat": -8.8981,
-      "lng": 116.2825,
+      "description": "Private yoga, Reiki, sound healing and cacao sessions in Lombok, by appointment. No fixed studio timetable; confirm the meeting place directly.",
+      "image": "",
+      "lat": null,
+      "lng": null,
       "categories": [
         "Yoga",
-        "Breathwork",
         "Meditation",
         "Sound healing",
+        "Reiki",
         "Cacao ceremony"
       ],
       "website": "https://shantiyogalombok.com/",
@@ -486,52 +560,48 @@ window.HTL_DATA = {
       "logoText": "S",
       "slug": "shanti-yoga-lombok-kuta-lombok",
       "url": "/facilitators/shanti-yoga-lombok-kuta-lombok/",
-      "profileLead": "A serene studio at Jivana Resort where daily yoga, private sessions and regular moon gatherings come together in a tropical Kuta Lombok setting.",
-      "overview": "Shanti Yoga Lombok welcomes beginners to advanced students with yoga classes, private sessions, retreats, sound healing and cacao ceremonies in a calm resort environment.",
-      "about": "Located at Jivana Resort in Kuta Mandalika, Shanti Yoga Lombok combines daily classes with regular holistic events in a peaceful tropical setting. The studio positions itself as an accessible space for beginners, intermediate students and advanced practitioners alike.",
-      "practicesIntro": "A gentle mix of movement, ceremony and restorative wellness experiences.",
-      "location": "Shanti Yoga Lombok, Jivana Resort area, Jl. Raya Kuta Baturiti, Kuta Mandalika, Lombok, Indonesia",
-      "gallery": [
-        "https://shantiyogalombok.com/wp-content/uploads/2023/09/Shanti-Yoga-Kuta-Lombok-Good-Vibes-768x432.jpeg"
-      ],
+      "profileLead": "A private yoga and holistic wellness practice in Lombok, offering sessions at your space and selected pop-up venues by appointment.",
+      "overview": "Shanti has moved from its former resort-based studio to a freelance wellness practice. Book private sessions, small groups, retreat support or selected pop-up gatherings directly.",
+      "about": "Shanti Holistic Wellness Lombok offers private yoga, Reiki, sound healing and cacao experiences. Following its move from a resort studio, the practice works at private spaces and selected venues in Lombok. There is no fixed public studio schedule.",
+      "practicesIntro": "Private yoga and wellness sessions, small groups and pop-up gatherings by appointment.",
+      "location": "Lombok — private sessions at an agreed location; confirm the meeting place when booking.",
+      "gallery": [],
       "offerings": [
-        "Yoga",
-        "Breathwork",
+        "Private yoga",
         "Meditation",
+        "Reiki",
         "Sound healing",
         "Cacao ceremony",
-        "Private classes",
-        "Retreats",
-        "All levels",
-        "Private yoga",
-        "Events"
+        "Small groups",
+        "Retreat support",
+        "Pop-up events"
       ],
       "stats": [
-        {
-          "value": "Daily",
-          "label": "Yoga classes"
-        },
         {
           "value": "Private",
           "label": "Sessions"
         },
         {
-          "value": "Retreats",
-          "label": "& events"
+          "value": "Book",
+          "label": "By appointment"
+        },
+        {
+          "value": "Pop-ups",
+          "label": "Selected venues"
         }
       ],
       "highlights": [
         {
-          "title": "Daily classes",
-          "text": "A regular schedule of yoga classes with equipment provided on site."
+          "title": "Private bookings",
+          "text": "Arrange a session for yourself, your group or your retreat."
         },
         {
-          "title": "Holistic events",
-          "text": "Known for sound healing, cacao ceremonies and special moon gatherings."
+          "title": "Flexible location",
+          "text": "Ask about a session at your villa, hotel or another agreed venue."
         },
         {
-          "title": "Retreat atmosphere",
-          "text": "A resort setting that works well for drop-ins, private sessions and hosted retreats."
+          "title": "Direct contact",
+          "text": "Use the provider’s WhatsApp to confirm the session and meeting point."
         }
       ],
       "reasons": [
@@ -554,15 +624,31 @@ window.HTL_DATA = {
         "facebook": "https://www.facebook.com/shantiyogalombok/",
         "whatsapp": "https://wa.me/6287787997273",
         "email": "",
-        "map": "https://maps.google.com/?q=Shanti+Yoga+Lombok+Jivana+Resort"
-      }
+        "map": ""
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://shantiyogalombok.com/",
+          "https://shantiyogalombok.com/contact/"
+        ],
+        "note": "Now a freelance/private wellness practice by appointment, with pop-ups and no fixed studio schedule. Old Jivana location and map pin removed. WhatsApp matches official contact.",
+        "contactFieldsChecked": [
+          "website",
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "By appointment only. There is no fixed studio timetable. Please agree on the location directly; the former Jivana Resort address is no longer presented as the studio address."
     },
     {
       "id": 5,
       "name": "Ikara Yoga",
       "region": "Kuta Lombok",
       "description": "IKARA Yoga is the first and only Traditional Ashtanga Yoga studio & retreat in Lombok, a paradise-like island in Indonesia.",
-      "image": "https://images.squarespace-cdn.com/content/v1/65cae9c98c445d6af1178fc7/f71bb4c5-0c99-4bc8-81eb-1eb4ab0bf307/DSC_6636.JPG",
+      "image": "",
       "lat": -8.891,
       "lng": 116.2805,
       "categories": [
@@ -581,9 +667,7 @@ window.HTL_DATA = {
       "about": "Ikara Yoga focuses on the traditional Ashtanga method and presents itself as the first dedicated Traditional Ashtanga yoga studio and retreat in Lombok. Alongside regular practice, it also offers retreats and themed intensives for students wanting to go deeper.",
       "practicesIntro": "A clean and focused offering built around traditional yoga practice.",
       "location": "Ikara Yoga, Kuta Lombok, Lombok, Indonesia",
-      "gallery": [
-        "https://images.squarespace-cdn.com/content/v1/65cae9c98c445d6af1178fc7/f71bb4c5-0c99-4bc8-81eb-1eb4ab0bf307/DSC_6636.JPG"
-      ],
+      "gallery": [],
       "offerings": [
         "Yoga",
         "Meditation",
@@ -641,10 +725,25 @@ window.HTL_DATA = {
         "website": "https://www.ikarayoga.com/",
         "instagram": "https://www.instagram.com/ikaraashtangayoga/",
         "facebook": "",
-        "whatsapp": "",
+        "whatsapp": "https://wa.me/6282145436733",
         "email": "",
         "map": "https://maps.google.com/?q=Ikara+Yoga+Kuta+Lombok"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "partial",
+        "sources": [
+          "https://www.ikarayoga.com/",
+          "https://www.indonesia.travel/id/id/travel-ideas/category-wellness/5-tempat-yoga-di-lombok-dijamin-bisa-menenangkan-pikiranmu"
+        ],
+        "note": "Official site blocks automated reading (403). Indonesia tourism authority corroborates studio, Kuta location, yoga and reservation phone. Other offerings and live schedule require direct confirmation. Existing photo shares the Gili Yoga image account and is withheld pending attribution.",
+        "contactFieldsChecked": [
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "The studio and reservation number are corroborated by Indonesia’s tourism website. Its own website could not be read during this review; confirm the current schedule directly."
     },
     {
       "id": 7,
@@ -733,9 +832,24 @@ window.HTL_DATA = {
         "instagram": "",
         "facebook": "",
         "whatsapp": "https://wa.me/6281385314185",
-        "email": "hello@myspalombok.com",
+        "email": "",
         "map": "https://maps.google.com/?q=My+Spa+Lombok+Kuta+Mandalika"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://myspalombok.com/"
+        ],
+        "note": "Official page confirms Kuta/Mandalika massage and WhatsApp. Existing hello@ email not located in the reviewed public text; removed pending verification.",
+        "contactFieldsChecked": [
+          "website",
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 8,
@@ -822,9 +936,25 @@ window.HTL_DATA = {
         "instagram": "https://www.instagram.com/flowersandfireyoga/",
         "facebook": "https://www.facebook.com/flowersandfiregiliair/",
         "whatsapp": "",
-        "email": "",
+        "email": "flowersandfireyoga@gmail.com",
         "map": "https://maps.google.com/?q=Flowers+and+Fire+Yoga+Gili+Air"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://flowersandfire.yoga/",
+          "https://flowersandfire.yoga/contact-2/"
+        ],
+        "note": "Official site confirms two Gili Air yoga locations and public email/telephone. Added email. Confirm ceremony availability through current event listings.",
+        "contactFieldsChecked": [
+          "website",
+          "email"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 9,
@@ -838,7 +968,8 @@ window.HTL_DATA = {
         "Yoga",
         "Meditation",
         "Retreats",
-        "Reiki"
+        "Reiki",
+        "Massage"
       ],
       "website": "https://www.h2oyogaandmeditation.com/",
       "logoDomain": "h2oyogaandmeditation.com",
@@ -917,21 +1048,38 @@ window.HTL_DATA = {
         "whatsapp": "https://wa.me/6287759231368",
         "email": "info@h2oyogaandmeditation.com",
         "map": "https://maps.google.com/?q=H2O+Yoga+and+Meditation+Gili+Air"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://www.h2oyogaandmeditation.com/",
+          "https://www.h2oyogaandmeditation.com/contact-us/",
+          "https://h2oyogaandmeditation.wordpress.com/contact/"
+        ],
+        "note": "Official site confirms Gili Air location, yoga, meditation, Reiki, massage and current WhatsApp. Existing email supported by historical provider page; current contact page masks the email in retrieved text.",
+        "contactFieldsChecked": [
+          "website",
+          "whatsapp"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 10,
       "name": "Slow Spa & Yoga",
       "region": "Gili Air",
       "description": "At Slow Spa we offer different types of yoga classes and an array of treatments ranging from soothing massages to rejuvenating facials in a serene setting.",
-      "image": "https://myspalombok.com/img/carousel2/massage.jpg",
+      "image": "",
       "lat": -8.3575,
       "lng": 116.0815,
       "categories": [
         "Massage",
         "Yoga"
       ],
-      "website": "#",
+      "website": "https://slowgiliair.com/experiences/slow-spa-yoga/",
       "logoText": "SS",
       "slug": "slow-spa-and-yoga-gili-air",
       "url": "/facilitators/slow-spa-and-yoga-gili-air/",
@@ -940,9 +1088,7 @@ window.HTL_DATA = {
       "about": "Slow Spa & Yoga is part of the wider SLOW Gili Air concept, a boutique luxury stay shaped around slower movement, rest and ease. The wellness side emphasizes personalized yoga or pilates sessions and elevated spa treatments rather than large public schedules.",
       "practicesIntro": "A premium, intimate wellness page for guests who prefer private sessions.",
       "location": "Gili Air Island, Lombok, Indonesia",
-      "gallery": [
-        "https://myspalombok.com/img/carousel2/massage.jpg"
-      ],
+      "gallery": [],
       "offerings": [
         "Massage",
         "Yoga",
@@ -1003,7 +1149,23 @@ window.HTL_DATA = {
         "whatsapp": "https://wa.me/6287830372856",
         "email": "hello@slowgiliair.com",
         "map": "https://maps.google.com/?q=SLOW+Gili+Air"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://slowgiliair.com/experiences/slow-spa-yoga/"
+        ],
+        "note": "Official page confirms Gili Air spa/yoga and public email/WhatsApp. Placeholder website fixed. Removed a My Spa Lombok image incorrectly used for this provider.",
+        "contactFieldsChecked": [
+          "website",
+          "whatsapp",
+          "email"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 11,
@@ -1090,21 +1252,36 @@ window.HTL_DATA = {
         "whatsapp": "",
         "email": "info@giliyoga.com",
         "map": "https://maps.google.com/?q=Gili+Yoga+Gili+Trawangan"
-      }
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "public_sources_checked",
+        "sources": [
+          "https://www.giliyoga.com/"
+        ],
+        "note": "Official site confirms Gili Trawangan classes, beginner access, drop-in guidance and public email.",
+        "contactFieldsChecked": [
+          "website",
+          "email"
+        ],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 14,
       "name": "Chi in Harmony",
       "region": "Senggigi",
       "description": "Learn Tai Chi, Qi Gong, meditation, Aikido and self-defense on the beautiful island of Lombok.",
-      "image": "https://myspalombok.com/img/carousel2/beauty.jpg",
-      "lat": -8.489,
-      "lng": 116.0475,
+      "image": "",
+      "lat": null,
+      "lng": null,
       "categories": [
         "Tai Chi",
         "Meditation"
       ],
-      "website": "https://www.chi-inharmony.com/",
+      "website": "",
       "logoDomain": "chi-inharmony.com",
       "logoText": "CH",
       "slug": "chi-in-harmony-senggigi-lombok",
@@ -1114,9 +1291,7 @@ window.HTL_DATA = {
       "about": "Chi in Harmony appears as a broader holistic and energy-based practice rather than a standard yoga studio. The official site emphasizes pranic healing, Reiki, feng shui and wellness sessions, while external Lombok references connect the name with Tai Chi, Qi Gong and meditation-style practices.",
       "practicesIntro": "A more flexible profile page meant for enquiry-based wellness rather than fixed public schedules.",
       "location": "Lombok listing — please confirm current in-person location directly",
-      "gallery": [
-        "https://myspalombok.com/img/carousel2/beauty.jpg"
-      ],
+      "gallery": [],
       "offerings": [
         "Tai Chi",
         "Meditation",
@@ -1171,28 +1346,41 @@ window.HTL_DATA = {
         }
       ],
       "links": {
-        "website": "https://www.chi-inharmony.com/",
-        "instagram": "https://www.instagram.com/chi.in.harmony/",
-        "facebook": "https://www.facebook.com/ChiInHarmony",
+        "website": "",
+        "instagram": "",
+        "facebook": "",
         "whatsapp": "",
-        "email": "chiinharmony@gmail.com",
-        "map": "https://maps.google.com/?q=Lombok+listing+—+please+confirm+current+in-person+location+directly"
-      }
+        "email": "",
+        "map": ""
+      },
+      "publicationStatus": "review",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "excluded",
+        "sources": [
+          "https://www.chi-inharmony.com/",
+          "https://www.indoindians.com/6-places-to-learn-tai-chi-in-indonesia/"
+        ],
+        "note": "Identity mismatch: linked hyphenated domain belongs to Diane Miralis serving Florida. Historical Lombok reference names a different domain (chiinharmony.com) and different contact details. No current Lombok operation verified. Removed from active discovery; record retained for review.",
+        "contactFieldsChecked": [],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 15,
       "name": "Tetebatu Retreats",
       "region": "Tetebatu",
       "description": "Yoga and meditation retreats in the lush green nature of Tetebatu, surrounded by rice fields, mountains and waterfalls.",
-      "image": "https://tetebatu.com/static/images/hero-banner.png",
-      "lat": -8.55,
-      "lng": 116.405,
+      "image": "",
+      "lat": null,
+      "lng": null,
       "categories": [
         "Yoga",
         "Meditation",
         "Retreats"
       ],
-      "website": "#",
+      "website": "",
       "logoText": "T",
       "slug": "tetebatu-retreats-lombok",
       "url": "/facilitators/tetebatu-retreats-lombok/",
@@ -1201,9 +1389,7 @@ window.HTL_DATA = {
       "about": "This profile page is built around Tetebatu’s retreat appeal rather than one single large studio brand. The village is frequently described as a peaceful hill area in East Lombok, known for rice terraces, waterfalls, local culture and a slower rhythm that naturally suits yoga and meditation retreats.",
       "practicesIntro": "More destination-led than operator-led, ideal for a curated retreat directory profile.",
       "location": "Tetebatu, East Lombok, Indonesia",
-      "gallery": [
-        "https://tetebatu.com/static/images/hero-banner.png"
-      ],
+      "gallery": [],
       "offerings": [
         "Yoga",
         "Meditation",
@@ -1260,77 +1446,77 @@ window.HTL_DATA = {
         }
       ],
       "links": {
-        "website": "https://tetebatu.com/",
+        "website": "",
         "instagram": "",
         "facebook": "",
         "whatsapp": "",
         "email": "",
-        "map": "https://maps.google.com/?q=Tetebatu+Lombok"
-      }
+        "map": ""
+      },
+      "publicationStatus": "review",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "excluded",
+        "sources": [
+          "https://tetebatu.com/"
+        ],
+        "note": "Existing record is explicitly a destination concept rather than a named operator. Linked site is a tour service; no evidence for the claimed yoga/meditation retreat provider. Removed from active discovery; Tetebatu travel guide retained.",
+        "contactFieldsChecked": [],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "Please confirm the current schedule, location and availability directly with the provider."
     },
     {
       "id": 16,
       "name": "Ingeborg Leonoor",
-      "region": "Lombok / online",
-      "description": "Reiki Master and Breathwork facilitator offering transformative healing sessions, rituals and certified practitioner trainings.",
+      "region": "Lombok · location by enquiry",
+      "description": "Reiki and breathwork facilitator associated with Lombok. Current session availability and meeting place need direct confirmation.",
       "image": "https://static.wixstatic.com/media/7205a5_3de46b15906b45d5bec8c7cc9481437d~mv2.jpg/v1/fill/w_490,h_397,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/7205a5_3de46b15906b45d5bec8c7cc9481437d~mv2.jpg",
-      "lat": -8.65,
-      "lng": 116.324,
+      "lat": null,
+      "lng": null,
       "categories": [
         "Reiki",
         "Breathwork"
       ],
-      "website": "#",
+      "website": "",
       "logoText": "IL",
       "slug": "ingeborg-leonoor-lombok",
       "url": "/facilitators/ingeborg-leonoor-lombok/",
-      "profileLead": "A Reiki Master and breathwork facilitator offering one-to-one sessions, circles and practitioner trainings for people seeking deeper energetic and emotional support.",
-      "overview": "Ingeborg Leonoor offers Reiki healing, breathwork, circles and trainings, with both in-person and distance formats available.",
-      "about": "Ingeborg Leonoor introduces herself as a Reiki Master and breathwork facilitator whose work centres on helping people reconnect with inner wisdom through energy and breath. Her site also presents Reiki circles, one-to-one sessions and practitioner trainings, with both in-person and remote options.",
-      "practicesIntro": "A personal-practice page with a more intimate and transformational tone.",
-      "location": "Lombok / online — please enquire directly for current in-person availability",
+      "profileLead": "A Reiki and breathwork facilitator described by a Lombok venue partner. Please enquire about current sessions and location.",
+      "overview": "A Lombok venue partner lists Ingeborg Leonoor as a Reiki Master and breathwork facilitator. Her own website was unavailable during this review; current formats and availability are not independently confirmed.",
+      "about": "Ingeborg Leonoor is described on a Lombok venue partner’s website as a Reiki Master and breathwork facilitator. Please enquire directly about current services, session formats and where she is working.",
+      "practicesIntro": "Reiki and breathwork, with current session details to be confirmed directly.",
+      "location": "Lombok — current meeting place to be confirmed directly; no verified studio address.",
       "gallery": [
         "https://static.wixstatic.com/media/7205a5_3de46b15906b45d5bec8c7cc9481437d~mv2.jpg/v1/fill/w_490,h_397,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/7205a5_3de46b15906b45d5bec8c7cc9481437d~mv2.jpg",
         "https://static.wixstatic.com/media/7205a5_3de46b15906b45d5bec8c7cc9481437d~mv2.jpg/v1/fill/w_490%2Ch_397%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/7205a5_3de46b15906b45d5bec8c7cc9481437d~mv2.jpg"
       ],
       "offerings": [
-        "Reiki",
-        "Breathwork",
-        "Healing circles",
-        "Distance sessions",
-        "Trainings",
-        "Rituals",
-        "Reiki treatments",
-        "Distance healing",
-        "Breathwork sessions",
-        "Practitioner trainings"
+        "Reiki by enquiry",
+        "Breathwork by enquiry"
       ],
       "stats": [
         {
           "value": "Reiki",
-          "label": "Master"
+          "label": "By enquiry"
         },
         {
           "value": "Breathwork",
-          "label": "Facilitator"
+          "label": "By enquiry"
         },
         {
-          "value": "Online",
-          "label": "& in person"
+          "value": "Confirm",
+          "label": "Current location"
         }
       ],
       "highlights": [
         {
-          "title": "1:1 healing support",
-          "text": "A grounded option for people seeking personal energetic work rather than a group class."
+          "title": "Reiki and breathwork",
+          "text": "These practices are described in a Lombok venue partner’s public teacher introduction."
         },
         {
-          "title": "Breath and Reiki",
-          "text": "The combination makes the work suitable for both relaxation and deeper emotional process."
-        },
-        {
-          "title": "Flexible format",
-          "text": "Sessions and circles can extend beyond location-based practice through online or distance work."
+          "title": "Check current details",
+          "text": "Confirm the facilitator’s availability, location and session format before making plans."
         }
       ],
       "reasons": [
@@ -1348,13 +1534,26 @@ window.HTL_DATA = {
         }
       ],
       "links": {
-        "website": "https://www.ingeborgleonoor.com/",
+        "website": "",
         "instagram": "https://www.instagram.com/ingeborgleonoor/",
         "facebook": "",
         "whatsapp": "",
         "email": "",
-        "map": "https://maps.google.com/?q=Lombok"
-      }
+        "map": ""
+      },
+      "publicationStatus": "published",
+      "review": {
+        "checkedAt": "2026-11-17",
+        "status": "partial",
+        "sources": [
+          "https://www.ingeborgleonoor.com/",
+          "https://jivanaresortlombok.com/yoga/"
+        ],
+        "note": "Own website returns 404. Venue partner describes Ingeborg as Lombok-based Reiki/breathwork facilitator. Specific location, online sessions, circles and trainings not currently verified. Broken website and generic map pin removed; Instagram retained as the existing enquiry channel, not reverified.",
+        "contactFieldsChecked": [],
+        "confirmedByProvider": false
+      },
+      "availabilityNote": "The provider’s website was unavailable during this review. A venue partner corroborates Reiki and breathwork, but current sessions and location still need confirmation."
     }
   ],
   "events": [
