@@ -103,3 +103,18 @@ After upload, check these URLs:
 ## Source-reviewed provider profiles
 
 New profiles with `profileTemplate: "source-v1"` are generated from `data/facilitators.json` using `python3 scripts/render-source-profiles.py`. Update the same provider in `data/site-data.js`, then rerun the renderer. Custom legacy profiles are preserved. Public source checks are not provider confirmations. Do not add seasonal classes or guessed map coordinates as verified availability.
+
+## Refreshed profiles and discovery pages (17 November 2026)
+
+Build the static pages in this order:
+
+```sh
+python3 scripts/render-island-pages.py
+python3 scripts/render-discovery-pages.py
+python3 scripts/render-agenda-data.py
+python3 scripts/finalize-discovery-seo.py
+```
+
+The data in `data/facilitators.json` remains the provider source. The new renderer updates 21 profiles. Sunset retains its separate photo design, and Kuara retains its complete checked main HTML; its refresh uses scoped CSS only. `data/agenda.json` remains the calendar source. Discovery pages select real published providers by their recorded categories and area; held-for-review profiles stay excluded.
+
+Finalization adds canonical metadata, provider/site/breadcrumb/list structured data, crawlable directory cards, internal links, redirects and a sitemap. Run finalization after rendering before publication. `data/seo-pages.json` records the indexable pages. No ratings, invented opening hours, guessed addresses, availability claims or guaranteed search rankings are added.

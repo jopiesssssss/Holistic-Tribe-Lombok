@@ -1,0 +1,9 @@
+# Lombok steps 3–5 — completion record
+
+- Step 3: refreshed 21 provider pages using a shared photo/story/practical-details layout. Sunset keeps its existing design. Kuara receives scoped presentation CSS; its complete main HTML is checked byte-for-byte against the previous published source. Provider-supplied Flowers & Fire text, both map links and all 16 local photos remain available. Reviewed limitations remain visible; no paused treatments are reintroduced as available.
+- Step 4: eight curated discovery pages for yoga across Lombok, yoga in Kuta, Gili Air and Gili Trawangan, sound healing across Lombok and in Kuta, massage, and yoga retreats. Each page has local comparisons, relevant real provider cards, planning questions, source references and links to the agenda. An Explore hub, contextual guide links, profile links and homepage/footer links make these pages reachable.
+- Step 5: canonical and social metadata, provider/site/breadcrumb/list schema, server-rendered directory cards, a 45-URL sitemap, permanent legacy redirects, a custom 404, and cache policy allowing replaced image paths to refresh. All provider identities use Organization, without unverified LocalBusiness addresses, opening hours or review scores. Held and removed listings remain out of the sitemap.
+
+Checks: parsed 45 indexable pages; unique page titles; one heading and canonical per page; valid JSON-LD; all local links, anchors and images resolve; sitemap excludes review/redirect pages; 23 static directory cards; Kuara main HTML unchanged. Finalization also passed a second run without duplicated cards or stylesheet links. Public provider research was performed earlier on 17 November and is retained with the profiles; no claim of direct provider confirmation is added.
+
+Indexing and ranking are controlled by search services. No Search Console submission or search-service verification has been performed as part of this source update.
