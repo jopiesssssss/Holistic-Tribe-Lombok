@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 BASE='https://www.holistictribelombok.com'
-VERSION='20261117-island-v2'
+VERSION='20261117-agenda-v1'
 
 def esc(value):
     return html.escape(str(value),quote=True)
