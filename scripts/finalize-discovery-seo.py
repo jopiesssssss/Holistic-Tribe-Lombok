@@ -35,7 +35,7 @@ for slug in ['sound-healing','reiki','breathwork']:
 # Kuara: presentation only. Do not change any content inside main.
 p=ROOT/'facilitators/kuara-lombok-south-lombok/index.html';s=p.read_text();s=re.sub(r'<link rel="stylesheet" href="/assets/css/discovery.css[^"]*" />','',s);s=s.replace('<body data-page="profile">','<body class="kuara-profile" data-page="profile">');s=s.replace('</head>',f'<link rel="stylesheet" href="/assets/css/discovery.css?v={VERSION}" /></head>');p.write_text(s)
 # Agenda direct links can open a provider-specific search without hidden filters.
-p=ROOT/'assets/js/agenda.js';s=p.read_text();needle="const from = $('#agenda-from'), to = $('#agenda-to');";s=s.replace(needle,needle+"\n  search.value = params.get('q') || '';\n  if (Array.from(area.options).some(o => o.value === params.get('area'))) area.value = params.get('area');");p.write_text(s)
+p=ROOT/'assets/js/agenda.js';s=p.read_text();needle="const from = $('#agenda-from'), to = $('#agenda-to');";initial="\n  search.value = params.get('q') || '';\n  if (Array.from(area.options).some(o => o.value === params.get('area'))) area.value = params.get('area');";s=s.replace(initial,'').replace(needle,needle+initial);p.write_text(s)
 p=ROOT/'agenda/index.html';s=p.read_text().replace('agenda.js?v=20261117-agenda-v1','agenda.js?v='+VERSION);p.write_text(s)
 # Keep the generator’s common footer and headline link generation aligned.
 p=ROOT/'scripts/render-island-pages.py';s=p.read_text();s=s.replace('<a href="/facilitators/">All providers</a><a href="/agenda/">Agenda</a>','<a href="/facilitators/">All providers</a><a href="/explore/">Explore practices & places</a><a href="/agenda/">Agenda</a>');p.write_text(s)
@@ -107,6 +107,6 @@ for p in ROOT.rglob('*.html'):
  src='/'+p.relative_to(ROOT).as_posix()
  if m and src not in redirects and m.group(1)!=src:config['redirects'].append(dict(source=src,destination=m.group(1),permanent=True))
 if not any(x['source']=='/facilitators/kuara-resort-lombok/' for x in config['redirects']):config['redirects'].append(dict(source='/facilitators/kuara-resort-lombok/',destination='/facilitators/kuara-lombok-south-lombok/',permanent=True))
-config['headers']=[x for x in config.get('headers',[]) if x['source']!='/assets/(.*)']+[{'source':'/assets/(.*)','headers':[{'key':'Cache-Control','value':'public, max-age=86400, stale-while-revalidate=604800'}]},{'source':'/(.*)','headers':[{'key':'X-Content-Type-Options','value':'nosniff'},{'key':'Referrer-Policy','value':'strict-origin-when-cross-origin'}]}]
+config['headers']=[x for x in config.get('headers',[]) if x['source'] not in ['/assets/(.*)','/(.*)']]+[{'source':'/assets/(.*)','headers':[{'key':'Cache-Control','value':'public, max-age=86400, stale-while-revalidate=604800'}]},{'source':'/(.*)','headers':[{'key':'X-Content-Type-Options','value':'nosniff'},{'key':'Referrer-Policy','value':'strict-origin-when-cross-origin'}]}]
 (ROOT/'vercel.json').write_text(json.dumps(config,indent=2)+'\n');(ROOT/'data/seo-pages.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print('Canonical metadata and structured data:',len(paths),'pages. Sitemap, redirects and error page rebuilt.')

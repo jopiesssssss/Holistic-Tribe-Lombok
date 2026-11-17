@@ -35,8 +35,6 @@
   const from = $('#agenda-from'), to = $('#agenda-to');
   search.value = params.get('q') || '';
   if (Array.from(area.options).some(o => o.value === params.get('area'))) area.value = params.get('area');
-  search.value = params.get('q') || '';
-  if (Array.from(area.options).some(o => o.value === params.get('area'))) area.value = params.get('area');
   const tabs = Array.from(document.querySelectorAll('[data-agenda-tab]'));
   const empty = '<div class="agenda-empty"><h3>No matching listings yet.</h3><p>Try another day, area or activity, or reset the filters. The studios below may have more sessions in their own timetable.</p><button type="button" class="agenda-reset" data-empty-reset>Reset filters</button></div>';
   function matches(item) {
