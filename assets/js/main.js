@@ -14,20 +14,13 @@ function facilitatorUrl(f, prefix=''){ return prefix + f.url; }
 function chips(items=[]){ return [...new Set(items)].slice(0,6).map(c => '<span class="chip">'+escapeHtml(c)+'</span>').join(''); }
 function eventEnd(evt){ return evt.endDate || evt.date; }
 function isUpcoming(evt){ return eventEnd(evt) >= toYMD(new Date()); }
-function upcomingEvents(limit=4){ const upcoming = data.events.filter(isUpcoming).sort((a,b)=>a.date.localeCompare(b.date)); return (upcoming.length ? upcoming : [...data.events].sort((a,b)=>a.date.localeCompare(b.date))).slice(0,limit); }
+function upcomingEvents(limit=4){ const upcoming = data.events.filter(isUpcoming).sort((a,b)=>a.date.localeCompare(b.date)); return upcoming.slice(0,limit); }
 function eventDateText(evt){ const start = parseLocalDate(evt.date); return evt.endDate ? formatDate(start)+' – '+formatDate(parseLocalDate(evt.endDate)) : formatDate(start); }
 
-function facilitatorCard(f, prefix=''){
-  return '<article class="facilitator-card" tabindex="0" role="button" data-open-facilitator="'+f.id+'" aria-label="Open quick view for '+escapeHtml(f.name)+'">'+
-    '<div class="card-image" style="background-image:url(\''+escapeHtml(f.image || '')+'\')">'+(f.image ? '' : '<span class="chip">Provider photo not available</span>')+'</div>'+
-    '<div class="card-copy">'+
-      '<div class="meta">'+escapeHtml(f.region)+'</div>'+
-      '<h3>'+escapeHtml(f.name)+'</h3>'+
-      '<p>'+escapeHtml(f.description)+'</p>'+
-      '<div class="chip-row">'+chips(f.categories)+'</div>'+
-      '<button class="card-link button-link" type="button" data-open-facilitator="'+f.id+'">Quick view →</button>'+
-    '</div>'+
-  '</article>';
+function facilitatorCard(f){
+  const localPhoto = (f.image || '').startsWith('/assets/');
+  const visual = localPhoto ? '<img src="'+escapeHtml(f.image)+'" alt="'+escapeHtml(f.name)+'" loading="lazy" width="600" height="400" />' : '<span class="provider-monogram" aria-hidden="true">'+escapeHtml(f.logoText || 'HT')+'</span><span class="provider-visual-label">'+escapeHtml(f.categories[0] || 'Explore')+'</span>';
+  return '<a class="island-provider-card" href="'+escapeHtml(f.url)+'"><div class="provider-visual tone-'+(f.id % 4)+'">'+visual+'</div><div class="provider-copy"><span class="small-label">'+escapeHtml(f.region)+'</span><h3>'+escapeHtml(f.name)+'</h3><p>'+escapeHtml(f.description)+'</p><div class="provider-card-bottom"><span>'+escapeHtml(f.categories.slice(0,2).join(' · '))+'</span><span class="round-arrow" aria-hidden="true">↗</span></div></div></a>';
 }
 
 function eventCard(evt){
@@ -41,11 +34,13 @@ function initNav(){
   btn.addEventListener('click', () => {
     links.classList.toggle('open');
     document.body.classList.toggle('menu-open', links.classList.contains('open'));
+    btn.setAttribute('aria-expanded', String(links.classList.contains('open')));
   });
   links.addEventListener('click', e => {
     if(e.target.tagName === 'A'){
       links.classList.remove('open');
       document.body.classList.remove('menu-open');
+      btn.setAttribute('aria-expanded', 'false');
     }
   });
 }
@@ -115,31 +110,51 @@ function initFacilitators(){
   const search = $('[data-facilitator-search]');
   const filters = $('[data-facilitator-filters]');
   const count = $('[data-facilitator-count]');
-  let active = '';
+  const placeSelect = $('[data-place-filter]');
+  const places = {
+    'kuta': {name:'Kuta & south coast',regions:['Kuta Lombok','Bumbang Beach, South Lombok']},
+    'selong-belanak': {name:'Selong Belanak',regions:['Selong Belanak']},
+    'senggigi': {name:'Senggigi',regions:['Kerandangan / Senggigi','Senggigi']},
+    'gili-air': {name:'Gili Air',regions:['Gili Air']},
+    'gili-trawangan': {name:'Gili Trawangan',regions:['Gili Trawangan']},
+    'gili-meno': {name:'Gili Meno',regions:['Gili Meno']}
+  };
+  const params = new URLSearchParams(window.location.search);
+  let active = availableCategories.includes(params.get('practice')) ? params.get('practice') : '';
+  let place = Object.hasOwn(places, params.get('place')) ? params.get('place') : '';
+  search.value = params.get('q') || '';
+  if(placeSelect) placeSelect.value = place;
   const cats = ['All', ...availableCategories];
-  filters.innerHTML = cats.map(c => '<button class="filter-btn '+(c==='All'?'active':'')+'" type="button" data-filter="'+escapeHtml(c)+'">'+escapeHtml(c)+'</button>').join('');
-
-  function render(){
-    const q = (search.value || '').trim().toLowerCase();
+  function syncFilters(){
+    filters.innerHTML = cats.map(c => '<button class="filter-btn '+((active === c || (!active && c === 'All'))?'active':'')+'" aria-pressed="'+String(active === c || (!active && c === 'All'))+'" type="button" data-filter="'+escapeHtml(c)+'">'+escapeHtml(c)+'</button>').join('');
+  }
+  function render(updateUrl=false){
+    const q = search.value.trim().toLowerCase();
     const items = data.facilitators.filter(f => {
       const text = [f.name, f.region, f.description, ...f.categories].join(' ').toLowerCase();
-      return (!q || text.includes(q)) && (!active || f.categories.includes(active));
+      return (!q || text.includes(q)) && (!active || f.categories.includes(active)) && (!place || places[place].regions.includes(f.region));
     });
-    grid.innerHTML = items.map(f => facilitatorCard(f)).join('') || '<div class="empty-state">No facilitators match this search yet.</div>';
-    count.textContent = items.length+' facilitator'+(items.length===1?'':'s')+' shown';
+    const empty = '<div class="empty-state"><strong>No '+escapeHtml(active || 'matching')+' providers listed'+(place?' in '+escapeHtml(places[place].name):'')+' yet.</strong><p>Try another practice or explore the options elsewhere on Lombok and the Gili Islands.</p><a class="pill-link" href="/facilitators/'+(active?'?practice='+encodeURIComponent(active):'')+'">Explore '+escapeHtml(active || 'all providers')+' across the islands →</a></div>';
+    grid.innerHTML = items.length ? items.map(f => facilitatorCard(f)).join('') : empty;
+    count.textContent = items.length+' provider'+(items.length===1?'':'s')+' shown'+(place?' · '+places[place].name:' · Lombok & the Gili Islands');
     renderMap(items);
+    if(updateUrl){
+      const next = new URLSearchParams();
+      if(active) next.set('practice',active);
+      if(place) next.set('place',place);
+      if(search.value.trim()) next.set('q',search.value.trim());
+      window.history.replaceState(null,'',window.location.pathname+(next.size?'?'+next.toString():''));
+    }
   }
-
-  filters.addEventListener('click', e => {
-    const btn = e.target.closest('[data-filter]');
-    if(!btn) return;
-    active = btn.dataset.filter === 'All' ? '' : btn.dataset.filter;
-    $$('.filter-btn', filters).forEach(b => b.classList.toggle('active', b===btn));
-    render();
+  filters.addEventListener('click',e=>{
+    const button = e.target.closest('[data-filter]');
+    if(!button) return;
+    active = button.dataset.filter === 'All' ? '' : button.dataset.filter;
+    syncFilters(); render(true);
   });
-
-  search.addEventListener('input', render);
-  render();
+  search.addEventListener('input',()=>render(true));
+  placeSelect?.addEventListener('change',()=>{place=placeSelect.value;render(true);});
+  syncFilters();render();
 }
 
 let map, layerGroup;

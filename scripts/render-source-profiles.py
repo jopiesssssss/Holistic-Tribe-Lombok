@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 BASE='https://www.holistictribelombok.com'
-VERSION='20261117-providers'
+VERSION='20261117-island'
 
 def esc(value):
     return html.escape(str(value),quote=True)
@@ -39,7 +39,8 @@ def render(provider,header,footer):
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css?v={VERSION}" />
+  <link rel="stylesheet" href="/assets/css/island.css?v={VERSION}" />
   <script type="application/ld+json">{structured}</script>
 </head>
 <body data-page="profile">
